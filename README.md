@@ -32,7 +32,7 @@ We performed the walkthrough for the following combinations:
 
 And used the following websites:
 
-- Gmail
-- Paypal
-- Target
-- Amazon
+- [Gmail](gmail)
+- [Paypal](paypal)
+- [Target](target)
+- [Amazon](amazon)
