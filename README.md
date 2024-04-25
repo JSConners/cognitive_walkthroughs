@@ -1,3 +1,3 @@
-# cognitive_walkthroughs
+# cognitive_walkthrough
 
 
