@@ -30,5 +30,8 @@ Find it in Settings, Sign in and Security | Uses the OS prompt as before. No oth
 
 
 # Screenshots
-
+## [Windows Screenshots](windows_SS) 
 These screenshots are from Windows 11, using Google Chrome, and viewing https://target.com... Taken on 4/25/2024
+
+## [macOS Screenshots](macOS_SS)
+These screenshots are from macOS Sonoma, using Google Chrome, and viewing https://target.com... Taken on ---
