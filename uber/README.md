@@ -9,3 +9,5 @@
     - Passcode
 - Once you click "Create a Passkey" the OS dialog comes up, and then you're done
 - no option to name them -- they are named where they are stored
+- have to cancel out of OS and then you get another option -- Chrome profile --
+  and no option for security keys or phone
