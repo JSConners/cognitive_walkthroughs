@@ -10,7 +10,7 @@ Setup: Using Chrome on a Mac | The button to do this is on the same page as addi
 | ---- | ----------- | ---------- |
 **Step 2.** Click on create a passkey. <br><br> ![+ Create a Passkey](./mac_SS/+create.png) | A browser popup with 3 buttons, an identical button to ![Create a Passkey](./mac_SS/blueButton.png),<br> a button that says "use another device", and "cancel" <br><br> Dialogue: "Create a passkey to start signing in with just your fingerprint, face, or screen lock. You can create a passkey on this device or use another device, like a hardware security key." | Mental Model – reinforces biometrics or device pin, for user understanding – you are signing in with F ingerprint / FaceID / Device pin / Device Password (in my case) and they mention face, screen lock <br><br> A user may not know what the websites means by "screen lock", and it could possibly be refering to a mobile device?
 | ---- | ----------- | ---------- |
-**Step 3.** Clicked on the blue button: "Create a Passkey" | I get an OS dialogue box that asks for my fingerprint – Use Touch ID to sign in?<br><br> Using my fingerprint continues the process.  | Leads user to think of Passkeys as TouchID or FaceID. It does say that a Passkey will be created and saved on the iCloud Keychain – requires users to know what a Passkey is.
+**Step 3.** Clicked on the blue button: "Create a Passkey" | I get an OS dialogue box that asks for my fingerprint – Use Touch ID to sign in?<br><br> Using my fingerprint continues the process.  | This option, regardless of OS and authentication mechanism, only lets the user use that devices default method (e.g., if I have winHello w/ pin, I can only use the pin, same for FaceID/Fingerprint/Password(mac mini keychain). Leads user to think of Passkeys as TouchID or FaceID. It does say that a Passkey will be created and saved on the iCloud Keychain – requires users to know what a Passkey is.
 | ---- | ----------- | ---------- |
 **Step 4.** Clicked on cancel | This brought up a new OS dialogue box with iCloud keychain or Chrome Profile as selectable options. No option to go to hardware or iPhone. | If someone wanted to use their iPhone, then they couldn't. Also applies to hardware tokens. What if someone is using a public computer, or using a friends laptop, and the device is logged into a different icloud account? I could accidentally create a passkey on a device that I don't own/control, instead of being able to use my own device, such as a phone or tablet. <br><br>If a website can recognize unique devices (highly probable), they could potentially give a user a warning like: "This is a new device, do you REALLY want to save a passkey on this device?"
 | ---- | ----------- | ---------- |
@@ -38,11 +38,18 @@ When clicking Use Another Device in **Step 2** | **DOUBLE CHECK THIS!!!!!!**<br>
 At **Step 3**| 1Password will intercept the request to create a Passkey and “go first”, interupting the macOS dialog. | Failure: If I want to use a hardware security key, then even if I choose “Use another Device”, 1 Password intercepts the request, and I have to click the device icon to then get a dialog that comes from the OS to let me use my hardware security key. <br><br> 1Password is opinionated and feels like it should always go first (on a laptop). On a phone if you configure both, user gets a choice of which to use.
 
 
+## Windows Differences
+| Step | Success and Failure | Design Suggestions or Comments |
+| ---- | ----------- | ---------- |
+**Step 1** Click the blue button (top right). | When clicking cancel inside the Windows Security OS dialog box, Gmail responds with an error message "Something went wrong." | This is different than on macOS Sonoma, where Chrome gives additional options after defaulting to the device the user is currently using. This might be based on the Chrome profile syncing--- but seems to be more of a Mac thing. 
+| ---- | ----------- | ---------- |
+**Step 7** Click on "Use another device" | Windows Security Dialog Box <br><br> Has options for: 1. Chrome Profile registered Android device<br><br> 2. iPhone, iPad, or Android Device<br><br> 3. Security Key. | Design Comments: Option (1) is listed on this OS notification twice, and the "more choices" are smaller. Just remove the big Option (1), and make "more choices" larger. 
+| ---- | ----------- | ---------- |
+**Step 8** Clicked on "iPhone, iPad, or Android Device. | Displayed a QR code, with information on what website the request came from, and which application sent the request. 
 
 
-
-
-
+## Notes
+We need to  verify what the priority is for Windows Hello, if I have a pin/FaceID/Fingerprint all setup. 
 
 
 
