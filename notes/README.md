@@ -7,6 +7,7 @@ For all other websites, we are just going to do a single video.
 ## TODO Next time
  1. Go through the videos and fix up other walkthroughs
  2. Comparing the differences between each combination in Gmail.
+ 3. What is actually being sent via bluetooth? 
 
 ## Organizing the paper
 ### Cognitive Walkthrough Section
