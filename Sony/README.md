@@ -1,5 +1,10 @@
 # Cognitive Walkthrough
 
+Registration using Windows Hello was fine. When trying to register a smartphone, it did NOT use the browser popup, and used it's own instead. I scanned it, got redirected to the Sony Website, where I clicked use passkeys, and then my phone displayed a QR code that a device which I had a passkey on needed to scan. 
+
+When I registered my iPhone first, it was straightforward. 
+
+
 ## Windows Notes
 ### Setting up a Passkey with Existing Account
 

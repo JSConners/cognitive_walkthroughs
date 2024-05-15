@@ -1,5 +1,7 @@
 # Cognitive Walkthrough
 
+No options for smartphone/tablet/hardware token? 
+
 ## Apple Notes
 ### Setting up a Passkey with Existing Account
 
