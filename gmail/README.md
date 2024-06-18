@@ -50,7 +50,7 @@ At **Step 3**| 1Password will intercept the request to create a Passkey and “g
 
 ## Notes
 We need to  verify what the priority is for Windows Hello, if I have a pin/FaceID/Fingerprint all setup. 
-
+James -- go through the Browser Differences... 
 
 
 # Screenshots
