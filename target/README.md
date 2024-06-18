@@ -1,9 +1,18 @@
 # Cognitive Walkthrough
 
 No options for smartphone/tablet/hardware token? 
+## Notes
+Target gives a 1 time prompt asking the user if they want to use Passkeys. 
 
 ## Apple Notes
 ### Setting up a Passkey with Existing Account
+
+| Step | Success and Failure | Design Suggestions or Comments |
+| ---- | ----------- | ---------- |
+| Step 0. Sign in and security page | Info -- "Passkeys protect your account iwth a key unique to you, like your face or fingerprint. Once you add one, it's saved to your password manager, so you can use it to sign in from other devices. You can shoose to sign in with your passkey or password any time." <br> Has good bullet points at the bottom of the passkeys box: "Strengthen account security, skip typing your password, save time and peace of mind."  | Good mental model analogies that will help users understand what is happening. <br> Could be a little clearer in the distinction between unique key and biometrics. <br> Reassures the user they can still use their password if they want. | 
+| Step 1. click "Add passkey"| See (Win11 OS)[win11OSdialoges.md] | I could only register a passkey on the local device... clicking cancel ended the passkey registration process. <br> This is a decision by Target to not allow roaming devices in the FIDO2 settings. | 
+| Step 2. Click "Ok" after passkey creation in OS Dialogue. | Passkey is named "Chrome 124" and gives a date/time. | A little weird... could let the user name the passkey... but also has a separate field below to show where the user is currently logged in, so that might be why. |
+
 
 | Step | Success and Failure | Design Suggestions or Comments |
 | ---- | ----------- | ---------- |
