@@ -8,8 +8,8 @@ The cognitive walkthrough was performed by *Redacted* and *Redcated* from the *R
 
 We performed the following actions:
 
-1. Log into an existing account and add a passkey.
-2. Create a new account.
+1. Log into an existing account 
+2. Add a passkey.
 
 > In depth steps for each of the above actions can be viewed in the directory for each website. 
 
