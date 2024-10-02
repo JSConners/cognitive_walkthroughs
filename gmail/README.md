@@ -1,12 +1,12 @@
 # Cognitive Walkthrough
-
+<button href="www.gmail.com"> <img src="./mac_SS/blueButton.png" </button>
 ## Apple Notes
 ### Setting up a Passkey with Existing Account on Chrome
 | Step | Design Comments | Researcher Suggestions or Comments |
 | ---- | ----------- | ---------- |
 Setup: Using Chrome on a Mac | The button to do this is on the same page as adding 2FA to the account
 | ---- | ----------- | ---------- |
-**Step 1.** Passkeys and Security Key page  |  1. Two buttons for creating a key, do they do the same thing? No! <br><br> From the screen recording <br>1.1 Top right blue button labeled "Create a Passkey" ![Create a Passkey](./mac_SS/blueButton.png)  <button img=./mac_SS/blueButton.png href="www.gmail.com"> <br> This assumes that I want to create a passkey on my device (iCloud keychain). <br> <br>1.2 Bottom, white button labeled "+ Create a Passkey" ![+ Create a Passkey](./mac_SS/+create.png) <br> gives me the option of using another device. But even then “Create a passkey” assumes this device, whereas “Use another device” defaults to hardware key if I have one plugged in or to phone QR code if not. <br><br>  | 1. It's unclear from the UI if the 2 buttons do the same thing. User's may not know what a hardware security key is, doesn’t mention I can use my phone.
+**Step 1.** Passkeys and Security Key page  |  1. Two buttons for creating a key, do they do the same thing? No! <br><br> From the screen recording <br>1.1 Top right blue button labeled "Create a Passkey" ![Create a Passkey](./mac_SS/blueButton.png)   <br> This assumes that I want to create a passkey on my device (iCloud keychain). <br> <br>1.2 Bottom, white button labeled "+ Create a Passkey" ![+ Create a Passkey](./mac_SS/+create.png) <br> gives me the option of using another device. But even then “Create a passkey” assumes this device, whereas “Use another device” defaults to hardware key if I have one plugged in or to phone QR code if not. <br><br>  | 1. It's unclear from the UI if the 2 buttons do the same thing. User's may not know what a hardware security key is, doesn’t mention I can use my phone.
 | ---- | ----------- | ---------- |
 **Step 2.** Click on create a passkey. <br><br> ![+ Create a Passkey](./mac_SS/+create.png) | A browser popup with 3 buttons, an identical button to ![Create a Passkey](./mac_SS/blueButton.png),<br> a button that says "use another device", and "cancel" <br><br> Dialogue: "Create a passkey to start signing in with just your fingerprint, face, or screen lock. You can create a passkey on this device or use another device, like a hardware security key." | Mental Model – reinforces biometrics or device pin, for user understanding – you are signing in with F ingerprint / FaceID / Device pin / Device Password (in my case) and they mention face, screen lock <br><br> A user may not know what the websites means by "screen lock", and it could possibly be refering to a mobile device?
 | ---- | ----------- | ---------- |
