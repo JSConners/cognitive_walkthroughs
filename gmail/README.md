@@ -1,5 +1,5 @@
 # Cognitive Walkthrough
-<button href="www.gmail.com"> <img src="./mac_SS/blueButton.png" </button>
+<button href="www.gmail.com"> <img src="./mac_SS/blueButton.png"> </button>
 ## Apple Notes
 ### Setting up a Passkey with Existing Account on Chrome
 | Step | Design Comments | Researcher Suggestions or Comments |
