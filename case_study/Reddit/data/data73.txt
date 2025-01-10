@@ -1,0 +1,15 @@
+Comment 1: I could be wrong but it seems like some orgs are just using passkey as another mechanism instead outright placing passwords with it.Comment 2: Correct me if I’m wrong, but my understanding of passkeys is that they’re entirely meant to replace (or upgrade) passwords. 
+
+You’re right that there are plenty of security holes in many authentication flows even with passkeys! Weak MFA, hijackable recovery methods, user impersonation, etc are still real problems! Passkeys aren’t supposed to fix *all* of them though. They’re just supposed to give us a better way to authn without users remembering/forgetting or sharing/leaking a secret string of text. Does that make sense?Comment 3: Passkeys are currently an alternative to passwords, not a replacement. Use a strong, random, unique password and TOTP for 2FA to lock down your accounts, but use the passkey to sign in.Comment 4: Passkey  and 2FA are the best to protect your account from remote access (done through phishing) from a Stanger 2000 miles away.
+
+the reason is because even if they do have your password. if they do not have something you have physically.  they can't get through it.
+
+this means your account most probably will **only** get compromise via local attempt. Local means around your area..
+
+probably a friend, a relative, a family member, a co worker.. someone who can have physical access to your belongings
+
+so if you have 2FA enabled or passkey. and your account got compromised.  there is 95% chance that someone you know is the culprit.Comment 5: Some are, but if people find passkeys easy to adopt, I imagine those sites will slowly phase out passwordsComment 6: ok, yes thanks for the reply, so i should remove any backup routes to my account i store my passkeys on 1passwordComment 7: Not relevant to the post, but ok.Comment 8: Tell me I'm wrong as I have only started reading about this, but what I have read says that the passkeys are stored in google password manager / icloud and synced with other devices.   
+So not device dependant??  
+Also worries me that someone could get into the password manager/icloud and have access to all the passkeys on their device which makes the whole system sound kind of pointless.Comment 9: You should retain recovery codes as a means of recovering your account.Comment 10: yes but I don't recommend using default browser password managers such as google for chrome.  
+
+the best passkey for securing password manager right now is a physical key like a yubikey

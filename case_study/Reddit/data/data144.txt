@@ -1,0 +1,55 @@
+Comment 1: I think you're confusing two separate issues: securing *access* to your Passkey vs. security of using Passkeys with apps & sites.
+
+The first part's all about how you secure access to your Passkey.
+
+If access to your Passkey is secured by a 6-digit phone unlock code, then it's less secure than if you had protected it with an app like 1Pass, or requiring a biometric factor (fingerprint or facial scan), or using a separate physical security key (i.e. a Ubikey).
+
+The second part, which relates to how Passkeys are used by apps & websites, it is widely accepted that a Passkey that resides on your device, and is tied to one (*and only one)* app or website, is MUCH more secure than even a strong password that can be used by *anyone* who knows it, on *any* app or site where you've used it.
+
+So, yes, Passkeys are more secure b/c they're tied to your device and generally require proof of presence (pin, fingerprint/face scan, etc.); but they can be compromised if you don't protect access to them properly (e.g. leave your device unlocked). But that's still a lot more secure than a password that *anyone at all* can use just by knowing the string.Comment 2: They are better than passwords for a few reasons. But in your case, you have compromised the security of your phone, similar to giving your debit card pin away along with the debit card itself.
+
+Passkeys have many advantages over passwords, but you still need to protect them just like you would a password (or debit card pin).
+
+If you want extra security for some of your passkeys you can store the passkey on a security key.
+
+Look at 1Password’s own site and blog to understand why they think passkeys are superior.  You don’t have to remember password or maintain it. You don’t have to have extra 2FA step, because it built into passkey, you are MUCH more protected against phishing attacks. There’s more benefits.
+
+https://blog.1password.com/passkeys-vs-passwords-differences/
+
+
+Also, if you’re using 1Password to store your passkeys, then your family would have to have access to that to use your passkeys. Your 1Password app requires master password or biometric like Face ID or phone 6-digit passcode. If you chose to use Face ID, 1Password app won’t allow login with phone’s 6 digit passcode. If Face ID is unsuccessful, 1Password falls back to requiring master password.
+
+So basically, even if your family member can get into your phone, they can’t get into your 1Password - as long as they don’t know your master password and you don’t use the passcode option to sign into the app. 
+Hopefully that makes sense.
+
+
+Passwords aren’t going anywhere for a long time. If you feel strongly about using a password, you can still use that.Comment 3: I think that passkeys are secure when used with fingerprint or 3D face recognition (like Face ID).
+They are a bit less secure in your case because anyone who knows the PIN could access services that use the passkey.
+
+What is not secure is that even when using the passkey, you can always access via the regular password, and if that is weak, the passkeys are useless.Comment 4: Yes.  
+
+If you don't like exposing your passkeys to your phone, use a Yubikey.  That will remove even the appearance of risk.  (Except the risk of losing your key!  I lost one of mine a year ago.  This is why you have a PIN on the key, and a backup key!)
+
+If you have a USB-C phone with wireless charging, you can just get a Yubikey Nano, plug it in like a dust-cover or port-condom, and generally ignore the USB port.  That way your passkeys (at least the 32 most important ones) are always there, but absolutely inaccessible to hackers.  If you use a decent PIN, it's also inaccessible to pickpockets~!Comment 5: No.Comment 6: So let me get this straight. Say I use a Passkey with only a 5 digit code for my phone for a trading platform for example, can someone from anyhwere who guesses the 5 digit code right access my account or does he also need my phone\`?Comment 7: If you store the passkeys in 1Password and set it to require master password or Face ID to unlock, then even if someone knows your phone’s passcode they can’t get into your 1Passowrd app.  Unlike other apps, when signing into 1Password app with Face ID it doesn’t fallback to Passcode unlock if Face ID fails. It falls back to using master password.
+
+https://support.1password.com/face-id-security/
+
+Note that this is not the case with native iPhone Passwords iCloud Keychain. That will allow you to get in and manage your passkeys with the phone’s passcode. But that was the same with passwords too.
+
+I strongly disagree that passkeys are useless if you still have password for a site/service. Sure it means that the company still has your password on their server, just like before; however, you are much better off adding and using the passkey if they offer it. You don’t have to use 2FA to log in, you are protected from phishing attacks, there’s no auto-fill, it’s faster, etc.  You can even have separate passkeys for a site/service per device (non-shareable passkeys) if you want to separate concerns even more.  Or put passkey on physical security key for ultimate, but less convenient, security.  Sure, in many cases it would be optimal to have no password - and that’s the long term goal.  It’s a transition period and I think it’s good to have the fallback to passwords until things are worked out.
+
+EDIT (12/13/23): looks like iOS 17.3 will introduce an opt-in “stolen phone” security feature to address the issue with falling back to passcode if biometric fails.Comment 8: > What is not secure is that even when using the passkey, you can always access via the regular password, and if that is weak, the passkeys are useless
+
+You've just made yourself immune to phishing attacks and man-in-the-middle attacks.  This is a huge win, even with a password for backup.Comment 9: Unfortunately Google forces the phone to be a passkey. I did not authorize my pixel6 to be one.. but google added themselves anyway.. under the heading "Automatically created passkeys : Android devices automatically create passkeys for you when you sign in to your Google Account."
+
+&#x200B;
+
+I do not like this.. unrequested addition of devices is a very large security negative. I want only my physical keys to perform passkey duties (YK5 NFCs)Comment 10: I said that passkeys are useless in those cases where you have very simple passwords.
+
+If you have a Google account with password 123456 (just an example) and you activate the passkey, you are still vulnerable.
+So the first thing to do when activating the passkey is to change the password to a very complicated one.
+Then it doesn't matter if you forget it, the simple ones are forgotten too!
+
+In case you lose the device with which you identify yourself for the passkey, you will require a password reset.Comment 11: Why?Comment 12: That backup password is still vulnerable. More so if you don't use it.Comment 13: Generally, I agree with this, but I suspect that’s part of how Google phones authenticate to Google services these days, because the encryption is very good.Comment 14: Agreed. Hopefully they move to a system that doesn’t require password to reset and instead has backup codes or something. Otherwise there is no way to replace passwords completely.Comment 15: Oh, I agree.  But you've defeated two of the most common attacks, and reduced the attack surface for Evil Maid attacks to boot.  
+
+Perfect, no.  Better, yes.Comment 16: its inherently weak because its no longer fully under your control whats added.

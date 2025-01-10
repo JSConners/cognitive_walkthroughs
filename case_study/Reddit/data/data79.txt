@@ -1,0 +1,33 @@
+Comment 1: There are different ways that a passkey can be stored-- you've just described one method.
+
+\- Passkeys that are stored in a dedicated external hardware device (Ex. YubiKeys)
+
+\- Passkeys that are stored in the TPM chip/secure element of the device the user is using
+
+\- Passkeys that are stored in/synced to the cloud (Ex. iCloud, or password managers like 1Password)
+
+**If an attacker manages to gain root access to a device with passkeys on it, what prevents the attacker from simply copying the passkeys to another device via the Internet?**
+
+Even with root access to a device I cannot exfiltrate private key material out of a secure element/TPM. What I *can* do is just use those passkeys (as long as I have the memorized credential/biometric to do so).
+
+This is part of the risk/benefit of **cloud** synced passkeys, if you choose to use them.
+
+**Benefit:** If I lose my laptop I don't have to worry too much about the passkeys that I may have stored in its TPM
+
+**Risk:** If my iCloud account is compromised (via a recovery flow or otherwise), there is the *potential* that an attacker may be able to compromise other accounts. 
+
+For some, the benefit outweighs the risk. For others, it's too risky and there are always ways of using passkeys in a way where the credential isn't stored in the cloud.Comment 2: [deleted]Comment 3: Thank you! Very informative.
+
+OK, so then passkeys improve on authentication/handshake quality, but they don’t exactly address theft vulnerability via the cloud/Internet. And I have to wonder whether third-party passkey managers like Bitwarden are even *able* to store passkeys in the TPM/secure module, especially on iOS.
+
+To me, all of that means they still aren’t suited to truly important sites (banks, etc) unless they can be stored strictly offline; I am definitely not storing my bank passwords in the cloud. I’m not sure if that’s currently possible on macOS, and I’m sure it isn’t on iOS, at least with the built-in keychain.
+
+Thank you again for your answer!Comment 4: Right, I understand that part. However, as I understand it, the private keys do synchronize among all of my devices, at least on iOS. Assuming that that is true, then the private keys are capable of being copied from the device, because they are copied to my other devices via iCloud Keychain. If my device has been rooted, what prevents the attacker from copying the private keys to a device of his choosing?Comment 5: [deleted]Comment 6: From what I’ve read online, that’s how the system works; it’s not just iOS. Bitwarden, 1Password, Google’s system on Android…all of them sync passkeys among devices via the cloud.
+
+I haven’t understood why I haven’t seen this potential issue addressed directly, so I’ve been assuming that I just haven’t fully understood how it works (especially given the proximity/Bluetooth safeguards that *do* exist regarding sharing passkeys via QR codes). But the fact that it still hasn’t been directly addressed (anywhere that I can find) is starting to worry me. If passkeys *are* vulnerable to this sort of attack, and it’s not possible to store them in a local-only keychain, there is no way in hell I’m using them for anything important.
+
+I guess my main concern is whether I can restrict copying of my passkeys from my first verified device by requiring authorization from my second verified device, or if no such authorization is required and therefore a third copy can be made to any device if one of my 2 devices has been compromised.Comment 7: My plan is to use Bitwarden for my passkeys. The way I see it, passkeys when used by password managers, are an incremental increase in security, rather than something "perfect" if you will. Your post made me think that all the risks you mentioned are the same with normal password managers. If your phone is compromised, your password manager may be also. 
+I would think that hardware keys like Yubikey are safer, but what if you lose it? What could someone do with a Yubikey they found on the street?
+Thank you for your questions because I was wondering the same thing.Comment 8: Without the memorized credential (or biometric) to unlock the yubikey, a randomly discovered yubikey is useless to a stranger. Even if it’s not a stranger, and its an attacker who knows what they want to access, they are going to have a very limited number of attempts at determining the memorized credential and then the yubikey will lock foreverComment 9: Yeah, the risks seem to be at least similar. The value of passkeys seems to largely center around 1) being much more difficult to brute-force or “guess”, 2) making local attacks harder, and 3) making remote but non-rooted phishing harder.
+
+Passkeys seem like an improvement overall. I hope I find it easy to keep some passkeys local-only. Hopefully they’ll make a v2.0 in a few years that addresses the question of authorized vs unauthorized devices & copying from the cloud.

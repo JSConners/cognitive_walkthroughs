@@ -1,0 +1,11 @@
+Comment 1: Is this the new 2023 Titan security key?Comment 2: Titan Keys seem like they were rushed out by Google without multiple things in place that should be like what Yubikeys have. I was also able to register with Enforce attestation disabled, but not with it enabled, bet it was the same issue you found here.
+
+Other big issue with Titan Keys is there is no way to manage existing FIDO2 residential credentials on the key, there's no vendor provided tool and it doesn't support standard FIDO2 resident credential management. So you can't see what credentials exist on it, and once it's full, that's it, there's no deleting old/unused credentials. 
+
+Thread on that here: https://www.reddit.com/r/yubikey/comments/18gcmui/manage\_credentials\_on\_google\_titan\_security\_key/?utm\_source=share&utm\_medium=web2x&context=3
+
+Definitely not a key to use for testing on [webauthn.io](https://webauthn.io) :|Comment 3: At this time, I believe MDS has been updated with the appropriate certificate data for the Titan key.  This issue was not an Entra issue, it impacted any RP validating attestations.  With the recent updated MDS entry, the error should be resolved for all RPs if they refresh their local cache of MDS data.
+
+Source: Personal discussions at the recent FIDO Alliance meeting.Comment 4: YesComment 5: I just purchased one to test with and ran into the same issue.Comment 6: Has documentation been released yet? I can’t find anything supporting this.Comment 7: Wow.Comment 8: this means google needs to replace the key or can it be fixed with a firmware udpate?
+
+I had to write my own python script to get the AAGUID because I could not find it anywhere documented on any google site or manual... so contacting the google support to replace the key and explaining that the certicate is probably wrong formatted will be funny.Comment 9: Hello all, has anyone been able to attest yes pun intended... that this is working around April '24?   Thx.Comment 10: Updates to MDS don't usually trigger any documentation changes.  RPs need to cache the latest MDS blob to receive the updates.Comment 11: Hopefully, it is impossible to update firmware on any security key.Comment 12: Neither.  The error was in MDS.

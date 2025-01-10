@@ -1,0 +1,9 @@
+Comment 1: I don't think we'll get this until first passkeys are established mainstream, which has already begun but has a way to go. Leaving passwords available will make adoption easier. 
+
+Once that's set, then removing the password as a recovery method completely would be the next evolutionComment 2: They won’t for a few years at least. Legacy products and workflows might prevent full transition.
+
+For example, Nvidia.com has passkeys, but the GeForce Experience desktop app doesn’t allow you to use it (yet?).Comment 3: Microsoft and GoogleComment 4: None that I know of yet.Comment 5: Which is a bloody shame because if passkeys are the way to go, then why keep the old, vulnerable mechanism?Comment 6: Came here to say Microsoft, as well.Comment 7: I can still get into google with a password.  It used to default to passkey, I wish it still did.
+
+Today when I clicked passkey, it gave me a QR code again.  Hasn't done that for a while.Comment 8: The cost for every impacted website in the world to switch from the username/password paradigm to Passkeys will be measured in Billions - if not more.
+
+More to the point, most tech support today is being addressed by script readers who have zero challenge-solving skills. Until AI can master the task of assisting genuinely confused users, Passkeys will not be a factor.

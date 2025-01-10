@@ -1,0 +1,2 @@
+Comment 1: Delete it, then they don't have access.  Probably look through security history to see everything they did.Comment 2: No they can't.  
+remove the passkey in your security settings. also check your mail forwarding setting, they might have put a forwarder in there to spy on you.Comment 3: All the passkeys in your account are visible and can be removed from the Security things.

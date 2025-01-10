@@ -1,0 +1,1 @@
+Comment 1: Interesting! I never heard of the SRP protocol. I understand that services like 1password and Proton use this protocol to safely transfer data(?)Comment 2: Dunno about them, but it’s an authentication protocol afaik and I’m curious about how the two “compete”.

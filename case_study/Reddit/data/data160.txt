@@ -1,0 +1,13 @@
+Comment 1: Right now, I wouldn’t delete anything and I’m not seeing that message anywhere. What screen are you seeing it on?
+
+As for the future use of Passkeys. I think it’s up to web sites to decide how they will be used. It’s still early days.Comment 2: iCloud Keychain. I consolidated my passkey and my username and password because they were two by adding my username and password to the passkey, and it said to delete the passwordComment 3: Oh, you’re referring to the Password Manager screen you access from the Settings app. I asked because their is an iCloud Keychain settings screen in the iCloud settings.
+
+When I look at my accounts list in the Password Manager for the ones that use Passkey I still have a separate account entry for the original User Name/Password combo. Are you trying to add the password to the accounts that use Passkey?Comment 4: I combined them by adding my username and password to my passkey. When you do that, it says something about deleting your password I mentioned above. Are passkeys ready to go passwordless because none are that I’ve noticedComment 5: Yes, the ultimate goal is to eliminate passwords in favour of passkeys. Not sure what you are experiencing and whether it is related. I’m not experiencing that behaviour.
+
+Just to clear things up! I’ll use one of my accounts as an example.
+
+I’ve had an eBay account forever that used the regular user name/password. Recently eBay started using passkeys so I set that up as well. 
+
+If I look at my eBay account entry in the Password Manager there are now two separate ones, the original one that has the user name/password combo and a newer separate entry that has my user name and passkey. The one that includes the passkey does not include the password for that account. I can however edit it to add my password, I won’t, so that is maybe what you are doing and why you are getting that message. 
+
+I prefer to leave things as they are with separate account entries for user name/password and user name/passkey until passkeys mature.

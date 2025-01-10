@@ -1,0 +1,12 @@
+Comment 1: I think you’re confusing two factor codes with passkeys.
+
+because until MS releases an Authenticstor update passkeys do not work from the phone to desktop the way you want
+
+instead they sync to compatible desktop software. and only that wayComment 2: Is this a new update? The reason I ask is because when I had a Pixel 6A and Pixel 8 this is exactly how it worked. I could sign into my Google account on the desktop while using the passkey on my phone.  I used it multiple times in fact. On the Pixel there were only issues with it in the beginning but then it was fixed. 
+
+
+But with the Samsung Galaxy s24+ however now it seems like as you mentioned that I can't use my passkey on my phone to access my Google account on the desktop.Comment 3: [https://us.community.samsung.com/t5/Galaxy-S24/Issue-with-pass-keys/td-p/2840700](https://us.community.samsung.com/t5/Galaxy-S24/Issue-with-pass-keys/td-p/2840700)
+
+based on this you should move to synced passkeysComment 4: I'm so sorry if this seems like a "duh" question but I clicked the link but I don't really understand how can I move to sync passkeys? Is there a tutorial on how to do that? Any information about this would be greatly appreciated.Comment 5: You can’t move passkeys yet.  Would need to delete and remake them on each website Comment 6: In that case how would one delete their passkey for their phone and make another one when I thought 🤔 on Android Google makes a passkey automatically? I'm not sure how to delete a passkey for my Google account.Comment 7: you would go to the website and delete it from there
+
+also, it can’t make one automatically.  The process is initiated by the siteComment 8: I see. I'll try that and see if it works. Thank you for letting me know. Appreciate it

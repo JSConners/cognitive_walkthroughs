@@ -1,0 +1,4 @@
+Comment 1: Apple has released passkeys for managed Apple devices tailored for businesses. These passkeys cannot be shared, and they include attestation data that relying parties can utilize to verify the passkey originates from a managed device. For standard Apple passkeys, relying parties do not have control.  
+
+
+https://developer.apple.com/videos/play/wwdc2023/10263/

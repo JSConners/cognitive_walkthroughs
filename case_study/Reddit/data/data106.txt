@@ -1,0 +1,31 @@
+Comment 1: Answered my own question, 
+
+Some security keys need extra verification, like a PIN.  
+If your security key is locked due to multiple incorrect PIN entries and must be reset:  
+On your computer, open Chrome Chrome.  
+At the top right, click More More.  
+Click Settings and then Privacy and security and then Security and then Manage security keys and then Reset your security key.  
+Follow the instructions on screen.  
+Tip: You can use Chrome to reset your locked security key. Go to chrome://settings/securityKeys.Comment 2: My biggest complaint about the Titan 2023 is there appears to be no way to list or individually delete passkeys that are stored in the key.Comment 3: You can also change the PIN from Windows Settings:  Accounts, Sign-in options, Security Key, Manage.Comment 4: I set a pin code and wrote it down but for some reason its not accepted now, the minimal help I can find directs me to a Manage Security keys menu option in Chrome that I can't find in either the desktop or the android browser versions.  So the key is now locked and useless.  So I'm returning the key to the online store.Comment 5: Unlike for Yubico \[1\] and \[2\] , I could not find detailed documentation (like the max retry count) on these capabilities for Titan (2023).  If you found info in addition to, or elaborating on the Chrome Managed Security keys settings you referenced \[3\], please let me know. I also found it is not possible to view "Sign-in Data" on Titan, as I can on a Yubico Security Key NFC (with FIDO2).
+
+\[1\] [https://docs.yubico.com/yesdk/users-manual/application-piv/pin-puk-mgmt-key.html](https://docs.yubico.com/yesdk/users-manual/application-piv/pin-puk-mgmt-key.html)
+
+\[2\]  [https://support.yubico.com/hc/en-us/articles/4402836718866-Understanding-YubiKey-PINs](https://support.yubico.com/hc/en-us/articles/4402836718866-Understanding-YubiKey-PINs)
+
+\[3\] [https://support.google.com/accounts/answer/6103523](https://support.google.com/accounts/answer/6103523)Comment 6: I don't see that menu option now, only Manage Phones but no Manage Security Keys, I have current version of desktop Chrome 1.21.0.6167.161 (Official Build) (64-bit) 
+
+My security key pin is not being accepted and I can't reset it so returning key to the online store.Comment 7: You are the man.. thank youComment 8: your are awesome! so simple, tank you!Comment 9: You can reset the key using Windows Settings: Accounts, Sign-in options, Security Key, Manage.Comment 10: I'm starting to see why Yubikeys are adopted more in large scale enterprises, the amount of available support and documentation on Titan Keys is abysmal, if I needed to adopt this for a business, it would be quite scary.Comment 11: I agree.  Google has good technology and  supported standards like FIDO, but the contribution of Titan keys to their revenue is minuscule, so it doesn't get a lot of attention, it seems.
+
+It matters to moving forward their goal to secure online interactions, hence they are donating Titan keys to high-risk individuals \[1\] but it probably pales in comparison to their AI efforts, for example.  For Yubico, that's their main business.
+
+I suppose it's an embarrassment to Google if a famous person's Google account was broken into, so it's worth it to donate keys to high-risk individuals.
+
+It was interesting that the Titan key box was branded as Google Cloud, even though it's not limited to use with Google Cloud.  Yet, given that positioning as a business tool, the key that I got was assembled in China according to the box, which may make it harder to get it adopted by some customers. That info was omitted on Google Store's website and  the keys themselves.
+
+Yubikeys are made in Sweden and the USA. \[2\]
+
+\[1\] [https://blog.google/technology/safety-security/new-partnerships-and-100000-security-keys-to-protect-high-risk-individuals/](https://blog.google/technology/safety-security/new-partnerships-and-100000-security-keys-to-protect-high-risk-individuals/)
+
+\[2\] [https://support.yubico.com/hc/en-us/articles/4414031436178-Where-are-our-keys-manufactured-and-shipped-from-](https://support.yubico.com/hc/en-us/articles/4414031436178-Where-are-our-keys-manufactured-and-shipped-from-)Comment 12: >I'm starting to see why Yubikeys are adopted more in large scale enterprises, the amount of available support and documentation on Titan Keys is abysmal
+
+So true..   2023 Titan key first and foremost needs a site that can test all the keys features without it being used for real.  It also needs more documentation as you stated.  I would also like to know what browsers and OS's support it, my MacOS with FireFox seems to not support it, but YubiKey 5 works fine..

@@ -1,0 +1,1 @@
+Comment 1: Are you sure it didn't say "Pay with Passcode"? That's what shows up when it can't authenticate with Face ID. It lets you put in your iPhone's passcode to pay instead.Comment 2: It probably said "pass code". Passkeys are an account sign-in mechanism, not for payments.Comment 3: probably right

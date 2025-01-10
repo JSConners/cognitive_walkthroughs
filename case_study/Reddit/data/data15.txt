@@ -1,0 +1,45 @@
+Comment 1: I agree with your analysis, with some nuances...
+
+1. Yes indeed. If the key is stolen, it grants access.
+2. Yes and no. The service \*can\* decide to reject multi-device passkeys for instance, or just allow a subset of hardware security keys... but it can only reject it after the public key credential was created, when receiving it, which leads to a very poor user experience. A request to the RFC to add such a filter was rejected so far.
+3. Yes, convinience vs security. A service allowing to register multiple passkeys per account would solve the recovery issue.
+4. Well, multi-device passkeys are stored locally, remotely and are in-transit over the wire. Although they go great length to protect all that, it is still more exposed to risk. Hardware-bound keys, as far as I know, have their key never exposed, they just sign the payloads.
+
+That's my take on it.
+
+Although it protects from phishing and password reuse, it is a \*lot\* of complexity. And the evolution from hardware-bound passkeys to multi-device passkeys transformed the whole from "secure by design" to "trust us with your keys". It sacrified security/privacy for convinience.Comment 2: I would agree with your assessment.
+
+Passkeys are so not SSH keys.  SSH and Passkeys are both PKI-based credentials.  They both rely on the same base technologies.
+
+But you are right they could be stolen if you can get into the store.   It's why their storage has to be well secured and the actual passkey data hard to get to.  To pick a trustworthy storage provider.
+
+2.  
+The server can care, it depends on the setup.  The server could fingerprint that it's the same machine each time and do additional prompts on a new machine.  No one is requiring a passkey to be the final source of authentication.  Passkey + rotating code is an option.
+
+3.  
+This is true.  So you should be picking your passkey storage based on trust of the platform.
+
+4. You are correct but it's encrypted on sync and the key relies on knowing your device pin.  You also can go further secure your account with a fido key so someone can't add your account without having it.   So being able to access passkeys is tied to a second factor only you should know or have, so you're involved in sync setup.  And better than passwords, only those specific devices have access to the passkey.   You also should have face id turned on so someone can't get into your device to use them.
+
+That's the fundamental summary of passkeys, if you don't have two factors in place the security is far lower.  My desktop setup doesn't let me use them without entering my 1password password but I also can set it to not ask for the password for so many hours if I choose to.  I'm in charge with the security level I get on device.  I can make it prompt immediately if I want.
+
+If someone gets into my machine in that period they can use my passkeys but they're better than passwords because they have to get onto my machine to use them.   I have my password keeper secured in a way they have to be with me to set it up on a new device and I can revoke access to the keeper on the device when I want. With iCloud you can remove from/block the account from a specific device remotely if you need to.
+
+So to your final line I would say that recovery needing be simple ties to utilizing the recovery methods platforms build in.   Like with iCloud you can print out a recovery code on paper to get into your account.  With 1password they have you print out the same to get into your account.  I have four pieces of paper in our home fire safe.
+
+For me I have a bunch of key accounts secured with physical keys,  my 1password  account included, and my third one always stays at home in a fire safe or a safe deposit box at home or in the bank.  I have a few more accounts to add to it but once it's done I can get into key accounts with it and it's not something that can be hacked.
+
+Either option works, printing is cheaper.  But what it is in a break glass method of access.  That's what we need everyone to implement.
+
+My rotating keys are synced with my google account which is secured with two factor, my physical security key one of them.  One could print out access codes, not as good but perfectly usable.  So same idea, if I need a two factor key I can open my safe and get into my account.
+
+It's layers of security and emergency access handled so I can't be fully locked out and others will have a hard time getting in equally.Comment 3: I posted a question here a while back that had basically the same premise as yours. What I gathered is that yes, your 4 points are basically correct. Passkeys are more complicated than passwords, and therefore more secure in that sense, but the system does not really improve upon the security issues present if one of your devices becomes rooted/compromised. They are better at preventing phishing than passwords are, and they are better at stalling brute-force/dictionary attacks, but they don’t really prevent copying issues on compromised devices.Comment 4: Thanks. I'd like to ask you more on multi-device vs device bound passkeys. How can a service know what you have? Public/Private keypairs are either Elliptic Curve or RSA which are usually 256-bit or 2048-bit, respectively which is doesn't contain data on how it's stored. The metadata on multidevice vs device bound would have to exist outside of the key and the service would basically have to trust that the client is creating a "device bound" key.
+
+For example, I could tell the service "yes I'm creating a device bound passkey" and then create the keypair in bitwarden instead of my TPM. What prevents me from doing that?Comment 5: they’re less complicated when you understand them.
+
+just that the learning curve is longerComment 6: During creation of the public key credential, there are some bit flags set on the authenticator data (see [Web Authentication: An API for accessing Public Key Credentials - Level 3 (w3c.github.io)](https://w3c.github.io/webauthn/#sctn-attestation)) . The third bit flag called "[Backup Eligibility](https://w3c.github.io/webauthn/#backup-eligibility)" means in practice it's synced / multi-device. Check out the demo here [webauthn.passwordless.id/demos/basic.html](https://webauthn.passwordless.id/demos/basic.html) to see if yours is synced or not. Now, it's possible that the authenticator sends any bit flags there, and actually most password managers lie about the user verification flag (see [Known Issues | passkeys.dev](https://passkeys.dev/docs/reference/known-issues/)). If you want to really be sure, you have to verify the attestation of the device to ensure it was certified and such ...but (A) it might be anonymized by the browser, it (B) might not be send at all (thanks apple) and (C) it is super complex because you must support a whole set of different freaky complex signature chain verification stuff. So usually, you just trust that what you are given during registration is true and take the flags as an indication of whether it's hardware-bound or "backed up" (in the cloud and synced on your other devices).Comment 7: Ok, seems like this feature is not quite mature yet but the architecture relies on trust that the client is truthful and that is not highly assuring. Thank you dagnelies.Comment 8: The relying party has full control over the passkey registration/attestation process. If browsers anonymize the registration process or if the platform, client, or device (such as iCloud Keychain) does not support attestation, the relying party can always choose to drop the registration process. This means the RP would only support MDS-known authenticators, which are primarily hardware-bound keys.
+
+For C, server libraries already exist, such as those from Yubico.Comment 9: Most websites typically allow any authenticator, they do not desire to restrict the user to specific hardware security keys. As such, there is usually no real need to prove the device model, it's more for informational purposes and tampering is of little interest.
+
+  
+It's the authentication that is important, and this one always contains a signed payload including the challenge, which is just another terminology for a nonce.Comment 10: Do you have any documentation on how this is implemented? It looks like to me MDS is a CA run by FIDO and signs the various authenticator vendors (yubikey, thales, ledger, etc.). Does this mean that the actual hardware module has a private key with a certificate that is signed by that CA and can cross sign whatever challenges that the passkey signs to also provide an attestation that it definitely came from within a hardware bound authenticator?

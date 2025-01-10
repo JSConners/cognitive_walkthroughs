@@ -1,0 +1,18 @@
+Comment 1: If you insist on not synchronizing the private key in the cloud you might consider a Yubikey or Nitrokey or any other brand. It’s the same technology as Passkeys.   
+By the way it’s absolutely not a bad idea what you want.Comment 2: You’ll need keychain or use third party app like 1Password or use yubikey. The whole point is access to the hardware security module on the device and iOS exposes it through API.Comment 3: RoboformComment 4: Absolutely, I'm certainly considering purchasing a Yubikey. It's just frustrating that I'd have to buy a Lightning compatible Yubikey for it to work with my current iPhone. These are prohibitively expensive currently.Comment 5: Thanks for the reply, I abandoned it in the end. I figured out you can't have 2 third party autofill password managers selected in iOS, so I'll have to put up with using iCloud keychain and the security risks that come with that for now.Comment 6: You can have keychain and 1Password enabled at the same time. I store my google passkeys on the phone (keychain) and others in 1Password.Comment 7: Yes, exactly, I was hoping to use Enpass for passkeys and Bitwarden for my password manager, but Apple lock it down to iCloud Keychain + a third party unfortunately.Comment 8: Is Bitwarden or good enough for passkeys?Comment 9: Also, you can't create passkeys if iCloud Keychain syncing is turned off. I understand why Apple do this for the average user, but I value having locally stored passkeys for security.Comment 10: Bitwarden doesn't support passkeys just yet, it's coming some time this month supposedly. However, for security, I'm not sure storing passkeys in an online vault is a good idea just yet.Comment 11: I really think your fears are unfounded. For one, it’s WAY more secure than passwords. They are encrypted exactly like all data.
+1Password has a better security model than Apple in my opinion.  If you try to open 1Password with Face ID and it fails. It falls back to master password. It does not fall back to phones passcode. I think keychain does. Which means that a person would only need your phones passcode. With 1Password, they would need your master password - assuming iPhone Face ID does its job and fails for anyone but you.
+
+EDIT (12/13/23): looks like iOS 17.3 will introduce a “stolen phone” security feature to address this.Comment 12: It's more a case of if someone got into my vault, they'd have access to the public key of my passkeys.
+
+As passkeys act as a password and second factor of authentication, a bad actor could technically get straight into my accounts. 
+
+It's the same reason I choose not to store my passwords and TOTP in the same vault (despite Bitwarden supporting this).Comment 13: I understand. Keeppass local might be a better fit. 
+
+If someone got into your vault it’s game over for everything.
+That’s why 1Password does it best in my opinion. master password and secret key for ANY new device. Additionally, if someone got admin access to you PC, they can do anything anyway.
+
+Some people go an extra step and store only partial password. When they login they add the extra character(s).  It’s overkill  imho.Comment 14: Personally, I duplicate my TOTP codes in 1Password and Microsoft Authenticator. Except for 1Password itself - which is only in MS Auth.
+
+I do a lot of remote travel and need to have “backup” solutions in case I lose my phone.Comment 15: It's not necessarily game over if someone got into my vault as they'd have to breach my separate TOTP app in order to access my most vital accounts. It would be with Passkeys and if I stored TOTP in Bitwarden.
+
+Thanks for the suggestion, I'll take a look at Keeppass.Comment 16: Btw, some sites (NVIDIA.com) let you still have TOTP with code as an extra step to passkeys.

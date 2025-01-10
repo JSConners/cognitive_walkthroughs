@@ -1,0 +1,9 @@
+Comment 1: Seems to me that you are confusing passkeys with the devices that store passkeys.Comment 2: [https://developers.yubico.com/PIV/Guides/SSH\_user\_certificates.html](https://developers.yubico.com/PIV/Guides/SSH_user_certificates.html)Comment 3: I see, sorry about that. What would you call a device which stores passkeys?Comment 4: Thanks, as far as I'm aware though (but please correct me if I'm wrong), those instructions won't work for my key, as it isn't a yubikeyComment 5: A hardware security key, some which will allow you to store SSH credentials and others which won't.Comment 6: Then you will need to check the documentation for the key you purchased and see if it supports ssh keys and how to configure them. 
+
+Also note that Passkeys is not the same as a hardware security key. Passkeys are a software implementation of FIDO2 / webauthn that don't require a hardware token.Comment 7: He's talking about passkeys, not SSH credentials. Yes, passkeys can be stored on security keys which have that capability, like the Titan key, but they can also be stored in the cloud or on smartphones too.
+
+Yes, I would also call the device a hardware security key.
+
+[https://www.yubico.com/resources/glossary/what-is-a-passkey/](https://www.yubico.com/resources/glossary/what-is-a-passkey/)Comment 8: I see, okay. Thanks!Comment 9: Yes, but most sites that allow for passkeys also allow you to use FIDO2 keys.Comment 10: Yes, and most stores that sell bread also sell cheese. That doesn't mean we should use the word cheese when we are talking about bread.
+
+OP's post asked, "can I use a passkey to store SSH credentials?". The technical answer is no. But I assumed OP was referring to a hardware key as a "passkey" and tried to provide a helpful answer despite the incorrect terminology. Finally I tried to clear up any confusion by defining the terms and pointing out that what he was using was a hardware security key, not a passkey.

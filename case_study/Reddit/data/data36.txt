@@ -1,0 +1,5 @@
+Comment 1: No.Comment 2: Thanks. Any documentation / source for this?Comment 3: Passkeys are basically just public/private key pairs and their migration implementation is horrible so far in most managers, so it's hard to export them to another password manager, even if you explicitly wanted to migrate them.
+
+Regarding your question: password managers are separate programs from the OS's passkey managers/key chains.
+
+There is documentation for most password managers and operating systems but usually they only document features they implement, not those they haven't implemented.

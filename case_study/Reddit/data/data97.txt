@@ -1,0 +1,8 @@
+Comment 1: Are you saying you cannot use your Google Titan Security Key to login to your Google account on Android or that you cannot use it as a 2FA/passkey for other accounts?Comment 2: There hasn't been a Bluetooth option since 2019. How old is this key?
+
+You have a second key for backup, right?  (Please say yes.) Does it work?Comment 3: I cannot use it on Android.Comment 4: I do have the USB key for backup. I've now managed to disable two-step verification. I didn't know that the Bluetooth key was discontinued, I received this key through a research project run by a large university. The keys were sponsored by Google itself, according to the instructor.Comment 5: Again? Is this referring to a Google account only or 2FA/passkeys for other accounts?Comment 6: I bought a Bluetooth version and it was convenient at the time, but it was a while ago.
+
+Info on why Google discontinued their BT version in 2019:
+https://www.theverge.com/2019/5/15/18625028/google-titan-security-keys-bluetooth-vulnerability-replacement-free
+
+I'd recommend you get a new USB+NFC version as your new primary and keep your current USB key as backup.Comment 7: Google account onlyComment 8: That's really annoying that they would still give these out then. Only got it a few weeks ago.

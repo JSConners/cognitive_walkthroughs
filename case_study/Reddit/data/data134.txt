@@ -1,0 +1,31 @@
+Comment 1: You should be able to confirm your account security settings at account.gooogle.com. Otherwise, as a simple test, open an incognito window, go to Gmail, and see how it asks you to login. If it asks for a password, it isn't using a passkey.Comment 2: I have the same problem on my Mac. I have a passkey set up, but am still being asked to enter my password and then asked if I want to use a passkey instead. It then tells me I have one already. This is daft.Comment 3: Not quite technically true… (I mean, it *isn't* using the pass key at that prompt, but it *could*) My account keeps asking for a password. If I click on "try another way", it permits the pass key. Pass key is supposed to be easier, but with password, Chrome prefills my password anyway, while pass key needs me to click on "try another way", then select pass key, then click on at least one (but I think 2) pop up buttons. Another UX failComment 4: [Account.google.com](https://Account.google.com) showed my cellphone has a passkey. It also said that the phone passkey is "Not yet used".
+
+So, I have had this Google passkey for about 3 months and Google kept using 2FAs for my log-ins. No one asked me to use it either. Interesting...Comment 5: Greetings!! I just had a few questions about passkeys with Google account. 
+
+
+I have a Pixel 6A. I understand that my phone has a passkey made for it by default but I had a few questions about it. 
+
+1: if my phone has a passkey already set up, could I use my phone only/solely to sign into my Google account? Or could someone bypass the passkey option by just selecting use password?
+
+
+2: Everytime I try and use my passkey on my phone to login to my account on my PC, it always prompts me on my PC for a QR code. Is there a way that windows or the browser can "sync' this passkey so I just get a prompt on my phone and not get a QR code request EVERY TIME I try to log into my account on a PC?
+
+
+
+I'm so sorry this is a multi part question. It's just I can't really find any articles(even from Google) that address these questions in a straightforward and direct way. And since I was able to bypass using my passkey on my PC by just selecting use password instead( which meant there was no Google prompt anymore for security authentication)now I'm kinda of concerned about the security of using them. Any help in understanding this would be greatly appreciated.Comment 6: Ditto. Google always asks for password, although I can "Try another way" and my passkey works fine. So many clicks. Not much more convenient than entering password (and 2fa if needed).Comment 7: Still having this problem. Passkey worked for me once upon a time, I don't know when it broke. But rather than saving time, it's just an annoying extra step asking me to set it up every single time.Comment 8: >1: if my phone has a passkey already set up, could I use my phone only/solely to sign into my Google account? Or could someone bypass the passkey option by just selecting use password?
+
+Right now, Google has no way for you to go completely passwordless yet. Passkeys are the default way to log in, but you still are required to have a password.
+
+That said, your account should be protected as long as you use a unique password for each site plus have 2-step authentication enabled. In the future, I imagine they will allow you to remove your password from your account entirely like Microsoft has.
+
+&#x200B;
+
+>2: Everytime I try and use my passkey on my phone to login to my account on my PC, it always prompts me on my PC for a QR code. Is there a way that windows or the browser can "sync' this passkey so I just get a prompt on my phone and not get a QR code request EVERY TIME I try to log into my account on a PC?
+
+You can create a passkey on multiple devices you own if you wish to authenticate directly on your PC. Sign into your Google account, and in your security settings, there is an option for you to create a new passkey on that PC. You'll then be able to authenticate directly using your PC (pin, fingerprint, face scanner, whatever you have) and not rely on your phone.
+
+Chrome on Desktop does not sync passkeys at the moment. It relies on the underlaying OS support. At this time, Windows does not sync passkeys either, meaning you'll need to create a new passkey on each Windows PC you own if you do not wish to require your phone each time. You can revoke passkeys on old devices at any time through your Google account, as well.
+
+You can also use a password manager like 1Password or soon Bitwarden to store and sync your passkeys on any device if you'd prefer that approach.
+
+Fwiw, Apple has the most cohesive passkey implementation built in. A passkey created on any of your Apple devices will automatically sync to all others (phone to mac, for example). With the updated iCloud Password extension for Chrome, you can even access those passkeys in other browsers as well on the Mac. This requires you to be all in on Apple, of course.Comment 9: Thank you for letting me know this. I was aware of all that was involved with this. Thank you!

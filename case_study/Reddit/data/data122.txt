@@ -1,0 +1,23 @@
+Comment 1: I believe I saw Bitwarden just released support for passkeysComment 2: NordPass supports passkeys.Comment 3: Bitwarden, DashlaneComment 4: Yubikey is a fido2 compliant hardware key.Comment 5: StrongboxComment 6: How are you supposed to select the correct storage option when multiple are available? I haven't seen any examples that allow you which place stores the passkey, which makes managing them a nightmare.Comment 7: I think it depends on the device.
+
+On iPhone, any app that is enabled to store passwords (Settings -> Passwords -> Password Options) will pop up when adding a new Passkey, allowing you to select which app to store it in.
+
+Edge on Windows is a little more clunky. When the prompt pops up (in my case it's the 1Password prompt), I have to click the USB-key-looking button (twice in my case for some reason), then you'll get other options for storing it.Comment 8: That is correct and is frustrating if you use different operating systems or eco-systems that support passkeys (Google (with Chrome Browser on macOS), Apple Keychain, etc.
+
+For example, see this article on [Passkeys on Android and Chrome](https://developers.google.com/identity/passkeys/supported-environments) and the [confusing matrix](https://developers.google.com/identity/passkeys/supported-environments#chrome-passkey-support-summary).
+
+Some sync across devices, some do not, for example. I think managing that will be a big pain for many users.
+
+It looks like the [user journeys described here](https://developers.google.com/identity/passkeys/ux/user-journeys?hl=en) is not adhered to by many sites.  I had to dig into developer docs to see how different storage locations are prioritized if there are conflicts. [For example](https://developer.chrome.com/blog/passkeys-on-icloud-keychain/), from this article from Eiji Kitamura, Developer advocate for Chrome:
+
+>Note that passkeys stored to the Chrome profile previously continue to be available, but ones stored to iCloud Keychain **are prioritized**. If only a passkey from Chrome profile is available, it will be used to authenticate the user.
+
+I think the public key cryptography and core tech for passkeys are solid, but they have not considered end-user usability sufficiently in guiding site developers or worked hard enough to ensure adherence to good implementation. I guess this will take a long time to sort out.
+
+On Chrome on macOS,  I can use iCloud Keychain, potentially a browser extension that supports passkeys, and the Chrome (local) profile. Understanding which one is used was a pain for me. Image what happens if the passkeys  for a particular site are outdated in one storage location.
+
+It also gets confusing when a hardware device that stores passkeys are used. When I create a passkey, I need to be very careful where I store it. (e.g. Yubikey or Google Titan key. Note that iCloud Keychain is not one of the "hardware" bound storage devices for passkeys)
+
+Or consider this edge case
+
+>[if the passkey exists on a phone it's not possible to use physical (USB or NFC) key](https://www.reddit.com/r/Passkeys/comments/17qyx25/disable_automatic_passkeys_generation_on_android/)

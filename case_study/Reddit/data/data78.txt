@@ -1,0 +1,7 @@
+Comment 1: I am a fan of feitian biometric keys.    Many more resident keys than the yubikey supportsComment 2: Numbers?Comment 3: Check out the datasheet for each of their keys -   [https://www.ftsafe.com/identity](https://www.ftsafe.com/identity)
+
+I don't recall they used to have numbers listed like 128 but that was on their older keys.   I have easily had maybe 30-40 on a key at a time.
+
+&#x200B;
+
+In the earlier keys you couldn't clear them, but the newer keys support the management app to manage RKS on the device to delete defunct ones

@@ -1,0 +1,41 @@
+Comment 1: I still find it complicated. So I just made a Paypal passkey which is "synchronised"
+
+I do not see it in my Google lists of passkeys.
+
+When I find the passkey in my Paypall app (profile/ log in and security/passkey / manage) I read::
+
+"You login to PayPal with this passkey. It's synched with your Android Devices"
+And
+
+"Created on:
+Android PayPal app
+Sep 8 2023"
+
+
+So Paypal and others cannot use the Google passkey?
+Any web provider will construct it's own passkey?
+And where, if there is no app?Comment 2: >I do not see it in my Google lists of passkeys.
+
+Do you mean you do not see in your Google Password Manager among the other credentials? If yes, is this on Android or another platform?Comment 3: I do not see Paypal  here: [https://myaccount.google.com/signinoptions/passkeys](https://myaccount.google.com/signinoptions/passkeys)
+
+Android.
+
+Where I see all my Android devices and Apple. One m1 macbook and one Intel macmini.
+
+AHA!.  But I see Paypal Passkey at Google Password Manager.
+
+So there is where i had to look for them.
+
+Great. I keep learning.
+
+&#x200B;
+
+Thanks.Comment 4: Yes, the link that you pasted are only the passkeys for the "web service" [google.com](https://google.com) (so PayPal wouldn't be in here).
+
+Google Password Manager that syncs your passkeys for all other web services, e.g. PayPal, is a different story.Comment 5: Here is where my know-how ends.  For a moment I thought the passkey is e.g. in your phone and can be used by any other company. Like a kind of yubikey.
+
+But as I see it now the passkey is alwasy newly genereated by any company that wants to use it.Comment 6: I am still confused.
+
+When I open Paypal in an  incognito web page. it asks me for a "normal" login with password  and after that I can choose for an SMS message, the paypal app or "Let us call you"
+
+I choose the Paypal app, and that works fine. But no passkey option.

@@ -1,0 +1,77 @@
+Comment 1: This is already a solved problem that has nothing to do with passkeys. Services that want to allow different access levels to users do so with account permissioning and multiple accounts (e.g. child accounts with limited access to features controlled by the parent account, cloud resources owned by a company with access controls to restrict what different employees can do, etc).Comment 2: Then that means the next solution was turning on and turning off 2FA must be locked with a pin.
+
+Coz when I test it I failed a takeover on the first troll account  and was locked (pending) for 30 days.  In this video it also show a failure on changing password when 2FA is still turned on. 
+
+The only time I succeeded was after I turned off 2FA first.
+
+This solution also works for account take over for people who already died in which your account is shared to a family member using only a passkey. It doesn't matter if they waited (pending) for 30 days for that.. The owner is dead and won't cancel the pending request.Comment 3: I don’t think you understood what I’m saying. It has nothing to do with passkeys and sharing a single account.
+
+What you want as I understand it:
+To share features of your online accounts with other people in such a way as to prevent them from performing a full takeover of the accounting which controls that access. For example, if you had a Netflix subscription, to allow others to watch movies through your paid membership.
+
+How you are proposing to solve this problem:
+Allow users to log into a single account with different permissions based on the credentials they provide during authentication.
+
+The correct solution is to give each person their own account, and have the primary account (e.g. the one with the Netflix subscription) grant access to the shared features to those other accounts. Passkeys are simply an implementation detail and should play no role in determining the level of access to resources that an account should have.
+
+The other thing to keep in mind is that this is entirely up to the business model employed by the companies in question. For example, it’s not in Netflix’s interest to allow users to share subscriptions, so they have no reason to implement any sort of changes in that regard.Comment 4: That's make sense.  Thanks
+
+This means the chances of this happening is nearly zero unless the case of physical account take over increase such as.. 
+
+People making you drunk at a bar and uses your phone as passkey enter your biometrics to take over your account with the process I did here. (it took me 5 mins to do it with the change password failure in the video but in real world it would probably take less)
+
+Passkey really is the greatest threat to phishing coz there is nothing to phish but criminals are humans too they will adapt and soon switch to physical act.Comment 5: So it looks like passkeys won't protect you from xkcd either :)
+
+https://xkcd.com/538/Comment 6: maybe leave your physical security key in your room when you are planning to be in a bar/public place?  
+this is no different than someone else being able to login using a physical security key (without biometrics) which doesn't belong to them.  
+
+
+I would say passkeys are safer, because lets say a thief steals someone's phone and some how managed to open an logged in session and when they try to change the password/passkey the website is going to ask them to re-authenticate, with a password it is easy as lets assume they have found it from the phone but with a passkey they cannot login as it would require the original FaceID and no passcodes will work,  
+so I think passkeys linked to FaceID or Windows Hello Face recognition is much better than even physical keys.  
+Because if they had managed to get the physical key, all they needed to do would have been to tap on the NFC to validate the login.Comment 7: 5 years from now... bars somewhere in the dark alley be like  
+Unli Booze : Requirement  bring your phone with you.    
+
+
+XDComment 8: No it doesn't matter if you have faceID and it doesn't matter if they don't know your password. as per the video.  once they got inside your account they don't need your password to change your password. they already have access to your recovery code inside your security setting.  what they need to do is turn off 2FA and use recovery code. easy as that.
+
+the fix to that security loophole is to hide the security setting behind a pin.
+
+doing so will make passkey the most secured login session there is. but with a catch... it will also be the best and safest way to share your account.
+
+and big corp doesn't want that. they don't want you sharing you game library to anyone, the way netflix is cracking down account sharing.
+
+so they won't do it. they won't support making their security setting perfect.
+
+&#x200B;
+
+\---------------
+
+I actually found an account that secure their 2fa setting with 2fa via sending a pin to the recovery email.
+
+And it was STEAM from valve I found it while I was updating old accounts in my bitwarden yesterday
+
+But steam doesn't support passkey yet. And would probably never if they found this post and see how it will end their gaming platform via account sharing 😂
+
+&#x200B;
+
+&#x200B;
+
+**Conclusion**
+
+Yubikey 5 series is the best passkey there is right now. coz it requires a pin. it doesn't matter if someone stole it while you are drunk in a bar.  they still need your pin.  unless you are the kind of guy who gives that information while drunk 😂
+
+but the new **yubikey bio with biometric is the worst yubikey there is.**
+
+coz again.. they can easily make you touch your own yubikey without your consent while drunk.Comment 9: *Now I'mma tell you what; uhh...*
+
+***I likes ya;***
+
+***and I wants ya.***
+
+*Now we can do this the easy way;*
+
+*or the haard wayyy...*
+
+***the choice is yaawrs...***Comment 10: what you are describing is similar to you giving someone you trust your netflix password and expecting them not to change it, using passkeys won't solve that.passkeys are not for access control, passkeys are just passwords but more secure.In your video, a typical user would need your password and 2FA or a passkey like shown in your video to get to the accounts page in the first place.but lets say you have shared your passkey with someone so that they can view your outlook email address or view your onedrive files and if they go to view/change the security settings for that account they would be prompted with a 2FA challenge or asked for passkey again before they (or even you) are given access to the accounts settings (the challenge might also depend on how recently they logged into the mail account before navigating to accounts settings though not sure).In your scenario they have the recovery code only because you granted them access to that page to view/generate the recovery code in the first place.Even if you had used yubikey to store the passkeys I believe you can replicate the same behaviour as you have shown in the video as you have let them access into the accounts page with a valid authorisation.
+
+but like another user posted what you are describing has nothing to do with passwords or passkeys, its just for the service to have some kind of access control.and most services solve this by allowing multiple accounts to share the same service with different profiles, parental control etc, so you don't have to share your passwords and let someone else take over your account even if it is your spouse or child.

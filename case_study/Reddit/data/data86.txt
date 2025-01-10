@@ -1,0 +1,1 @@
+Comment 1: Same thing from my end, my YubiKey was detected as iCloud keychain by Amazon.Comment 2: They may fix it laterComment 3: Amazon's passkey implementation is pretty crappy. It still makes me enter my TOTP after accepting my passkey....kind of defeats the purpose.Comment 4: Same. Does your Amazon account ask you for your YubiKey when you log in?

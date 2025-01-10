@@ -1,0 +1,22 @@
+Comment 1: A lot of these things are already addressed or being worked on.
+
+1. If you are using the same password manager as your parents (for example iCloud Keychain or 1Password) you can put passkeys into a shared vault that you both have access to. This is new for iCloud in iOS 17 and macOS Sonoma. Also, most websites allow you to create multiple passkeys for a single account. So you can put a passkey in their password manager for them and a passkey in your password manager for yourself.
+2.  and 3. QR code login works great. Enter your email address on a computer you don't own and you get a QR code you scan with your smartphone. Your phone authenticates with biometrics and you're in. I've used this before with iPhone and 1Password and it works great. Of course, the computer you are signing into must have updated software, but in a few years that issue is going to start disappearing.Comment 2: These are legit use cases but all the issues boil down to your preference to use passkeys with your personal password manager. If you're willing to ditch your password manager, passkeys can be synced across iCloud Keychain and Google's equivalent.  
+
+So basically with a synced passkey setup, your parents passkeys could be synced (as long as yall are on the same iCloud account) and you could do a roaming authentication from your iPhone (scan a QR code) to login with a passkey on a shared device and work devices. 
+
+For what it's worth, I do think that password managers will start supporting these use cases by enabling passkey syncing and roaming authentication. I can't speak to their roadmap thoughComment 3: Thanks. I didn't even know QR codes for Passkeys were a thing, that's very helpful. 
+
+As for my parents, yes the challenge is that 1Password is very important for me as I store multiple info in there in addition to just login credentials. My parents don't, so Apple Keychain is fine for them. It's the cross compatibility with Passkeys that will be essential for me in future. They will never be able to use 1Password (I've tried), hence vault sharing is out of the question. They always forget the Master Password, and they get extremely frustrated with usernames and passwords as it is. As long as I can maybe keep a copy of their Passkey on my 1Password in future, that would be a positive. 
+
+Thanks so much for your comment, it was very insightful.Comment 4: 2+3 That could work if you had a phone with you, but it's basically a roadblock to make logging in harder for the people who should have simple access.
+
+Passkeys just add unnecessary steps and device dependency to the login process. Using a shared device shouldn't require QR codes.Comment 5: When you scan the QR code with your phone, does your phone send the passkey to the website?Comment 6: > Thanks. I didn't even know QR codes for Passkeys were a thing, that's very helpful.
+
+Unfortunately they do not seem to be implemented that well at the moment. Obviously Passkeys are new and all the kinks are still being ironed out.
+
+>As long as I can maybe keep a copy of their Passkey on my 1Password in future, that would be a positive.
+
+Passkeys are not copyable. You will have to create two separate ones for Keychain and 1Password.Comment 7: >Passkeys are not copyable. 
+
+A passkey not linked to a physical key or TPM can be synced across devices, can it not?

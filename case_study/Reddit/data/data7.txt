@@ -1,0 +1,26 @@
+Comment 1: If your 2FA is TOTP, Passkeys are still more secure. The biggest threat to passwords is phishing. You enter your username and password on a phishing site that looks just like the real thing, and the attacker now has your credentials. If you're using TOTP 2FA, they can snag that too. Passkeys are connected to the exact URL, so they won't be used on a phishing site that can trick humansComment 2: A PIN or biometric should always be required when using a Passkey. This is the second factor. Just like an ATM card.Comment 3: Passkeys replace passwords but not 2FA.
+
+If we think they replace multiple factors we’re in for a world of hurt once iCloud and Google credential vaults become the prime target.
+
+Not to mention recovery flows as wellComment 4: Still not sure. Is the biometric the same that was used when creating passkey?Comment 5: This is where I am confused. Just went through a process where I signed up for passkey for a website which had my 2FA turned on. It’s disabled my 2FA with passkey because 2FA (with Totp) was considered as weaker than passkey.Comment 6: Credentials vaults have been a prime target for about two decades.Comment 7: Passkeys are used for both replacing password as well as a multi factor authentication by websites. Although if someone is using password plus passkeys then it’s weird. Doesn’t really satisfy FTC’s safeguard rules.Comment 8: Yes. I assume your iCloud Keychain is secured by Face ID or touch.  You should be asked for that when using the Passkey.Comment 9: This is site specific. I've had a handful that don't require 2FA except when logging in via password. I've had others that require both when 2FA is enabled. Personally, I think it'll make sense to make allow a 2FA setting where the user decides when it applies.Comment 10: Agreed but it will be worse if people think passkeys replace 2FAComment 11: They are but they shouldn’t be.Comment 12: What if iCloud Keychain gets hacked and the passkey is leaked. The hacker has the passkey now. Won’t he be able to use the passkey on his Mac / iPhone and use his Face ID / Touch ID to unlock it?Comment 13: I AgreeComment 14: If the Passkey implementation is FIDO 2 compliant and the website requires user verification, then a person holding the Passkey will still need a PIN or biometric. 
+
+It’s the same as an ATM card.  If you lose your ATM card, someone who finds it has to know the PIN for YOUR card. They can’t use the PIN for their card with your card.Comment 15: So it has to match with the biometric data that I used while setting it up. Correct?Comment 16: Biometrics are just a "local" solution to not enter the actual Passcode of your phone. Biometrics never leave the device, and are not part of the encryption/protection in the cloud.
+
+The security of passkey for Apple is based on:
+
+* Requiring 2FA for your iCloud Account
+* Passcode needs to be enabled
+* newer iOS Version (over 16)
+* Keychain needs to be enabled
+
+(You can find a more detailed version here: https://www.corbado.com/blog/passkeys-sca-compliance#62-analysis-of-the-security-of-synced-passkeys)
+
+You can only restore the iCloud Keychain on the new device with **all the following details**:
+
+* Password of your iCloud
+* SMS OTP access
+* Knowing at least one Passcode of your devices
+
+Maximum of 10 tries then passkey data gets destroyed.Comment 17: My comments are based on how a device-bound credential would work on a hardware device like a Yubikey. I assume credentials in keychain are both hardware and software bound. 
+
+Your question is more about whether any stolen keychain data can be used on devices other than your own. I certainly hope Apple has built- in safeguards to protect against this but I don’t know for certain. I assume the data would at least be protected by your Apple ID password.Comment 18: Your biometric data is irrelevant to passkeys registration.

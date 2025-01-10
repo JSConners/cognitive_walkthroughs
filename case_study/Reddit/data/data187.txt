@@ -1,0 +1,45 @@
+Comment 1: [deleted]Comment 2: how best would you want to move your passkeys around? everything has a tradeoff. hard to create the ideal solution. 
+
+imo passkeys is just another thing to deal w. and solving its problems won’t solve root causes. i imagine passkeys will bloom and be everywhere. passwords will remain. newer things will emerge. 
+
+i think we need personal and interoperable keychains - eg better 1passwords … 
+
+wdyt?Comment 3: I played more with Passkeys yesterday and I don't think it's quite ready for prime time.  I deleted all my passkeys and will leave them disabled until there is better support for them.
+
+I created a [kayak.com](https://kayak.com) account 2 night ago and set up a passkey. The site did not require me to create a password. Then I installed the Kayak app on my phone and iPad and could not login to the app using a passkey. Since I didn't have a password, I could not log into the app at all.
+
+Honestly, there is no point to the added security of a passkey if the website doesn't let you turn off passwords for your account. I'll revisit this in 6 months and see if the end-user experience is better.Comment 4: The big plus with passkeys is that they're just public/private key pairs. If someone hacks a website and gets your credentials, all they get is your public key, which is worthless to them. And if passkeys are true discoverable credentials, then they can't even get your username.
+
+What we really need is SQRL. But for some reason, the world chose not to adopt it. SQRL solves all the problems with passkeys.
+
+https://www.grc.com/sqrl/sqrl.htmComment 5: [deleted]Comment 6: will bookmark and start w the forum intro   https://sqrl.grc.comComment 7: "SQRL gives websites no secrets to keep."
+
+https://www.grc.com/sqrl/
+SQRL_Explained.pdf
+
+and
+
+"You may choose to remain anonymous to a website, such as when you post a response to someone's blog. SQL never identifies you by anything other than that long code. In other cases you will want to be known, ... you would inform Amazon that that particular code is actually you."
+
+👀Comment 8: I won't use it until some cross-platform password manager supports it. Until that happens, passkeys are just another form of vendor lock-in.Comment 9: Sounds pretty cool, doesn't it?Comment 10: https://www.future.1password.com
+
+cross platform will be vendor lock in too 😂Comment 11: it does. i’m not a dev tho so i’ll need to ask some eng friends their thoughts re lack of adopting. why do you think it wasn’t adopted?Comment 12: If I can't export my passkeys and move them around manually where I want to move them to, and be able to back them up, I will never use passkeys.
+
+Right now, I obviously have passkeys in my Apple Keychain, but I cannot find them anywhere to export them.
+
+I have a passkey saved in Vivaldi too. Have no idea where it is or how to export it.Comment 13: A couple of reasons:
+
+1. Lack of promotion - Steve Gibson promoted it on his Podcast and website. He did some talks, but that was about it. I know the W3C approached him at one point and LastPass was interested. Gibson should have been promoting this to Apple, Google and Microsoft.
+2. None of the major players in the industry cared enough about it.
+3. IMHO it was pretty industry disrupting
+4. We're past the point where someone can create a new security tool and have it go viral.
+
+The only reason passkeys are where they are now is because Apple, Google and Microsoft adopted them.
+
+Passkeys are just FIDO2 Discoverable credentials. They've been around for years and the Yubikey has supported them since the Yubikey 5 came out. But nobody was using them.
+
+I think the other problem with SQRL was Gibson released a Windows client, and hoped the community would take care of Mac and Linux clients and website plugins. I think it needed to got out the door with Windows, Mac, iOS and Android apps, and probably at least a few forum plugins.Comment 14: agree re FIDO. 💯 
+cool point re security tool and viral
+
+anything industry disrupting imo isn’t going to get major players involved. only fomo will. look at microsoft and google playing catch-up
+to open ai chat gpt right now…

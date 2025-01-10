@@ -1,0 +1,29 @@
+Comment 1: Update: As of today's update this has been resolved for Firefox 116.0.3 on Windows :-)Comment 2: I don’t think Firefox is supported yet. It’s why we will still have the password for a few years.
+
+https://support.google.com/accounts/answer/13548313?hl=en
+
+“Check what you need to create a passkey
+You can create passkeys on these devices:
+
+A laptop or desktop that runs at least Windows 10, macOS Ventura, or ChromeOS 109
+A mobile device that runs at least iOS 16 or Android 9
+A hardware security key that supports the FIDO2 protocol
+Your computer or mobile device will also need a supported browser like:
+
+Chrome 109 or up
+Safari 16 or up
+Edge 109 or up
+To create and use a passkey, your device must have the following enabled:
+
+Screen lock
+Bluetooth
+If you want to use a passkey on a phone to sign in to another computer
+Tip: To ensure the best passkeys experience, we recommend you update to the latest available releases for your operating system.
+
+Depending on your operating system and browser, you may not be able to create or use passkeys while in private browsing mode like incognito or other equivalent.”Comment 3: Same question here:
+
+If, on my Mac, I login to gmail in a Chrome "new incognito" tab, I see all my Passkeys (all Android devices+ 1 osX). I select one, give my fingerprint and ok.
+
+No need for 2FA or password. Great and secure1
+
+When trying the the same trick on the same mac with Safari or firefox v116, I only am asked for a fysical item like yubikey. My androids do not show. Safari gives a QR to be pictured  by Iphone which I do not haveComment 4: FWIW - this worked on a Mac I never update that had Firefox 114. Upgraded it to latest version and that works too. On my windows pc only Chrome works.Comment 5: What? I dont understand this Reply?

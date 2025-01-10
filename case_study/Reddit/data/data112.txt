@@ -1,0 +1,13 @@
+Comment 1: With regards to question 4.  "a way to manage the keys stored on the YubiKey"
+
+Yubikey currently has a way to manage credentials (Reddit discussion) \[1\]  and docs \[2\]
+
+\[1\] [https://www.reddit.com/r/yubikey/comments/17g10ny/how\_do\_i\_viewdelete\_my\_yubikey\_credentialshow/](https://www.reddit.com/r/yubikey/comments/17g10ny/how_do_i_viewdelete_my_yubikey_credentialshow/)
+
+\[2\] [https://docs.yubico.com/software/yubikey/tools/ykman/FIDO\_Commands.html](https://docs.yubico.com/software/yubikey/tools/ykman/FIDO_Commands.html)
+
+Question 5. "Shared keys"
+
+The answer depends on what OS/device & setting where you use passkeys  \[3\]
+
+\[3\] [https://support.google.com/chrome/answer/13168025?co=GENIE.Platform%3DAndroid&oco=1](https://support.google.com/chrome/answer/13168025?co=GENIE.Platform%3DAndroid&oco=1)

@@ -1,0 +1,29 @@
+Comment 1: Google (Passkeys), GitHub (Passkeys), Apple (non-U2F-only keys), and Amazon (Passkeys in the store, not sure about aws) all use residential keys. Some password managers are getting in the game too. Not sure of the support from 1Password and Dashlane, but Bitwarden is planning to add support for Passkey login sometime soon. That is certain to require a slot as well.Comment 2: I checked Google, I don't believe it uses residential keys - I have to type in my username or email address. True discoverable credentials, like Microsoft allows me to select Passkey and with the PIN for the key, logs me straight in.
+
+Can you prove me wrong here please? My Yubikey is v5.1 so I am not able to check for any stored FIDO2 credentials.Comment 3: Passkeys work in 1PComment 4: I work for Google. I helped dogfood the Passkeys implementation before it went GA. Trust me, they take up residental key slots. The passkeys in your Google account are not to be confused with the U2F security keys registered to it; those take no slots on your yubikey.
+
+What may be throwing you off is the fact that Google doesn’t currently support discovering the credentials on your key like Microsoft does. You must still enter the username to your Google account first.Comment 5: You mean to login or to store them?Comment 6: Brilliant definitive answer from you, thank you!  
+In this case, my Yubikey 25 slots will run out sooner than I think.Comment 7: >Trust me, they take up residental key slots
+
+Not in my experience..  Is there a list of browsers and OS's that are supported?  Using the 2023 Titan key, Google only recognizes it as a 2nd factor.   I'm using FireFox on  MacOS..  In fact, 2023 titan key with FireFox on MacOS has not worked anywhere for passkey, only 2nd factor, whereas, Yubikey 5 works fine as a PassKey for a few sites like GitHub.
+
+ThanksComment 8: could i please ask since you work for Google, do you have any internal feedback mechanism to seek guidance on how to manage these new Titan keys?
+
+there is little information on how to support these keys, for example how does one check what resident credentials are on the key, utility or tool to manage keys in bulk for mass rollout, etc.Comment 9: So they residential keys but not discoverable credentials?Comment 10: Yubikey 5 NFC
+
+I have 5 google passkeys and 1 microsoft passkey, all enable passwordless login. I can go a system I haven't used, like a new minipc I just got in.. go to [gmail.com](https://gmail.com), put in my account/email, select next.. get the keyprompt. put key in USB slot, enter pin. bing bang boom, in.
+
+if I use ykman under admin authority on the command line and enumerate the fido2 keys on it, only Microsoft shows as resident.
+
+Google seems to not show, Non Resident i would think.Comment 11: Not to login to 1P, they do work as saved credentials for Google, Microsoft et alComment 12: \+1. I'm getting started with 2023 Titan keys, and just wondering now how can I actually list the resident keys (and — ideally — remove some of them).  
+
+
+Yubikey users seems to have a [complete CLI tool](https://developers.yubico.com/yubikey-manager/) for this, would be nice to have those capabilities for Google keys.Comment 13: >if I use ykman under admin authority on the command line and enumerate the fido2 keys on it, only Microsoft shows as resident.
+
+>Google seems to not show, Non Resident i would think
+
+This is weird, I use Yubico Authenticator on a Mac and passkeys show up as resident keys.
+
+Download Yubico Authentificator on Windows/Mac. Connect the yubikey, open the Passkeys section, enter the pin code and you will see which keys are now RKs.
+
+Yubikey 5C NFC.Comment 14: YKMan is Yubikey Manager. Autheticator is the OTp app.

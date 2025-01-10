@@ -1,0 +1,3 @@
+Comment 1: Check in Android settings that notifications for Play Services & Chrome are not disabled.Comment 2: For others coming here, also check that Bluetooth is active on the phone. If it's not turned on, you will not get a specific warning about it and it won't workComment 3: Play Services was "allowed"
+
+Chrome was blocked so I switched it to allowed. I then ran a test and it seems to be working. Nice.Comment 4: Yes, this solved it for me too. But this forces me to enable Chrome. I use Samsung Internet or Brave and had Chrome disabled so far.Comment 5: True, but at least you can scope notifications to only sign-in verifications.

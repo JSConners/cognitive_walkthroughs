@@ -1,0 +1,10 @@
+Comment 1: It also seems that you must use the MA Authenticator.Comment 2: Did you have your Passkey installed on an M1 Mac with fingerprint sensor? Or on Iphone?
+
+I have the idea that older Macs cannot become Passkey devices.
+But I may be wrong.
+
+And indeed: I also need the standard Microsoft app (on Android in my case) to authorise.
+
+Would be nice to find a site that shows the actual list of Passkey companies/systems.Comment 3: 👆 This. The last time I tried it, it wanted me to download the MS Authenticator app which I don’t want to do.Comment 4: Yeah. M1 Pro Mac and iPhone.  Works great for google.Comment 5: 1password has community curated list of sites with passkey support. https://passkeys.directory/Comment 6: perfect. Me the same (a poor MacBook) user.
+I have  the idea that we need minimum an Apple Silicon for installing Passkeys on OSX.
+On an older Intel mac I am never asked, and it is nog in my Google list.

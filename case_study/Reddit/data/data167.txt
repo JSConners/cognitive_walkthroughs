@@ -1,0 +1,96 @@
+Comment 1: For those of us who have been randomly generating passwords for ages (speaking as another 1Password user) passkeys offer only a few security improvements for us:
+
+\- Domain scoping - Passkey for [google.com](https://google.com) won't be usable at goog-phishing.com making it MUCH harder for attackers to steal your credential
+
+\- MITM resistant - passkeys (like other U2F standards) by design count the number of hops they go through from user to the intended recipient, so anyone that grabs your key in transit would result in a failed login for you and a bad key for them, whereas passwords and OTPs will generally work
+
+As for the no phone/no login point - when logging into a new device without passkeys you always need password and MFA. Receiving the SMS or generating the 6 digit code requires a phone so if you're screwed without a phone either way, why not make it more cryptographically secure if that's the case?
+
+More importantly though - mom, dad, grandparents, cousins, etc. aren't as good about randomizing passwords and don't have them stored anywhere outside their brain or their Notes app. This is a HUGE improvement for them, since each site gets a unique key that's only accessible on their trusted devices.
+
+&#x200B;
+
+TL;DR the encrypted stuff in your 1Password vault is unencrypted when the password is typed/filled in on a website, and therefore can be taken and used by attackers elsewhere. Passkeys can't.Comment 2: >With passkeys, I'm basically trapped into carrying my phone everywhere -- no phone, no login. And if the device I'm using doesn't play nicely with my phone (ex: Apple laptop w/ Android phone), I'm stuck -- no login. Is that right?
+
+I'm with you on this one, and I was pretty paranoid about it and really held off on enabling passkeys.
+
+But then I also am a believer in 2FA/MFA as a good security tool. As a victim of password leaks and whatever attack you'd call someone using the "forgot password" feature, 2FA has been really helpful in securing all my accounts. I'm happy to say that during a couple of years of phishing attacks from the misuse of COVID tracking data, all my accounts (and my identity and money) are all intact.
+
+And because I use 2FA, I am needing my phone with me all the time anyway, to get my SMS OTPs and TOTP generators. I'm not typing my Bitwarden credentials in some random PC or phone that may be compromised.
+
+And because I need my phone all the time anyway, it dawned on me that passkeys are practically the same, and I wouldn't be able to login without my phone or trusted device anyway even with 2FA. 
+
+It was just this sense of "loss of control" by not needing to input my OTPs when in fact passkeys work exactly the same, and with the convenience of never needing to type anything or even get it wrong.
+
+All that being said, passkeys are still pretty useless because we are just moving towards it. The security benefits aren't apparent yet because there's nothing we can log onto right now that is exclusively using passkeys. Ergo, there is still "something that we know" (the password) that can be stolen from us without us knowing. With no passwords and only passkeys, you'd have to steal someone's device quite literally to gain access. 
+
+While it means you now have to carry a device with you all the time, that's the same reason why safes with keys are very secure, versus ones with codes. You can look at the code or listen to it or find a reference to it and gain access. With an exclusively key-based safe, you have to steal a key or destroy a building (and the safe). The fact that you can't even enter your own accounts without your pass keys makes it more secure - security doesn't care who you are, if you're not good, you're not in.
+
+&#x200B;
+
+>Why would any person jump through all of these asinine hoops (ex: https://www.reddit.com/r/Passkeys/comments/10zm5xx/it\_seems\_that\_you\_cant\_delete\_your\_passkeys\_from/) to switch over?
+
+Specifically for this, I think its more of an RTFM thing. I read all I could about using them and basically, turn on your Apple/Google cloud password manager, make passkeys using the default browser, can delete them later in the same password managers that you turned on. 
+
+User basically just missed step 1. I've deleted like, six passkeys today.Comment 3: *"As for the no phone/no login point - when logging into a new device without passkeys you always need password and MFA. Receiving the SMS or generating the 6 digit code requires a phone so if you're screwed without a phone either way, why not make it more cryptographically secure if that's the case?"*
+
+I don't use my phone for MFA:  To get MFA codes I use either VOIP services (which I can access via my web browser) or 1Password's own code-generator/authenticator (which is accessible via the browser extension).
+
+If I (1) generate a passkey for Website on my phone, then (2) want to login to Website via computer, I have to go through a whole song-and-dance, connect my phone to my computer via Bluetooth, and hope they play nice together, correct?Comment 4: Oh, that whole auth flow (login challenge > QR code > scan with phone > approve login > phone sends auth via Bluetooth) totally sucks and I have no idea why that’s being pushed. In my experience, it’s a much simpler login flow:
+
+1.	⁠Login challenge > enter username
+2.	⁠Passkey prompt > passkey provided Note: Passkeys can be provided by 1Password’s Beta browser extension now if you want to try! Google password sync and iCloud password sync also support passkey storage natively now.
+3.	⁠Login approved
+
+No voip lines, no extra TOTP prompt, no other devices - super easy.Comment 5: (1) Thanks for the back-and-forth:  I've Googled around a zillion times, read all of the "here's how passkeys work" websites, and none of them really explain the steps.
+
+(2) Re: your steps above, there are still some concepts I'm clearly missing. Specifically:
+
+1. "*Login challenge>enter username"* \-- Just to make sure we're talking about the same situation/parameters, this hypothetical assumes a user attempting to login at a computer, not on a mobile device, correct?
+2. "*Passkey prompt > passkey provided"* Here's the crucial point where I'm lost: What is "***providing***" the passkey? 1-A phone that you have in your hand while you're trying to login; or 2-the computer you're actually web browsing/logging in with?
+   1. (Phone)
+      1. If you're sitting on your computer trying to login, but it's your phone providing the passkey, how is the passkey transmitted from phone > computer > website without a Bluetooth connection?
+      2. More significantly, if its your phone providing the passkey, that still goes back to my primary objection: I want to login on ***one*** device, which right now I can. With 2FA, I either get VOIP messages directly on my computer, or use 1Password's built-in authenticator to generate one-time codes. If lose my phone while traveling in a foreign country, and need to access my bank, or my credit card company in a hurry, I just get the information from my 1Password vault. If my phone is stolen/destroyed/dropped in the ocean, or even if it's just in the other room and I'm too f\*\*\*ng lazy to go get it, I can still login to my websites. If my entire house burns down and every device I have is destroyed, I just need my 1Password account recovery information to completely recreate my vault. (*And yes, I understand that both Apple and Google have graciously offered to backup your keys. But that locks me into their ecosystems -- my passkeys become hostage to Apple or Google. Conversely, I can leave 1Password anytime I want, export my vault and take it with me to another password manager provider.)*
+   2. (Computer)
+      1. "*Note: Passkeys can be provided by 1Password’s Beta browser extension now...*"I thought that one of the points of passkeys was that they were restricted to devices with biometric ID. If you have a password to access your computer, and your computer stores the passkey, then you're still using a password -- anyone who can crack your computer's main login password now has access to all of your passkeys.
+      2. In that same vein, I tried to set up a passkey on my computer for my Google account, and got an error message stating that I needed to activate Windows Hello....which requires me to buy an IR camera.
+      3. The 1Password beta ([https://support.1password.com/save-use-passkeys/](https://support.1password.com/save-use-passkeys/)) website says: "*Because passkeys saved in 1Password are like any other items, you can also view,* ***edit, move, and even share them with other people***." Isn't the whole point of passkeys that they are unique to the device you're using them on--you need a different passkey for every different device? How can you move/share passkeys between devices?
+3. Finally, I just don't trust the technology. The tech behind passwords with 2FA I understand. Passkeys, on the other hand, are just a giant black box; I'm just supposed to trust that they "work" somehow. Yet can I tell you how many times a day my phone doesn't recognize my face when I try to login? Or the laptop I once had with a fingerprint reader that worked ***maybe*** 1 out of every 20 times I tried using it? If my password isn't working for some reason, I can just go and reset it. What do I do when I'm trying to access my bank account for something important, I show my face to my phone, and it says "access denied"?  How many roads do I have to go down before I identify the problem, much less correct it?  The phone's camera? The phone's passkey code? The communication/handshake between the phone and the bank? The bank's own software? In the meantime I'm stuck not being able to access anything because of a failure of technology I can't understand or fix. 
+
+Thanks again for the straight talk.Comment 6: About 3 the principle behind passkeys are relatively simple. The server sends a certificate to the user. The device by the user puts the digital signature on the certificate and sends it back. Since this digital signature can only be made with the private key and only be verified with the public key the server is sure that it is the correct user who is signing in. Since the private key is a carefully kept secret. In order to get this you might want to look in the following subjects : 
+
+\- public-private keypair
+
+\- hashing
+
+\- digital signatures
+
+By the way TLS works the same way. You know this lock thing in your browser.Comment 7: >Finally, I just don't trust the technology. The tech behind passwords with 2FA I understand. Passkeys, on the other hand, are just a giant black box; I'm just supposed to trust that they "work" somehow. Yet can I tell you how many times a day my phone doesn't recognize my face when I try to login? Or the laptop I once had with a fingerprint reader that worked   
+>  
+>maybe  
+>  
+> 1 out of every 20 times I tried using it? If my password isn't working for some reason, I can just go and reset it. **What do I do when I'm trying to access my bank account for something important, I show my face to my phone, and it says "access denied"?**  How many roads do I have to go down before I identify the problem, much less correct it?  The phone's camera? The phone's passkey code? The communication/handshake between the phone and the bank? The bank's own software? In the meantime I'm stuck not being able to access anything because of a failure of technology I can't understand or fix.
+
+Basically, the point is that you prove that you have the device, just like a physical key (it really does help to think of passkeys as actual keys). On devices with biometrics, and the biometrics fail, you use your PIN. That alone proves you have the device (2nd factor) and something that identifies you (PIN, fingerprint, face).
+
+I'm on iOS, so it will take me less than 10 seconds from not reading my face twice and pushing my PIN. On MacOS, about 30 seconds, because my password is a bit long and TouchID can be slow.Comment 8: Public-private keypair and digital signatures I get.  What I don't get is how the actual signature gets put on the certificate. If I'm logging on to a website with my computer, but the signature is on my cell phone, how does that signature get from my cell phone to my computer to the website?  And again, I thought that passkeys were supposed to be device-specific -- how could a signature on my cell phone be used when it's my computer logging in to the website?
+
+Maybe a concrete example would make more sense:  Let's say I travel to a relative's house, but on the way I lose my phone+phone case, which has my ID and credit cards in it. 
+
+(1) ***Using 1Password***:  I contact my partner who gives me the login info for my 1Password vault. I login to 1Password at my relative's house, get my passwords, and start logging on to my bank's website etc. to put holds on my accounts and get new cards issued.
+
+(2) ***Using Passkeys.***  I'm just screwed, right? All of my logins are tied to the physical phone. Once I lose the phone, I can't login anywhere.Comment 9: With the private key the device can make a signature. A digital signature is nothing more than a hash encrypted with the private key. The digital signature is put on the certificate and send to the website. You are right that the original idea behind webauthn is that the private key is device specific. That's still the case with a Yubikey which is the same procedure. However since nobody uses that they had to come up with a solution. Passkeys are exactly the same as webauthn. Except the private key is synchronised over your devices.   
+In your example. You have lost your phone. On the phone you have 1password running and are logged in. Which effectively means that your phone has access to the private keys stored in the 1password vault.   
+If you log in at your aunts house and somehow you can login on your 1password account then you can see your passwords. And just like that the browsers at your aunts house has access to the private keys in your 1password account. So when you try to login on your google account at your aunts house the 1password plugin in the browser reads out the private key in your vault. And it gets a certificate from google stating that it is you who is loggin in. The plugin hashes the certificate and encrypts this hash using the private key. And puts this signature on the certificate. 
+
+At google using your public key the signature is decrypted to the original hash. They also hash the certificate. If the two hashes are identical your are logged in.Comment 10: >Passkeys are exactly the same as webauthn. Except the private key is synchronised over your devices.
+
+I think we're going at cross purposes -- I really appreciate your effort in explaining, but it seems like you're answering questions I'm not asking, or I'm asking the questions badly.   I'll try brevity/one question at a time:
+
+From a layman's perspective, "synchronised over your devices" seems like the exact opposite of "device-specific." To me "synchronised over devices" means that you can take the passkey on my phone and copy it to my tablet, my laptop, my sister's laptop, her boyfriend's laptop, the computer of some random guy down the street, etc.? I thought the whole point of passkeys was that they were tied to the device.Comment 11: Ah, that's your question. Well in case of those hardware authentication devices like yubikey you are 100% right. The private key stayes on the device and never leaves it. So the private key is tied to your device and therefore device specific. 
+
+In case of the passkey implementation it is more like the private key is tied to your password vault. So yes on any device where you can use the password vault you can use the passkey to log in. 
+
+Reading back your original question. If I understand you correctly one of your questions is what is the point of using passkeys versus passwords. Correct?Comment 12: Right. I get that passkeys are more secure than an encrypted password manager using individually-generated random passwords, but not orders of magnitude more secure in an average person’s use case.
+
+But for me, they also seem significantly more of a hassle, since I have to have my phone with me whenever I want to login somewhere, and I either risk being locked out forever if I lose my phone, or I become forever beholden to Apple or Google to backup my passkeys.

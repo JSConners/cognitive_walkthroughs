@@ -1,0 +1,44 @@
+Comment 1: Yes. Imagine logging on to a public machine without needing to enter your password on a strange keyboardComment 2: There are benefits, for example, if you are using passkeys, you prevent man in the middle attacks, and phishing attempts, as long as you don’t use your passwords you’ll be fine. Unfortunately the if the site doesn’t let you get rid of the password, you’ll still be vulnerable to data breaches, brute forcing and and all that stuffComment 3: If a site didn't allow me to disable password entry when I set up passkeys, I think I'm going to just change that password to a long, random string of characters and forget it, essentially rendering that password useless and unknown to even myself.
+
+I can't be phished for something I don't know.Comment 4: airport axiomatic rinse berserk entertain nutty zesty wide modern quack
+
+ *This post was mass deleted and anonymized with [Redact](https://redact.dev)*Comment 5: And how would I do that now with a passkey? Every implementation I use requires the passkey is saved in my browser's default password manager or a third party one. Is there some way to login with a passkey that's on your phone that  I don't know about?Comment 6: But the site can be hacked and the password possibly extracted. With Passkeys, if they hack the site, all they get is your public key. As long as there is a password, then there's a passkey bypass.Comment 7: Yes. Some implementations present a QR code on a device where your passkey isn’t present or supported. Scan that QR code with a device that has your passkey, and if those two devices can confirm proximity over Bluetooth, you will be logged in.Comment 8: True. That possibility exists. I was assuming that the site didn't store any plaintext passwords in their db, but if they did that, I would not expect them to be sophisticated enough to even offer passkeys.
+
+Still, I agree with you there. The risk exists because the password still exists somewhere in some form, and if they store it poorly, it's game over.Comment 9: You're responding like someone who doesn't use a password manager. Do you?
+
+If every single password is long, complex and unique then a breach won't impact you any more with a password than passkey. If you never use said password then it has no possibility to intercepted. 
+
+By complex I mean looking like this:
+
+@@aFktYhN8dx3she2D6dqHsGE
+
+The biggest threat to passwords these days is repeated use of passwords. This comes from poor storage or transmission. Using Passkey and not using your password you can't delete but set up as above fixes all of that.Comment 10: If someone hacks a website/service where you have an account/login your password is the least of your concerns. The site/service in it's entirety is compromised and your password is A) Not needed and B) Not useful. There is a caveat with B if you are terrible with passwords and one of those people that reuse passwords at different sites.
+
+The security benefit and primary purpose of passkeys is to keep people from easily giving away passwords to nefarious actors that con users out of them. That's really all passkeys do, they don't make things unhackable on your side or the site/service side - they just keep you from giving away passwords, choosing weak passwords, and reusing passwords. Behind the scenes passkeys use passwords/secrets of their own to log you in to sites/services but you the user don't get to see, touch, or chose them.Comment 11: Interesting. I have never had a website present a QR code. Heck, some sites that I created passkeys for don't even let me use them.  CVS is a classic example. I login with a password, it asks me if I want to create a passkey. I make the passkey, and I log out and it lets me login with the passkey. But if I close the browser and reopen it, or switch to another browser, no option to login with a passkey.Comment 12: Only the crappiest of sites stores passwords in plaintext. Storing salted hashes of passwords has been the industry standard for decades now.
+
+Speaking of standards, Password reuse is a no-no. If a site should get hacked and your password discovered it shouldn't affect you because that password should have only been for that already hacked site and never used anywhere else.Comment 13: If there is a breach, it's true that they only get your password to one site, BUT…
+
+What if that site is your bank and they login and transfer a large sum of money via Zelle to another account?
+
+Or what if it's your email account password? Now they can reset the password to any website where you have that email address set up.
+
+Even if someone gets your reddit or Facebook password, they could login as you and post a ton of racist ramblings and other undesirable things and cost you that job you've been interviewing for.
+
+And there's always the problem of your password manager getting breached. Lastpass taught us that can be a thing. And some of the passwords in those vaults had very low PBKDF iterations and were cracked.
+
+What really annoys me is that SQRL solved the password problem, and most of the issues with passkeys long before passkeys came along, and the world just ignored it.Comment 14: If you’re on iOS or macOS you might need to go into Settings > Passwords, select the CVS keychain item, click the Edit button on the bottom of the panel, and delete the password from the keychain entry (which right now on your system is storing both the password and the passkey).
+
+Presumably there’s a similar mechanism for Android or Windows.
+
+You’re right, the website support for passkeys isn’t complete until they delete your old password from the system or at least let you do that.Comment 15: 
+You only have control over what you have control over
+
+If a site is password mandatory with optional passkey. Then using passkey and leaving complex unique password unused is better
+
+If you're already using a quality password manager properly with 2fa, and you're still anxious, then unless you've very unique circumstances maybe it's not a security problem but an anxiety problem you need to resolve
+
+I recommend 1password if you need a suggestion. That or your local medical professional.Comment 16: If a site/service has been hacked, they don't need your password to hack in to the place they already hack in to. Your login to the bank gives you access to the customer portal, it doesn't protect any of the internal bank processes/transactions i.e. a hacker that has successfully hacked into the bank doesn't need any ones password to then transfer money into an off-shore account in the Cayman islands.Comment 17: I'm using 1Password to store my Passkeys. But point well taken. There must have been a bug on CVS' side, because Passkeys started working about 3 days ago.Comment 18: It depends. Just because they hacked in the bank doesn't mean they can get to anything. Systems are often spread out for a reason. Just because they're in, doesn't mean they have access to everything. And you also don't want to STAY in. You want to get in, grab something of value and GTFO before anyone notices. So, if you can abscond with the database and usernames and passwords, along with the keys and salt tables, you grab those and leave, decrypt the data and come back later.
+
+If you want to set up an APT on the network, that's fine, but you're going to get discovered at some point.Comment 19: The point is when a hacker breaks in to a system, they don't need your password afterwards. They could use your password to get IN to your account i.e. hack your account but they don't need after they have already hacked in.
+
+Another way to look at it is; a burglar can use your house keys to get in to your house, but if they break-in without using your house keys, they don't need your house keys to burglarize your home - no protection is offered by the burglar not having your house keys and they don't need to obtain them to complete the burglary.

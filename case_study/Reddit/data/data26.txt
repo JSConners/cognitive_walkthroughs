@@ -1,0 +1,5 @@
+Comment 1: Face ID is handled by the phone's operating system.  The apps rely on the OS to provide a go/no go decision about Face ID.  Once you enroll your face on the new phone, your apps should work as before.  It might be necessary to re-enable the Face ID requirement for each app, but I doubt that will be required.Comment 2: Face ID is simply an authentication method.  It identifies you as the legitimate user of the device
+
+The app has to decide if and how to accept that authentication.  Basically face ID is authentication but bit warden handles authorization based on the information it receives.  They could accept just that or also require a second factor such as a code (something you are + something you have)
+
+If someone else sets up their face the device wouldn't be able to tell your app a different person is using the app so not sharing your device pin helps make the method secure.  because only you know the device pin only you can setup a face so you have an indirect two factor system for authentication

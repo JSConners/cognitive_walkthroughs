@@ -1,0 +1,7 @@
+Comment 1: I recommend one of [these](https://a.aliexpress.com/_EyUD8uN) that I use for my keyComment 2: Have you had any issues registering your Titan key at any websites?
+
+Also, do you know of a way to view the FIDO2 resident credentials that are stored inside the key?Comment 3: *re:  view the FIDO2 resident credentials that are stored inside the key?*
+
+I understand that it is *not* possible due to the version of CTAP that is implemented on this key.
+
+[https://www.reddit.com/r/yubikey/comments/17xb3lo/comment/khy7l7u/?utm\_source=share&utm\_medium=web2x&context=3](https://www.reddit.com/r/yubikey/comments/17xb3lo/comment/khy7l7u/?utm_source=share&utm_medium=web2x&context=3)Comment 4: Might be good that anyone finding the key can't interview it's contents?Comment 5: I agree in principle since you don't want someone to find a lost key and find out which sites it is for, but I think one needs to enter the PIN in order to view the contents (that's how it works on a Yubico Security Key NFC with FIDO2).  On Chrome browser's manage security keys, you see this message: "Enter the PIN for your security key. If you don’t know the PIN, you’ll need to reset the security key"  I think it's part of the CTAP2 protocol

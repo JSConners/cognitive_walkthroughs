@@ -1,0 +1,16 @@
+Comment 1: I did manage to add the first Yubikey to passkeys in Chrome on my desktop. But not the seond. Then I did try it in Firefox and I did manage to add the second Yubikey. Strange thing is that the icon is not the same as the first one.  
+I am still not able to add 2FA with Yubikeys and cannot add Yubikeys to the second account.  
+
+
+Other strange thing; when I log in the first Google account in FireFox I do not see the passkey option. When I click on "Try another way" I still not get the passkey option. I need to add my password. Then I get the option to 'simpllify your sign-in". When I click on "Continue" I need to type the Windows pin, then I got "You already have a passkey on this device". When I click on "Contineu" I am logged in.  
+But when I do not fill in the Windows pin and press "Cancel" I got "Something went wrong at our end". When I click "OK" I am logged in again!
+
+&#x200B;
+
+My conclusion is that the Google Passkeys implementation is chaotic, clearly not tested properly and unfit to be used.Comment 2: I have a similar issue as well. I was able to add my Yubikey as a passkey to my first Google account, but unable to add the same key to my second account. It said "You already have a passkey on this device". My guess is Google saw the passkey of the first account and assume that it is for the second account.
+
+Then when I tried to sign in to my first account using only the passkey on the Yubikey, I ran into the same problem as yours. It didn't recognise the passkey and said "This security key doesn't look familiar. Please try a different one".
+
+I end up removing the passkey from the first account and stick with password and Yubikey as 2FA for now.Comment 3: Based on my experience with two Yubico 5 NFC keys and a discontinued Yubico U2F only key on a secondary account, Google won't support having a Yubikey as both a 2FA security key and as a passkey at the same time.  I've had the two Yubico 5 NFC keys as 2FA security keys for years, the only way they would work as passkeys is if I removed them from 2FA security keys and added them as passkeys. After they were added as passkeys, I could no longer re-add them as 2FA security keys. (The discontinued U2F key was only mentioned because it couldn't be added as a passkey, and is now my only physical key under 2FA)
+
+I agree with u/NiceToHave25 conclusion, Google's implementation is not ready right now.

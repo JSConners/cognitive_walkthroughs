@@ -1,0 +1,25 @@
+Comment 1: Slowly getting there...but people are still hesitant to opt for them as the only authentication method.Comment 2: Woot Woot!Comment 3: Mine was Best Buy today.Comment 4: Not finding the option yet, link?Comment 5: Sorry, don’t understand. What is your question exactly?Comment 6: Don’t see the option in EBay for adding PassKey (yet)Comment 7: For me, I was asked to add it when I logged in. I got a message that said, 
+
+“Tired of passwords?”
+
+“Depending on your device, you can sign in with your fingerprint, face, or PIN.”
+
+and then two choices…
+
+“Maybe later” or “Turn on”
+
+I chose ‘Turn on.’
+
+Now, when I just logged in to eBay.ca (Canada) it did not use Passkey login. When I went to my account settings ‘Sign in and Security’ page I got an error saying the page did not exist.
+
+So I just signed in to eBay.com (USA site) and I was presented once again with the same question to set up Passkey sign in and I did.
+
+Now when I go the settings page for ‘Sign in and Security’ I see the settings for ‘Face/fingerprint/PIN’ sign in.
+
+Look for those settings in your account if you were not prompted to set it up during your initial sign in.
+
+Make sure you are using a browser that supports it. On Mac that is Safari and possible Chrome. On Windows Chrome supports it but I’m not sure about Edge.
+
+EDIT: Just signed back in to eBay.ca and was asked to set up Passkey again. It was like I never set it up.
+
+Seems like eBay still has bugs in their implementation.

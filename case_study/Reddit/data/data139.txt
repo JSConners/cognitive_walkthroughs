@@ -1,0 +1,13 @@
+Comment 1: [I disagree for several reasons which I have laid out as a comment on a post in a different subreddit.](https://old.reddit.com/r/Bitwarden/comments/13yru64/is_storing_passkeys_on_bitwarden_lower_security/jmocogj/)
+
+Copying from there (with minor edits):
+
+* Passkeys are essentially immune to being phished as no secrets are typed into a text field anywhere (a username should not be considered a secret, and depending on the implementation of the service, might not even be necessary to be provided).
+* Passkeys are much stronger against MITM attacks as the browser (or other application) and OS play a role in determining the authenticity of the service or website in question.
+* **Major** For services that derive some sort of encryption key from your password (e.g. Bitwarden), passkeys remove the password from the auth workflow, especially since they are typically the first factor in that workflow (and subject to phishing/MITM attacks).
+* If the service itself is hacked, there is no need to rotate passwords on the service or elsewhere as only public keys will be exposed.
+
+One of the big reasons I consider password + WebAuthn 2FA weaker than Passkeys is that the former retains the huge attack surface that is exposed by passwords, thus partially compromising the security of the whole authentication workflow. The problem with this is twofold:
+
+* Point 3 above.
+* The fact that many services typically require a relatively insecure backup method of 2FA not built on top of WebAuthn (e.g. email 2fa, sms, etc).Comment 2: You can also store passkey on yubikeyComment 3: Additionally, even though passkeys technically have 2FA built in, a site can still offer additional optional 2FA OTP code requirement. Nvidia.com passkey solution is a good example of that.Comment 4: Thanks, very interesting!

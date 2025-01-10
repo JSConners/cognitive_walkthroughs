@@ -1,0 +1,7 @@
+Comment 1: I don't think  there are shortcomings. It's just that the technology is young, the protocol is complex, the security nuanced, the usage possibly confusing, the browsers/platforms/authenticators with varying support, and even the UX is undergoing regular changes. Thus, it's not a quick shot, it'll take some time....Comment 2: Depends. We are M365 shop with Windows 11 for desktops, with USB ports allowed and iOS for mobiles - this combination is fully supported and user-friendly.   
+For others there may be challenges:  
+- Android does not yet support passkey via NFC  
+- onPrem AD does not have Passwordless natively implemented  
+- If your policy restricts USB and your laptops do not have NFC built-in, you cannot use FIDO2Comment 3: > onPrem AD does not have Passwordless natively implemented
+
+What about in the cloud?Comment 4: Entra ID fully supports it in Cloud and Hybrid deployments. I manage a couple of tenants, moved  all of the users to Passwordless - no more accounts compromised since then

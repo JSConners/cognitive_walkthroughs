@@ -1,0 +1,3 @@
+Comment 1: You can see passkeys in your Google Account at https://passwords.google.com. 
+
+If you created 2nd-factor ("non-discoverable") credentials on your old phone over Bluetooth (i.e. you only saw the biometric prompt when creating them, no confirmation sheet showing the username and account to save them to) then those are not synced. There isn't a way to list the 2nd-factor credentials on a phone.Comment 2: Sorry my first reply wasn't considering your 2nd paragraph, but yes that's what I was referring to.

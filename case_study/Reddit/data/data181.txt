@@ -1,0 +1,84 @@
+Comment 1: It depends on your device / OS, but in the case for an iPhone with Face ID, you fall back to your passcode. On Android, it's your PIN pattern (depeding on device) and on Windows it's your Windows Hello PIN.Comment 2: Thanks for the reply.
+
+All of those seem less secure than a 2FA-support passphrase. Since security is only as secure as the weakest gate keeping the bad guys out, Passkeys then seem not-so-secure. It seems like your best bet would be to use the strongest, reliable system you have, which is already passphrases.
+
+I've been wondering about this for awhile. The unreliability of Passkeys (because of the unreliability of biometrics) leads them to poorly secured fallbacks.
+
+I see lots of industry movement (MS, Google, Apple, FIDO, etc) so I'm sure I'm not the first person to think about this. So I'm genuinely confused how we are supposed to secure things this way. I totally get that this reduces frustration, but is it worth the cost of security?Comment 3: The way I read your comment, I cannot tell if you are saying the strongest form of security is using a passphrase which is to be verified locally (similar to a pin) or remotely (similar to a password). In the first case, Passkeys are not intended to help when an attacker has already compromised the device being used to perform a login to a remote server; the device is already compromised, so authenticating with a remote service from the device will provide an attacker access regardless of the method being used. In the second case, this is precisely the problem that Passkeys solve and why they offer better security.Comment 4: If I understand you correctly, you are saying that passkeys are device dependent, thus depending on the device's weakest security (biometric, pattern, pin, etc).
+
+That still doesn't seem secure. It is like connect two ropes with a thread an expecting it to be as strong as a rope.
+
+2fa supported passphrases don't rely on local device security. They exist separately from the device. Of course if your passphrase is stored in easily accessible or plaintext on the device, well, that's dumb.
+
+Is the argument being made that personal devices are more easily or better secured than a passphrase with 2fa? That's hard to imagine. For my critical applications my passphrase is dozens of characters long with 2fa (in one particular case, 3fa). 
+
+It's just hard to believe that it makes sense to make my entire security strategy dependent on one device that is poorly secured with biometrics, pins or patterns.
+
+Maybe there are better ways of securing devices and I'm just not aware of them. 
+
+OR... is the idea that light security needs can be met this way? I could buy that. I have throwaway accounts with simple passwords that could be clearly more easily accessed with a device-based passkey.
+
+Hmmm.. what if you drop your device in the sewer?Comment 5: > If I understand you correctly, you are saying that passkeys are device dependent, thus depending on the device's weakest security (biometric, pattern, pin, etc).
+
+Correct, but this assumes even this weakest link is strong enough to be cost prohibitive to attack (or at least more expensive than the weakest point using passwords).
+
+> That still doesn't seem secure.
+
+What about it doesn’t make it seem secure to you? The idea behind WebAuthn (which Passkeys are built on top of) is that the chain of trust is no longer directly between a user and a remote service; instead, links are inserted by establishing a chain which includes the user’s client software (e.g. their web browser and OS) and a hardware security module (e.g. a security key like a Yubikey or an embedded module like a TPM). These new links enable the remote service to authenticate a user using methods much more secure than can be done with passwords and 6-digit SMS or TOTP codes and moves such validation to the security hardware itself via pins, biometrics, etc in a way that does not transmit such data over a network which would expose it to MITM attacks as is the case with passwords. The big assumption here is that the user trusts their software and security hardware is not compromised, but this is the same assumption that must be made regardless of how authentication is established with the remote service.
+
+> 2fa supported passphrases don't rely on local device security. They exist separately from the device.
+
+Still not sure what you mean here. What exactly do you mean by “passphrases?” My assumption is that you mean passwords (albeit consisting of several randomized, memorable words) that are transmitted across the network in a hashed or plaintext form to be validated by the remote service. Is this what you mean?
+
+And what do you mean by “2FA supported passphrases?” Are you talking about the above that are backed with an additional authentication step such as WebAuthn, SMS, TOTP, etc?
+
+> Is the argument being made that personal devices are more easily or better secured than a passphrase with 2fa? That's hard to imagine. For my critical applications my passphrase is dozens of characters long with 2fa (in one particular case, 3fa).
+
+No, the argument is that passwords are a terrible method for performing authentication on a remote service as they are easily phished, more easily subject to MITM and replay attacks, and rely way too much on humans to provide decent security (e.g. avoiding password reuse, making them sufficiently complex, etc). Moreover, several 2FA methods are also subject to some of the same issues (SIM jacking for SMS, MITM for TOTP and SMS, etc). Furthermore, passwords require a shared secret to provide authentication (the password itself) which becomes exposed whenever there is a security breach of the remote service, adding to the toil that a user must endure to reestablish a secure method to authenticate with that service in the future (by changing their password again).
+
+Passkeys essentially do away with ALL of those insecurities by moving the human-to-machine authentication off the network to instead be performed by hardware that the user themself controls and trusts, with the chain of trust forged with asymmetric secrets between the user’s trusted hardware and the remote service.
+
+> It's just hard to believe that it makes sense to make my entire security strategy dependent on one device that is poorly secured with biometrics, pins or patterns.
+
+What I read you saying here is that you don’t trust the hardware and software you control. That trust is a fundamental assumption being made for Passkeys to be secure. Hardware and software makers have their own ways to address these concerns. For example:
+
+Yubikeys (when used for WebAuthn authentication for Passkeys) require entry of a pin and a physical touch. Failing to enter the correct pin 3 times requires removing and reinserting the key into the computer. After 8 consecutive failures, the key erases itself and the Passkeys are gone from the device. This is all predicated on the Yubikey itself being manufactured in a way that it is cost prohibitive to anyone attempting to extract the Passkeys from the key, and all cryptographic operations occur within the key itself; no private key data is ever exposed to the computers it is connected to.
+
+> OR... is the idea that light security needs can be met this way? I could buy that. I have throwaway accounts with simple passwords that could be clearly more easily accessed with a device-based passkey.
+
+The idea is that Passkeys both greatly increase the security of authentication by both substantially increasing the cost of attacking the most common attack surfaces in use today (where most authentication is done with passwords) and reducing the toil on users to achieve high security of their accounts.
+
+> Hmmm.. what if you drop your device in the sewer?
+
+Have a backup device. If you use security keys, get a second one and register it on the same accounts as your primary one. Or use an integrated ecosystem like iCloud. There are many options here, and one of the biggest pros is that most people (1) own a smartphone and (2) can use the associated ecosystem (iCloud, Google, etc) to sync their Passkeys between their devices. While these solutions are technically less secure than a hardware security key, it is a small cost for a massive increase in ease-of-use for most users.Comment 6: Password + 2FA is weaker than a passkey. The reason your password needs to be so complex is because it is stored in multiple places and is subject to a number of attack vectors that are not rate limited. A website with poor security practices could compromise your password. 
+
+A passkey is (in a sane deployment) stored on secured hardware (a security chip) that is hardened against extraction. Even a phone with the minimum size password is extremely hard to compromise unless the victim just tells you the password. Passkeys force all attacks to be in person and require you to be passive about securing your accounts after an attack.Comment 7: Please explain what I'm misunderstanding here:
+
+1: A device (say, a phone) provides all passkeys for a user
+
+2: Access to any passkey is unlocked via biometric, or if the biometric isn't functioning, via a pattern (substitute any backup access mechanism you like).
+
+3: An attacker, in an over-the-shoulder encounter (say, an airport) learns the pattern.
+
+4: The attacker takes the phone using some subterfuge and in moments has access to EVERYTHING protected by passkeys on that phone 
+
+Therefore, all accounts (finances, investments, communication) are easily attacked through a pattern, regardless of how secure the passkey is in itself. It seems to me that as soon as the community of attackers realizes that all these poorly protected devices open the floodgates to all the passkeys, they will become the focus of attacks. *No one ever has to defeat a passkey*, they only have to defeat the weakest device protection. 
+
+The only accounts uncompromised are those protected independently of the device (like those protected by 2fa-supported passphrases).
+
+What an i missing?Comment 8: The piece you're missing is that (1) this vector of attack is not unique passkeys, (2) that passkeys are non-exportable, and (3) that the surface area of attacks is vastly narrowed.
+
+For your example, one of the things you have to assume is that the person using weak forms of phone authentication would be the sort of person to use very complex passwords with 2FA. Unlikely. 
+
+Shoulder surfing attacks are not attacks of opportunity. Anyone dedicated enough to surveil someone enough to watch them input passwords on their phone can use the same technique for a person using passwords and 2FA. Once you have unrestricted access to someone's phone and email, your account recovery options make all your accounts vulnerable. The same applies to password managers except password manager databases are exportable and don't even require use of the phone.
+
+The vast majority of attacks are non-local and done at large scale via MITM attacks and session hijacking. Unless you have an interest in a specific person, it's not practical to compromise a person's security by in person attacks.Comment 9: You said it much better than in my reply which I've deleted. Just one minor inaccuracy: Passkeys bound to an ecosystem may be exportable to other accounts within that ecosystem beyond the control of the original owner. For example, [iPhone users can copy Passkeys via AirDrop to other iCloud accounts](https://support.apple.com/guide/iphone/share-passkeys-passwords-securely-airdrop-iph0dd1796bb/ios). However, this still requires physical access to the victim's device which is a much higher bar than observing someone's password.Comment 10: Thank you. 
+"...it's not practical ..."
+
+That's the best answer I've heard.
+
+So, let's say I want to use a passkey on a critical site and I need a device to implement it. Even though it isn't practical to attack my phone (or other device?) I still would not want biometric or patterns or something similar controlling access to this particular passkey. In those situations, are there any current reliable and  difficult device barriers in the works that I might be willing to trust?Comment 11: Don't forget. You can always put your passkey on a hardware security key too. So for super critical sites or services you can make the passkey non-copyable. This would be the most secure you can get. However, you now take on the job of backups and maintence (i.e. multiple yubikeys) This is what i'll do for my Proton, Microsoft, and Google accounts, etc. Everything else (e.g. dominos, Netflix, etc) go to regular old (copyable) passkeysComment 12: That's very good. I wasn't aware that was possible. I can imagine Google, Proton, my clients, and banking like that. Everything else on my phone. Very cool. 
+
+I will go study Yubikey and passkeys.
+
+Thank you!

@@ -1,0 +1,4 @@
+Comment 1: The breakage actually comes from Safari 17.4(!). With Firefox 124 still running, and without rebooting, I downloaded the available Safari 17.4.1, retried passkeys in Firefox and now they work.
+
+  
+The whole passkeys popup dialogue comes from Safari, apparently.Comment 2: Yes no one’s allowed to have bugs or make mistakes 🙄

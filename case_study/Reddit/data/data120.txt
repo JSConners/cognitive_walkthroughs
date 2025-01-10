@@ -1,0 +1,1 @@
+Comment 1: It sounds like you're on a login screen rather than a passkey screen. Have you tried setting your key up somewhere in settings?

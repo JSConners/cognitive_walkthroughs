@@ -1,0 +1,15 @@
+Comment 1: Why do all that? Can't they change biometrics with passcode only?  Assuming stolen device protection is not enabled.Comment 2: This is what Stolen Device Protection added in iOS 17.4 addresses. If you are concerned about that I recommend turning the feature on.
+
+Without SDP enabled, iPhones allow your phone PIN (passcode) to access passkeys if Face ID or Touch ID doesn't work. Biometrics are not synced between Apple devices. If you enable biometrics on one Apple device it is used as a security method only on that device. If you add another device to your account, you have different biometrics there.Comment 3: To follow up with something kind of related, one thing I wish I could prevent is that if I am logged into Google on let's say the YouTube app, it keeps me logged in across all Google apps on my iOS device.
+
+For example, it's great that Stolen Device Protection now requires a biometric when away from my home. However, I don't have Chrome currently install on my iphone, but I have downloaded it in the past. I keep my Apple Keychain and Google password manager up-to-date by manually updating one or the other.
+
+Anyways, all anyone would have to do is download Chrome and you can see my entire password list with no authentication because iOS just logs me into to the newly downloaded program.Comment 4: In a way yes, but look at it this way: Passkeys are way more secure than most passwords. Which all to often are simple and used multiple times. If security is an issue for you than a Yubikey or Nitro key might be an option.Comment 5: The key is "delay". Attackers would force you (at gunpoint) to unlock your phone, then register their biometrics.
+
+If I read this correctly, there's now a 1h delay for major account changes (including biometric changes), followed by a second biometrics prompt. Unless you're in a trusted geographic zone.Comment 6: If they get a new device they will need password to activate keychain.
+
+Ofc they can make you give it by force but thats other topic, we talking about usual roberyComment 7: > So to my understanding, Apple only use biometric data to use a passkey (I can't use my phone pin to use a passkey).
+
+I don’t think that’s the case.Comment 8: Oh yeah. lolComment 9: I just tried it out and seems like it fixes a lot of issues.Comment 10: Exactly. Password systems are based on a “shared secret”.  The three biggest problems are (1) the chosen password (the secret) is easy to guess; (2) a database of passwords is stolen and decrypted; (3) users can be tricked into handing over passwords (phishing) through the use of fake websites that appear to be a “trusted” site. 
+
+These are persistent large scale attack surfaces which passkeys solve (more or less completely) by using a public/private key and challenge system (FIDO).

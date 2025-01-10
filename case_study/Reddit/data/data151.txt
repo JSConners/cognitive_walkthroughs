@@ -1,0 +1,58 @@
+Comment 1: You have to have Bluetooth in for Passkeys to work. It maybe showing you a previously paired Android phone.Comment 2: Nope. I am 100% sure, and tested it again..
+
+I tried again with both bluetooth and UWB off.
+
+It did work .
+
+But when I switch off bluetooth on the mac it says: "no bluetooth"
+
+But maybe you are right. Bluetooth has a long range.
+
+Now I switched off blu4tooth on all my android devices
+
+\-I choose my Note 20 (No bluetooth)
+
+\-the note 20 gave me this "keep close" and I had to click on the drop down, and then fingerprint and hoppa.
+
+only explanation I have is that it switches bluetooth on itselve.Comment 3: I think you are right.(with respect): previously paired phone/passkey wil work.
+
+My ten cents so far:
+
+-the authorisation process via Passkeys is stopped when  Bluetooth on the Mac itself is switched off. Google says Mac bluetooth has to stay on
+
+-on the phone side bluetooth, UWB and Wifi can be switched of. The authorisation is successful after entering my fingerprint.. with a Phone, earlier paired, using 4G.
+- I used Chrome new incognito tab, but for the Macbook itselve the pairing, of course took place.
+-latest versions of Firefox and Safari on the Macbook never offered my Passkey list to choose  only Yubikey like devices. 
+
+Chrome, of course gave other options to login. I have 2Fa enabled with 2fa app. Or password 
+
+So I use Chrome "new incognito tab" because in that case I can test all my Passkey devices.Comment 4: Google says both bluetooth have to be switched on.
+
+[https://support.google.com/accounts/answer/9289445?hl=en&co=GENIE.Platform%3DAndroid](https://support.google.com/accounts/answer/9289445?hl=en&co=GENIE.Platform%3DAndroid)
+
+&#x200B;
+
+weird
+
+&#x200B;
+
+Only explantion I have that Google/Samsung switches bluetooth on .
+
+
+Oops, not even that. I even had Wifi switched off. was quite far away (only connectd via 5G) and again worked. So it has communicated via 5G.
+
+And maybe, because it was paired before, it worked.Comment 5: I was just wondering if you have a android phone like the Pixel 6A can you use your phone as a passkey to login into your account on a PC if your PC doesn't have Bluetooth capabilities by default? I was just wondering because I know that my phone says there is a passkey already on it, but whenever I try to login I never get the verify your identity prompt on my phone. I always have to either go back to my password or use the QR code that prompts on my PC. But I do admit my PC doesn't have Bluetooth capabilities by default. I have to use a Bluetooth removable device to use say connect wireless earbuds to my PC.Comment 6: To be honest? I personally do not feel capable enough to fully understand Passkeys.
+I am getting closer and closer, but still.
+
+I have a PayPal Passkey, that I can find in the list of Google Passwords. So its there. And now?
+Is the PayPal passkey also on my phone?
+
+But if I have a Bitwarden Passkey I am still not sure. 
+
+I feel stupid, but i am sure that sooner or later I will be enlighted. Or a book "Passkeys For Dummies" will appear.
+
+In the case of being close to a computer it is also possible that that computer "knows" already who I am.
+
+Pfff.
+
+Will be greatfull for a site that explains for dummies like me.Comment 7: I'm in the same boat. I feel like I wish someone would either show a tutorial on how to do so with a Pixel phone or at least someone should show how to do so on a YouTube video or something.Comment 8: Haha. I am  not alone. Thx

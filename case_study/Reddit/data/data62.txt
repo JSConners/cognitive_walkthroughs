@@ -1,0 +1,111 @@
+Comment 1: I'm right there with you. Been pulling my hair out about it for 2 days now...Comment 2: Same. PlayStation send you here too?Comment 3: I got a new phone and I had the same issue and here is what worked for me. 
+
+Went on my old phone and used the autocomplete/pass key to log in to a website. On the old phone It asked me for my lock screen passcode. As soon as I entered it on my old phone, there was a pop up on my new phone that asked for that same passcode.
+
+In other words, my new phone asked me for my old phones password. I just had to actually use Google pass keys on an old device.
+
+Hope that helps someone!Comment 4: Managed to fix the same issue in the following way:
+
+1. Disable the lock screen via settings on the old phone
+
+2. Try to log in to any site with a passkey via Chrome on the old phone
+
+3. Chrome will ask to set up a screen lock, set it via the PIN option (the pattern didn't work for me).
+
+4. Continue logging in with the passkey, Chrome should ask for the PIN.
+
+5. Try to log in with the passkey via Chrome on the NEW phone.
+
+6. Chrome should ask to set up a screen lock and then redirect to the Google page where you should enter the PIN from the old phone.
+
+7. Should log in successfully after that.Comment 5: Hello,
+
+I am experiencing quite the same issue with the passkey feature in an app called **CAKE by VPBank** (a domestic banking app in Vietnam) after performing a factory reset on my Xiaomi 11T device.
+
+Previously, I had logged in to the app using my fingerprint (or Face ID) and enabled the enhanced authentication feature with a passkey. This meant that I would log in using my fingerprint or Face ID in combination with a passkey stored on my device (Xiaomi 11T).
+
+Two days ago, I performed a factory reset on Xiaomi 11T, making sure to completely sign out of both my CAKE account and the Google account used to authenticate the device. I then signed back in using the same Google account on the newly reset Xiaomi 11T.
+
+Now, many services and apps, including CAKE, recognize the previous Xiaomi 11T as an "**old device**" and the current Xiaomi 11T (after the factory reset) as a "new device" - even though we all know they are essentially the same one, right?!
+
+So when I attempt to log in to CAKE again **using the enhanced authentication method with the passkey**, I receive the message: "*Your encrypted data is locked on this device. For security, you can no longer access your encrypted data on this device. Try again using a device you have recently signed in to access your Google account.*" However, **I am still able to log in to CAKE normally using fingerprint authentication without the passkey**. This is because the enhanced authentication feature is **optional** and it can be toggled on or off in the app's settings.
+
+But my primary concern is to regain access to the enhanced authentication feature and use the passkey for added security. That's why I'm writing this comment.
+
+I have read some of your suggestions here about trying using the old device to resolve the issue, but this is not applicable in my case since I no longer have access to a separate "old device" – it is the same device, just in a pre-reset and post-reset state.
+
+Curiously enough, **the very same passkey** grants me seamless access when I log in on my iPhone. Everything works just perfectly. I'm led to ponder if this could be attributed to CAKE on the iPhone storing the passkey in iCloud rather than in my Google account, thus averting the issue?! And here, it’s also unclear if the same would happen with my iPhone if I am to factory reset it in the future. Basically, I still don’t quite understand how passkeys, passphrases, and/or on-device encryption work. Please check the screenshot.
+
+So, I am looking for alternative solutions to this problem, for my Xiaomi 11T. I only use the default Chrome encryption option "*Encrypt synced passwords with your Google Account*" instead of the sync passphrase option so as to sync everything (including history, bookmarks, passwords, and other settings) to my Google account. If possible, I would like to avoid wiping my synced data (i.e., clearing sync data and starting over).
+
+I would appreciate any assistance or suggestions from the community in resolving this issue.
+
+Best regards,
+
+**Screenshots:**
+
+* [https://imgur.com/jGXSUp0](https://imgur.com/jGXSUp0)
+* [https://imgur.com/MvQgMT2](https://imgur.com/MvQgMT2)
+* [https://imgur.com/21ok2TH](https://imgur.com/21ok2TH)Comment 6: Same issue hereComment 7: I experienced the same issue. I initially thought it was because I had a couple compromised passwords saved (local router admin log ins), but deleting them had no effect.
+
+What worked for me was resetting my Chrome synch encryption passphrase. I experimented with it years ago and never revisited it.  Once I reset the synch, I was able to create new passkeys (PlayStation, Amazon).
+
+Here are the instructions from the Google search:
+
+When you change your sync passphrase, all your data is deleted from Google’s servers and all your synced computers and devices are signed out. Your payment methods and addresses from Google Pay aren't encrypted by a passphrase.
+
+Your bookmarks, history, passwords, and other settings aren't deleted from Chrome on your device. When you sign back in to Chrome on that device, all your info will start syncing again.
+
+Step 1: Remove the sync passphrase
+
+On your Android phone or tablet, open the Chrome app ￼.
+
+Go to the Google Dashboard.
+
+At the bottom, tap Clear data ￼ Clear.
+
+To the right of the address bar, tap More ￼ ￼ Settings.
+
+Tap Sign in to Chrome.
+
+Sync will start again, and you'll no longer have a sync passphraseComment 8: i have the same on PC for google accountComment 9: Im on a Moto Edge Plus 5G and get the same message, but using my password works. I dont mind using my password - prefer it actually - but I am frequently - but not always - directed to the passkey page, to be told that it is inaccessible to me.
+I really don't mind not having to use a passkey, but I would love it if someone could tell me how to make it stop directing me there automatically so that I have to back out of there to go back to my login screen to put in a password. 
+
+
+Thanks!Comment 10: Same problem caused by someone changing my lock screen password. I switched back to old phone and getting this msg. It's going to be a while before I even reset the new phone because there is a ton of data on it I need to try like hell to save. Thanks Google for taking away that option!Comment 11: Just ran into this issue while trying to backup my timeline data. I lost my old phone, and can't recover it using the find my device option. I have my contact info on my screen I believe, so hopefully it turns up, but I know it's gone for good. It's not even letting me backup the timeline data from my "new" phone (and old phone I've had for years). Is this functionality just gone forever?!?! I've fully recovered my google account everywhere else on all my other devices, what's up with this?!?Comment 12: Guys pleeaee help me I am in the same trouble on robloxComment 13: Hi there,
+
+It sounds like you're experiencing some frustrating issues with on-device encryption and passkey storage on Android. The error message you're seeing suggests that the encrypted data is tied to a specific device state and may require recent authentication on a device linked to your Google account.
+
+Possible Solutions:
+
+1. Recent Device Authentication:
+
+   - Ensure you have recently logged into your Google account on the device in question. Sometimes a fresh login can reset the encryption status.
+
+   - Try accessing the data on a device where you have recently signed in to your Google account.
+
+2. Check for Software Updates:
+
+   - Make sure your Android device is running the latest version of the software. Updates often include bug fixes that can resolve such issues.
+
+3. Clear Cache and Data:
+
+   - Go to Settings > Apps > \[App Name\] (the one you're using for passkeys) > Storage > Clear Cache and Clear Data. This can sometimes help reset the encryption handling.
+
+4. Reboot in Safe Mode:
+
+   - Restart your device in Safe Mode (usually by holding the power button and then tapping and holding 'Power off' until the 'Safe Mode' option appears). This can help determine if a third-party app is interfering with the encryption.
+
+5. Use Alternative Security Solutions:
+
+   - If the built-in options are not meeting your needs, consider using dedicated security and encryption apps. For example, apps like Signal offer robust encryption for messages and calls, while password managers like Bitwarden provide secure passkey storage.
+
+A Note on Secure Devices:
+
+If you find these solutions cumbersome and are looking for a more straightforward approach to maintaining security and privacy on your device, you might be interested in devices specifically designed for enhanced security, such as the StellarProtect phone. It offers built-in, always-on encryption and a host of other features designed to keep your data secure without the hassle of constant troubleshooting.
+
+Hopefully, one of these suggestions helps resolve your issue. If not, it might be worth exploring dedicated secure devices for a more seamless experience. Good luck!Comment 14: I'm having the same issue, removing all devices from ur account doesn't work. Relogging into same google account on that device also doesn't work.Comment 15: I'm on a Pixel! I thought it could be related to my employer requiring device encryption.
+
+Your post means it must be something more generic! Thank you.Comment 16: YES!Comment 17: I never had an old phoneComment 18: God I love reddit. Seriously. This has not been working forever and I kept giving up with it. Then today I thought, "let me append my Google search phrase with "reddit". Never fails me...Comment 19: this is what solved my problem. you need to go to [https://chrome.google.com/sync](https://chrome.google.com/sync) and clear your chrome data. back up your passwords and bookmarks first before doing this to be safe.
+
+what happened to me was, I didn't know you needed to sign up to passkeys in your google account before doing this and I got locked out as a resultComment 20: It works 😀Comment 21: So strange. I still haven't gotten it to work, the whole thing seems so fickle and brittle I don't know if I want to trust it.Comment 22:  .Comment 23: This actually works! Thanks!Comment 24: Friend of mine had to do this and then it workedComment 25: This worked for meComment 26: "Setting up passkeys before enrolling in passkeys" was my problem also - bloody brilliant. Thanks.Comment 27: Worked for me. Thanks manComment 28: Also worked great for me. I was going mad after replacing my Pixel 5 for my new Pixel 8.

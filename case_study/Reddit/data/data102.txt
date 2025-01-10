@@ -1,0 +1,10 @@
+Comment 1: But... why?Comment 2: Well creating a password manager from scratch might be quite a challenge and takes a four year college degree for most people to master the skills. Perhaps an idea for you?   
+
+
+Having said that Bitwarden is open source you might take a look : 
+
+https://github.com/bitwardenComment 3: Because I’d like to be part of this revolutionComment 4: Yeah, I’ve been creating password manager and 2fa manager but passkeys will destroy these 2 things so I don’t think there is a sense in develop a tech around it right now.
+
+Gonna check bitwarden, thanks for the recommendationComment 5: ... and you want someone to point you to a *video*'so that you can *program* a passkey manager? Do you see a problem here? 
+
+If you want to program a passkey manager, you need to look at the specification/standards documents and implement the specification.Comment 6: Be part of the revolution by get others to use passkeys where available and suggest to services that do not have them to implement them. Make content explaining it in a user friendly format and put it on social media platform. If you work for a company that has customers use passwords then ask them to try out passkeys.

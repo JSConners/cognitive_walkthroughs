@@ -1,0 +1,21 @@
+Comment 1: You can setup 1Password to use hardware keys as 2-factor so it would be the same amount of security as Keychain in needing physical hardware to access the account on a new device.Comment 2: I think we’re in the stage where best practices are still being figured out.
+You have management, ease of sharing, separation of concerns, etc. The biggest reason to use a third party to manage your passkeys is if you are in a mixed environment (iOS AND windows for example). It also keeps things all together under one management roof.
+
+However, I don’t currently have my google passkeys in 1Password. I have a separate google passkey for each device (phone, laptop, desktop) as opposed to a shared passkey.
+
+On one hand, this leads to a proliferation of passkeys. On the other hand, I’ve separated concerns.
+
+I’m thinking of doing the same for the “big” accounts/services.  Still not positive though.
+
+I think this mindset shift is the biggest hurdle to passkeys in the public’s mind. Where before they had a single username and password. It’s easily understood. Now with Passkeys there are (could be) multiple for the same site/service/app. You might have to keep track of all the places you have a passkey for that site/service/app. It a mindset shift.Comment 3: I have chosen to use Apple's keychain for the reasons you mentioned.
+
+I'm not actually certain it would make a huge difference in storing the passwords/passkeys separately because it's not like one is a second factor for the other (though I think actually passkeys technically can be for MFA if the site allows it). But for me, Apple's more locked-down platform is actually the bigger factor.
+
+Not to say that 1Password isn't secure - I actually use it myself for my passwords. But from what I understand (and I could be wrong), the passkeys are synced to all your devices where you're logged in with 1Password. Which includes my Windows PC. I actually don't want that, because I know for a fact that there are malware stealers that specifically target OTP 2FA tokens stored by password managers, so the same would probably happen for passkeys. I find it much more unlikely that will happen on an iPhone or mac.
+
+I don't really care about portability of passkeys across ecosystems because you can just create multiple ones.Comment 4: 1password uses AES-256 encryption which is still unbroken if one uses a strong password. 1Password uses this device encryption key so that shouldn’t be a problem. However Apple’s iCloud Keychain also uses pretty strong encryption, but I couldn’t find the details. So imho it’s really a matter of choice. If you only use Apple devices using iCloud Keychain might be a bit more convenient. But if you also use other devices 1password might be a better option for you.Comment 5: What's the implication of allowing third party browser extensions the ability to intercept these passkey registrations, I know everyone wants to own the passkey, you own the Passkey you "own" the user, but until there's a framework to protect consumers with third party extensions I'm sticking with Google/apple managersComment 6: \+1  
+
+
+Two other core questions that you need to answer yourself:  
+1) Do you only have Apple devices? If yes then going with the iCloud Keychain is probably the more convenient way (and cheaper because you don't need to pay for 1Password). But if there's one device you regularly use that is non-Apple, then it might make more sense to go with 1Password (even though setting up a passkey on this other device isn' too much effort IMO, recovery may be though)  
+2) I would try to keep the service / password manager wher you currently store your passwords, as you would still need this service anyways and then having both your passwords and passkeys in the same place is probably the best experience.Comment 7: Does the icloud app on windows support use of passkeys stored in iCloud? I know it can support the passwords stored there.

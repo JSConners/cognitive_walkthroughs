@@ -1,0 +1,3 @@
+Comment 1: There should be  an official passkeys website with a list of websites already offering login via passkeys and push to faster implementation via multiple servicesComment 2: Just saw this:  [https://github.com/passkeydeveloper/discussions/wiki/Known-Passkey-Support](https://github.com/passkeydeveloper/discussions/wiki/Known-Passkey-Support)  Known Passkey SupportersComment 3: Great idea!Comment 4: >There should be  an official passkeys website with a list of websites already offering login via passkeys and push to faster implementation via multiple services
+
+Great Idea.

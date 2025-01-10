@@ -1,0 +1,1 @@
+Comment 1: I having a similar'ish issue, passkeys work on my Android phone, unless it is accessing a Google account on my Win11 machine.Comment 2: Yeah I'm also having that issue. I filed a feedback on feedback hub but idk if it's just going to a black hole

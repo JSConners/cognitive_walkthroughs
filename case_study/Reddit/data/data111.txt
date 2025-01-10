@@ -1,0 +1,9 @@
+Comment 1: See also:
+
+https://blog.google/technology/safety-security/titan-security-key-google-store/Comment 2: Available in the UK store, have ordered USB A & C versions to try out, should recive this weekend.Comment 3: Be forewarned that I cannot find a way to manage the passkeys stored within the Titan Security Key.  Yubikey currently has [a way to manage credentials](https://www.reddit.com/r/yubikey/comments/17g10ny/how_do_i_viewdelete_my_yubikey_credentialshow/) (Reddit discussion) and [docs](https://docs.yubico.com/software/yubikey/tools/ykman/FIDO_Commands.html).
+
+This may be needed if I want to review or clean up stale passkeys stored within the Titan key.Comment 4: Great :)Comment 5: Hows the experience so far if you've got to use them? And compatibility on websites?Comment 6: Thanks for the warning.Comment 7: They work on every site I use. The big downside is no way to view or manage resident credentials.  
+
+I am however sold on passkeys. I had to setup lots of new hosts and ease of use with MicroSoft and Google is compelling. The big downside is Electron apps in Linux which don't support FIDO.Comment 8: You're welcome Google Chrome has a few settings to manage (e.g. reset) security keys \[1\] but it is not comprehensive as what Yubico has provided.
+
+\[1\] [https://support.google.com/accounts/answer/6103523?hl=en&co=GENIE.Platform%3DDesktop&oco=0#zippy=](https://support.google.com/accounts/answer/6103523?hl=en&co=GENIE.Platform%3DDesktop&oco=0#zippy=)

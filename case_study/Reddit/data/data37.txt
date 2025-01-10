@@ -1,0 +1,13 @@
+Comment 1: >Where is this Passkey's private key actually stored?
+
+According to Google, the passkey is stored on your macOS Keychain. This means that your passkey is locally stored and can only be accessed with your mac device only. It is not synced to your Apple account iCloud Keychain.
+
+https://support.google.com/chrome/answer/13168025?hl=en&co=GENIE.Platform%3DDesktop#zippy=
+
+>why is something like "From your Macbook" not an option to use Passkey with the OS directly?
+
+When it comes to locally stored passkeys, the browser has always been a dependable factor with macOS. Previously, if you created a local passkey (which was called FIDO credentials) using Safari, it could only be used with Safari. The same is true for Chrome, Edge, etc.
+
+>how does syncing these passkeys work if they're device-specific?
+
+They can not be synced and never leave your device.

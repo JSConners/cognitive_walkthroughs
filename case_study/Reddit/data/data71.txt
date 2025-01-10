@@ -1,0 +1,43 @@
+Comment 1: Certain password managers fix this issue, I use 1Password and it stores a single passkey per login and works on all my devices that support passkeysComment 2: The only real answer is probably "it's a mess" just like the whole Passkeys rolloutComment 3: I know it's 2 weeks later , but if you haven't figured this out yet, it's not a chrome sync issue.  If you are on a Mac Chrome can't sync passkeys like it can on Android. On Mac Chrome doesn't store the passkey.  The passkey is stored in your icloud Keychain.  It will work on any ios/Mac device that is logged into the same icloud account.  
+
+So having a mix of android , iOS , and windows devices requires creating 2 separate passkeys for syncing to work.  One is synced with Chrome and then the other is synced with icloud.   This is not an chrome/google issue.  Apple doesn't allow passkeys to be stored outside of the icloud Keychain.  
+
+It's kind of a pain but all you have to do is make sure to log in on the mac on any account you make a passkey for.  Personally I've gone to using a hardware security key so I'll always have a backup.Comment 4: Well if you want to introduce passkeys support on different devices, it does make sense to have the sync service up and running first actually – if the intention is to synchronise. Otherwise every device has a passkey for site Y, and then you turn on sync and end up with lots of passkeys per site in your credential manager...
+
+But for my part, I think synchronising passkeys negates a lot of its benefits.
+
+Passkeys are inherently more secure than password because you do not transmit the passkey to log in, hence it cannot be stolen from the website you log into for example. Devices have secure enclaves and TPMs and whatnot. Synchronisation through a cloud is less secure than staying on device.
+
+BUT, if you start synchronising it over a password manager, then it can be stolen from your password manager. This significantly weakens the above benefit in my view.
+
+Finally, I agree with everyone on this post that the UI for passkeys is a terrible and inconsistent mess.Comment 5: There are ecosystems for managing passkeys and they don't mix.    If you create a passkey on apple ecosystem you can't have the same passkey synced to your Google ecosystem.
+
+You can use a passkey on one ecosystem on another device but the passkey is not synced when you use it.
+
+This is where ecosystems like 1password are OS agnostic.
+
+If you use both OS ecosystems you can just register multiple passkeys, one on each tooComment 6: man this sounds like a mess indeed.
+
+I'm sticking with my Yubikey I'm able to use on my Pixel, iPadPro, and MBP both in macOS & Ubuntu until the dust settles!Comment 7: if you are using a device for the first time, you might have to click on sign in with a passkey by clicking on other login options instead of trying to enter a password and 2FA code.  
+I haven't used Android/Google Password Manager so can't comment on its sync capabilities, but when logging in from windows desktop using a passkey stored in iOS keychain if I select passkey option on GitHub or Google I am prompted to scan a QR code and login using the hybrid model where the passkey is on a different device.  
+Google by default doesn't prompt me the passkey option to sigin and I have to manually click sign-in using passkey to login using the passkey flow.  
+Do you see your passkey synced to your Google account password manager at [Password Manager (google.com)](https://passwords.google.com/)?  
+  
+Note, the only true passwordless flow I have seen working is my Outlook/Microsoft account with the Microsoft Authenticator app and the password deleted on the microsoft account.Comment 8: Just to be sure, it wasn't specified, but did you use the same Google account for both Android devices? You can check your passkeys on your Chrome settings as well.Comment 9: What do you mean a single passkey per login?Comment 10: But you can use other password managers than keychain though. You can use enpass and 1password to create your passkey, which will then be available on ANY device (unless I'm getting this aren't )
+
+
+So apple doesn't force you to use keychain, they force you to use, well, a password manager 
+
+
+I imagine google could fix it by implementing some NON WEB app , and integrate into macOS password manager (within macOS system settings ) 
+
+
+Can you use other password managers to create and sync passkeys on iOS ? Since IOS has chrome and bitwarden as a password manager , system wideComment 11: Hmm, but when I create passkeys in Chrome on Mac, it always asks me where to save them. iCloud is one of the options but I've never used it.Comment 12: Yeah, but I didn't try to mix ecosystems. I had created a synced passkey via Google and tried to use it on another device via Google (Chrome & Google Password Manager). It's not that I had created a passkey synced via iCloud and then tried to use it via Google Password Manager.Comment 13: I don't believe you currently even have any options other than  USB keys on UbuntuComment 14: The login flow with a QR code doesn't require a passkey on your phone to be synced, I believe, it can perfectly be device-bound.
+
+I do see the passkey in my Password Manager, yes, which is what puzzles me.Comment 15: Yeah, same account.Comment 16: Ah, I'm guessing this means "per account".Comment 17: If you did then they will sync to other Mac and ios devices.  Say you do it on chrome on Mac.  Open in Chrome on ios and it won't be available.  If you do it in icloud it's available on ios.  It's yet another artificial limitation imposed by Apple.  
+
+I don't work with Mac hardly at all anymore.  I sill have my old iPhone that I use mainly as a backup storage key.  I broke out my old Mac book air just to test with passkeys a while back and that's they only way to get then to sync.  I did some googling on it and its an apple limitation.  
+
+I have the exact opposite situation as you.  I can't get them to reliability sync between android devices.  I've had to use my security key or the qr code on every new device.  I went so far as to use another android and set it up from scratch with my same Gmail account and could not get one passkey to actually work.  I've kind of given up caring.  All I want is to make sure if I lost my phone I could access my accounts.  That's what originally got me to get out the iPhone.   I have everything on my iPhone and security key as well as windows.  
+
+I just recently started getting more serious with passkeys.  My next 3 day weekend I plan to sit down and try to figure it all out.  Maybe I missed something with syncing with Google password Manger.  I probably did.  I just wanted to let you know about the apple way of doing it.  Syncing between ios and Mac is seemless.  Since passkeys is a promoted by Google so hard I would have expected it to work alot more seamlessly on android.Comment 18: you're probably right.  all I know is the end result feels like better standardization across platforms (using FIDO2) and totally get Passkeys are very early in the implementation cycle!Comment 19: No fix ?Comment 20: Correct

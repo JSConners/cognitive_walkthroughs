@@ -1,0 +1,1 @@
+Comment 1: same with using passkeys, if the passkey exists on a phone it's not possible to use physical (USB or NFC) keyComment 2: Happens on computers too.

@@ -1,0 +1,130 @@
+Comment 1: The fact that you need a new one for each device you connect with. 1Password lets you save them but only on a computer with a web browser that supports the 1Password plugin and even then it is hit and miss. The main reason for that being that different websites support passkeys in different ways. It is a great idea in principle but because a lot depends on the actual implementation (and the fact that there is a variety of ways to implement), it makes for an inconsistent user experience in the real world…Comment 2: I don't like the fact that if you have a passkey on your phone and you decide to login into your Google account on your PC then you have to use a QR code each and every time to login. Its not like it was when I used to receive prompts on my phone and then I would simply select yes it was me signing in or not. If only passkeys sent a prompt to my phone and no more QR code for EACH and EVERYTIME I login to them then I wouldn't have any issues with it.Comment 3: Google & Amazon work great for me, but Microsoft seems to want me to delete my password if I want to set up a Passkey.  I'm not quite ready for that because I don't know what it will break.Comment 4: What’s the point of focusing on “what don’t you love about passkeys”? There is so much more upside to Passkeys than downsides when comparing them against other authenticators (passwords, TOTP, etc) that I don’t understand focusing on the negatives in a vacuum.Comment 5: 1. You can't export your passkeys  
+2. Even when you'll be able to export them, it will be possible only in encrypted form, which means that you will always rely on an external app to have access to your own passkeys.  
+3. You can't delete your password, even if you want to, so the weakest link is still there.  
+4. Google creates a passkey for you on Android devices without asking you, which you can't delete.Comment 6: I dislike that Google and Apple know which sites I am registered in. Let me know if I have this wrong.Comment 7: The fact that I practically still can't use them to save them, since every time I try to save them on my Android 14 it tells me that there is a "problem"... Try later...Comment 8: [deleted]Comment 9: That end-to-end encryption isn't in the protocol. A cloud drive service could easily be end-to-end encrypted. But at the moment that encryption is done via the password.Comment 10: Passkeys simply aren't practical or desirable. 
+
+Just like 2FA solutions, a passkey requires me to have a second device available (with sufficient battery power) or store biometrics on a device so they can be stolen, or both.
+
+Logging in should be simple without any hoops.
+Passwords are the standard for a reason.
+
+The fact bluetooth may be needed is also a downside. I should be able to log in without bluetooth shenanigans draining battery power and opening up my device to hackers.Comment 11: My g, can u tell me more about it? What if you could save it in an application that would allows you to use the passkey in any browser you’d like, would it help you? Lemme knowComment 12: Thanks bro. Can u please tell me more about it? I’m trying to understand to build a solution for it.Comment 13: So would you like both? Passwords + passkey as an option?Comment 14: Can u tell me more about the reasons for it? ThanksComment 15: I deleted my password on Microsoft since february, and basically they are using 2FA methods as a backup if you can't use your passkeys, because the 2FA is considered safe enough. The main 2FA being used is their Authenticator app sending you a one time request :)Comment 16: I’ve asked about the competitors. I’m doing a business thing here to try to understand what people don’t like about the current Passkeys to build a better one lolComment 17: Im focusing on understanding the problem with the current passkey to build a better version. I love passkeys, that’s why I’m doing it. I’m not trying to say it’s badComment 18: "You can't delete your password, even if you want to, so the weakest link is still there."
+
+==> On Microsoft, you can since february, it's the decision of each site when they plan to let users delete their passwords, but that's the final goal everywhere. 
+
+Google is planning to let users delete it from next year. 
+
+But many sites still think that users would be too afraid of deleting it, so they are doing a smooth transition, one step at a time to not loose the non-technical usersComment 19: With Google and Apple specifically, even though the password exists it can’t be used on its own once you have 2-step authentication turned on, right?
+
+In regards to not being able to export them, that’s something I LIKE about Passkeys. It’s what makes them phishing resistant.Comment 20: Can u tell me more about that? I’m very curious about it. If possible tell me as much details as possible, I’d be very grateful. 
+
+ThanksComment 21: An application key should work for that :) It's a long key that is used in place of password + 2FA and that will still exist with passkeys for cases like thatComment 22: It's under work on mutliple providers :) Usually the encryption is not done via the password, but your password is used as a decryption key for the master key. 
+
+Multiple providers are working to have a passkey that will also encrypt/decrypt the master key. Basically, they will encrypt the master key with each private key that needs access to it. 
+
+You can find an explanation at the bottom here: https://proton.me/blog/protondrive-securityComment 23: > Just like 2FA solutions, a passkey requires me to have a second device available (with sufficient battery power) or store biometrics on a device so they can be stolen, or both.
+
+Do you think they can only be stored on phones or in the case of computers only if they have biometrics? Windows supports use of a PIN.
+
+> Passwords are the standard for a reason.
+
+Standards can progress.Comment 24: That is essentially what 1Password does. The problem is it doesn’t work on Mobile devices (iOS in my case) and is only useful on computers with a web browser that has the 1Password extension. So cross platform is a problem. Even then, like I said hit and miss.Comment 25: Absolutely and thank you for your efforts!!! Yes so here's my dilemma: 
+
+
+I have a Pixel 6A so I have a passkey already set up on my device. Not a problem. Now I have already set up my account to use passkeys for authentication. The first time you do set it up I understand that yes you may have to use a QR code that the browser presents you with to login. But here's the issue. In theory this is only supposed to be just ONE TIME ONLY that you are required to use a QR code to sign in. But each and every time I log into my account now using my browser (which is Brave by the way since I don't like ads) it now always and I mean ALWAYS PROMPTS me to scan a QR code then I login into my account. 
+
+
+
+Should I press no to the QR code it gives an error and it won't allow me to sign in. I have to then use my password instead. I really wish there was a solution where once you have already set the passkey on your phone then you shouldn't be prompted each and every time to scan a QR code to login. I just want it to be that now once I select passkey option to sign in to my account I instantly get a prompt on my phone asking is it me trying to sign in. Then I could just say yes and login. If there's a way to solve this then please please let me know ASAP. I would definitely appreciate it!!!Comment 26: Well.... Not everything I have supports passkeys or biometric authentication.  Some examples:
+
+\- My Xbox
+
+\- My Wireless scanner which scans to Onedrive
+
+\- My Synology Server which backs up to Onedrive
+
+If I delete my password/2FA, how will I sign into my Microsoft Account with a passkey on these devices?  Maybe some day they'll all support biometrics, and maybe there is a way around this, but it's not really described on Microsofts website.Comment 27: Don’t go try to create your own, go work with the cross-org FIDO Alliance if you want to help and have something to contribute.Comment 28: I think you are using the wrong term, because phishing is stealing user's credentials from a fake website that is a copy of the original one. 
+
+With passkeys, that is impossible even if you are able to export them, because they are linked to a website domain (eg "[google.com](https://google.com)"). 
+
+If you accidentally share your passkey with an attacker, this is not phishing, but credential stealing.Comment 29: >In regards to not being able to export them, that’s something I LIKE about Passkeys. It’s what makes them phishing resistant.
+
+I have seen this opinion before, but I don't really understand it. How an unencrypted passkey export would increase the risk of phishing? Phishing can happen when you enter your credentials into a fake website, right? But you don't enter your passkeys anywhere, anyway.Comment 30: https://www.reddit.com/r/Passkeys/s/IfVT2HQYoUComment 31: Any tips for this?Comment 32: Nice!Comment 33: >Do you think they can only be stored on phones or in the case of computers only if they have biometrics?
+
+I think requiring biometrics is a violation of privacy and the alternative (a PIN) is not secure enough. Therefore, the entire premise doesn't work.
+
+>Windows supports use of a PIN.
+
+A pin which is easy to guess and completely insecure. And earlier this week, it was also shown that the fingerprint biometrics of Windows Hello had been circumvented. Thus also not secure.
+
+>  
+Standards can progress.
+
+Requiring someone to either hand over their biometrics or use an insecure device PIN is not progress. It will just mean being robbed involves robbers not just taking your phone, but your fingers as well. 
+
+Also, if I use a Windows Hello pin, this would require me to make a separate passkey if I happen to not be near my PC, so instead of ONE password for all devices, I know need at least 4 different passkeys to properly log into my accounts from anywhere I want to. That is not a practical solution.Comment 34: You mean you can’t use the passkey you saved on 1password on mobile browsers? Even if you set up 1password as the main software  on Apple password manager?Comment 35: Thanks for this great answer and feedback my g. 
+
+Have you already tried or researched about any way to allows you to do that? 
+
+Just to clarify the things. You meant a way that you could connect the QR code once and then it’d work for sometime or even forever on that same device without the need to do the QR code scan each time you try to login, is that right? 
+
+Also, a question: does the Passkey you’ve been using have a fingerprint or faceID system or only the QR code? Because I believe it’d solve your problem but not sure yet. 
+
+Let me know and thanks for your reply and feedbackComment 36: I don't have this issue on my Pixel 7 Pro. The phone needs to be connected to your computer via bluetooth for it to communicate with it, and once its communicated a prompt appears on my phone and it asks for my fingerprint to complete the login.
+
+Did you add your phone as a "passkey" in the google security settings, or under "security keys". I believe the latter is just for 2FA instead of single sign on so maybe that is the issue? Maybe the issue is you are using the brave browser while I am using chrome?Comment 37: Ok, I got what you mean, thanks for the explanation bro. Let’s keep in touchComment 38: Can you an app password?Comment 39: I don’t wanna be an employee, always prefer work for myselfComment 40: That’s an example of, but not the definition of phishing. And I’m not sure how it would even be possible to share a passkey with an attacker.Comment 41: Not being able to “export” a passkey from a secure enclave makes it so user also can’t inadvertently send them to attackers. Huge upside with almost no downside.Comment 42: > I think requiring biometrics is a violation of privacy and the alternative (a PIN) is not secure enough. Therefore, the entire premise doesn't work.
+
+Because why? Biometrics data is stored locally on a separate chip inaccessible by the OS
+> A pin which is easy to guess and completely insecure. And earlier this week, it was also shown that the fingerprint biometrics of Windows Hello had been circumvented. Thus also not secure.
+
+Yes because all those hackers can use MY pin for MY device on THEIR computer to access my accounts.
+
+>Requiring someone to either hand over their biometrics or use an insecure device PIN is not progress. It will just mean being robbed involves robbers not just taking your phone, but your fingers as well. 
+
+Who are you giving your biometrics? Certainly not Apple. Your windows Hello face is also not stored on MS's servers. [Also If you're targeted physically you're already screwed anyways.](https://www.explainxkcd.com/wiki/index.php/538:_Security) This is about online security
+
+> Also, if I use a Windows Hello pin, this would require me to make a separate passkey if I happen to not be near my PC, so instead of ONE password for all devices, I know need at least 4 different passkeys to properly log into my accounts from anywhere I want to. That is not a practical solution.
+
+It's not like you need to remember those 4 passkey in your mind. Also plenty of services (iCloud Keychain or password managers store them encrypted in the cloud.)Comment 43: What makes you think a PIN is easy to guess or insecure compared to a password? PINs on Windows Hello are alphanumeric they are not just 4 or 6 digit numbers like other PINs. These are effectively just password that works only a specific device. 
+
+What is not practical about having multiple passkeys compared to having one password for all devices? The device with the passkey would still need to be unlocked either way but with the passkey you would not need to enter any password. You can say maybe the process of making them but that would be similar to setting up 2FA.Comment 44: You're welcome anytime. And yes I have tried to research this (even leave comments on websites and even emailed a editor of an article about this) and there is no answer to my specific issue unfortunately. 
+
+
+And yes basically what I mean is this: since the passkey is now on my phone and ready to go I wish I could just go to my PC and once I log with my user name I just get a prompt instantly on my phone asking me if I'm trying to log in now? For which once I select yes it's me then it should authenticate and sign me in since the passkey is already on my phone. Before passkeys became a thing, I kinda had that option with 2FA set on my Google account. Google at the time, allowed someone to use phone prompts to sign in without having to enter a password at all or scan a QR code each and every time. I would just select it was me once I got the prompt on my phone, and sometimes it would ask me to use my screen lock or for me to unlock my phone to login in or it would have a number on the screen and I would have to select it on my phone to login. 
+
+
+
+And I'll humbly admit this, I'm not sure if this is the reason I'm constantly getting the QR code prompt on my PC, but for my passkey I thought (I thought) I could just use my screen lock for my phone as a passkey since I don't have any biometrics set up on my phone. Ive been using a password on my phone for years now and I thought I could use that as a passkey to sign into my Google account.
+
+
+I don't know if I'm just misunderstanding how passkeys work but I really just like the simplicity of using Google prompts on my phone to sign in with and not having to use my password or a QR code now or anything else (constantly) to login with on my PC.Comment 45: Thank you for trying to help me with this. Google finally fixed it so now those issues have been resolved. All I do now is just sign in and select the passkey option and then once the drop down section comes on my PC about which device I then just select my pixel and then it signs me in without scanning the QR code again.Comment 46: I understand that, but for passkeys, it's definitely not the way to go. 
+
+I love passkeys as well, I have been following the subject since the release of Webauthn in 2018, and they are using the same principles as PGP, so it could have been done since years, but the main lack was the synchronisation. And that required the big techs to work together with FIDO Alliance as well to get a working solution.
+
+If you develop a solution alone, without being FIDO compliant, I think that the support would be poor among the websites and it wouldn't be so usable. 
+
+It would be better to work with the existing solution and improve it if you can :)Comment 47: That's the thing, passkeys are made so the risk of a user sharing it with an attacker is lowered to the minimum. And that's working pretty well as currently the only way is to share it via a password manager to a user that you trust and that you added as a user that can access some of your vault items
+
+And that's also why they still need to work on a secure way of exporting them at FIDO in general, because creating a way of exporting them without encryption would again create a risk of a user sharing it to the wrong person.Comment 48: Great but isn’t there another way to export or at least share it on cloud or something? 
+
+By the way, what are your thoughts about fingerprint and FaceID? Is this really necessary for passkeys? I’m not sure if it’s the safest way because hackers can get your faceid and fingerprint.Comment 49: Not being able to export also means no way to backup or share with trusted people like employees or family members. That is a huge downside.Comment 50: The setup process is way too long. I have at least 300 accounts, all with a password safely stored in my password manager. Setting up a passkey for each of them is already more work than I'm willing to do. Setting up passkeys for all of my accounts times at least 4 different devices is madness.Comment 51: Man, thank you for the feedback. I’ve been doing some small research here before keep building the product. 
+
+Really appreciate it. 
+
+A question, for a better understand of your problem, would you be able to participate in a short survey a zoom call(voice or video) to talk about it? It’d help me a lot to understand your problem better to build a better product for you and for all people across the world. 
+
+I’d say I have 70% of my passkey ready and this call would help because I can get your feedback. 
+
+Let me know if you are open to it. 
+
+ThanksComment 52: Great! It's a good idea to have a backup method of signing in case you lose your phoneComment 53: Passkeys can be synced among devices in an ecosystem (like between a Mac and iPhone via an iCloud account) and passkeys for an application can be created for multiple ecosystems, as well.
+
+The biometric auth is part of what makes the passkeys phishing resistant. In terms of “safest” it’s way safer than a password.
+
+In the end, though, if you’re here to learn more about Passkeys in general that’s great. If you’re here to just gather information in the hopes of launching a competitor that’s likely a losing strategy given the complexity and work that’s gone into passkey development.Comment 54: Your trusted people can add passkeys for your accounts. This isn’t a real argument.Comment 55: You're welcome anytime. And sure I wouldn't mind a zoom call or a survey to talk about this. I would like to do anything I can to help with resolving this and making things simpler for passkeys. Please let me know whichever works best for you and we can set something up.Comment 56: My thoughts exactlyComment 57: Im here for both my g, for learning and to create something related to passkeys(Maybe it’s not a passkeys but a way to save them or something similar) 
+
+Have you already created one? I’ve been working on it for 2 weeks. 
+
+What do you do? Are you a passkey specialist or something?Comment 58: Oh, let's stuff an account with multiple passkeys and waste storage space. That is not an improvement! The argument is that passkeys waste storage space. Forcing people to create even more passkeys is not going to solve that.
+
+The whole point of sharing a password is that you have ONE item to share instead of having 4 passkeys for yourself and an additional X for each other person on the account, where X is the number of devices they use, where NONE of these keys are shared.Comment 59: Great to know bro. It looks you love passkeys. I’ll send you a dm and let’s schedule this zoom callComment 60: Yes I do and yes let's do this!!

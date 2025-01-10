@@ -1,0 +1,1 @@
+Comment 1: The only thing I can think of is to make sure that Bluetooth is enabled on both the computer and your phone, and if that doesn't work, try rebooting both devices.Comment 2: Yeah, same here. It was working fine last year but not anymore.

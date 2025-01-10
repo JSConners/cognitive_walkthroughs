@@ -1,0 +1,24 @@
+Comment 1: I'm having all sorts of problems with passkeys on iOS as well.
+
+Vendors are using it to force vendor lock-in.
+
+I setup passkeys on Best Buy, eBay and Kayak. And it was a mess:
+
+1. You can only sync passkeys across devices if you create them using Safari
+2. eBay will not use the passkey I created on my desktop. It always asks me for my password and then asks me if I want to setup a passkey
+3. The Kayak app can't use a passkey to authenticate. Only the website. The app keeps wanting to email me a "magic link," which it can't do because I created a passkey.
+4. I need to enable the Apple keychain as a password authenticator on my devices. So, now whenever I login to a site, my phone/tablet/Mac asks me if I want to save my password.
+
+I'm going to guess passkeys are probably a year away from being useful for the geek/hacker community and IT professions. And it's probably 2 years away from normal people to use it.
+
+And, as implemented now, your grandmother is never going to use passkeys.
+
+The fact that there is no way to sync a passkey between an iOS device and a Windows PC is going to be a huge problem.
+
+Good idea. Bad implementation.
+
+When that dialog box pops up asking you if you want to use a passkey or a security key, unless there is an API that allows a third-party password manager to insert itself into the list, passkeys are DOA for me.Comment 2: You can sign out of the Google account from any of the device then passkey will be deleted automaticallyComment 3: It's possible to delete them from the password manager on any Android phone connected to the account. Just go to the Security sections of your phone, tap on Manage passwords and choose Google. There you can manage them (rename or delete)Comment 4: >When that dialog box pops up asking you if you want to use a passkey or a security key, unless there is an API that allows a third-party password manager to insert itself into the list, passkeys are DOA for me.
+
+This is my stance as well. I'm not going to give up control of my credentials to Google or Apple. I will use them only when/if I'm able to manage them myself, use them on any device easily, and back them up to a local file.
+
+I agree that the sync issue is a big one. Scanning a QR code after having enabled Bluetooth may seem easy to its creators, but it definitely isn't that easy for the average person. They advertise them as easier than passwords and they can be, but not when you are using a desktop, at least with the current implementation.Comment 5: this doesnt work on my phone.. I can access all the passwords there, but not my passkeys (even though it says so).. and I have 8 passkeys for one demo site now..

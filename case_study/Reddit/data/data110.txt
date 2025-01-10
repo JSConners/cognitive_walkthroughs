@@ -1,0 +1,15 @@
+Comment 1: Seems to be missing a lot of the sites listed on [passkeys.directory](https://passkeys.directory)Comment 2: Ubiquiti does support 2FA, but not passkeysComment 3: AOD Federal Credit Union uses passkeys for passwordless logins on desktop browsers.Comment 4: Thanks for this website! Nice work!Comment 5: It's not obvious what the difference between the documents symbol and the refresh symbol in the details column is.Comment 6: This site ([https://passkeys.2fa.directory/](https://passkeys.2fa.directory/)) does not work with firefox, nothing is listed..Comment 7: As the two directories are separate, there will of course be instances where the directories differ.
+This directory is however more than twice the size of passkeys.directory and as this one is maintained, the number of sites will continue to grow steadily.Comment 8: Thanks for your input! The refresh icon links to documentation on account recovery. I’ll see with the team if we can make that clearer in any way.Comment 9: I’ve had one other person tell me that and they ran Firefox ESR. Are you also using that or just an outdated version?
+The reason seems to be that Firefox pre v120 has `layout.css.has-selector.enabled` turned off.Comment 10: Both directories are actively maintained - worth noting that passkeys.directory does not list sites that only support webauthn as mfa (not a passkey. Passkeys are for sign in.)
+
+Also, passkeys.directory intentionally does not list sites where ‘social sign in’ is supported and the social service (sign in with Google for example) is where passkey support is.Comment 11: I'm not using the ESR version, I'm using 120.0.1 64bit on MacOS..  It says it is up-to-date.
+
+I see you updated the site to point out the problem, which helps..
+
+Edit: I checked the firefox release version, and 120.0.1 is the legit released version..  https://www.mozilla.org/en-US/firefox/releases/Comment 12: That’s very strange. The only reason I can think of is if you or an add-on has manually set `layout.css.has-selector.enabled` to __false__  in _about:config_.
+Can’t think of a reason why that would be done though.Comment 13: >The only reason I can think of is if you or an add-on has manually set   
+>  
+>layout.css.has-selector.enabled to false in about:config
+
+Default seems to be false for this version.  Future versions will have it true it if [https://caniuse.com/css-has](https://caniuse.com/css-has)can be trusted..Comment 14: Oh! I don’t know how I could have missed that!
+Sorry! 😅

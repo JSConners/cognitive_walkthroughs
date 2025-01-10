@@ -1,0 +1,1 @@
+Comment 1: That’s a very good question. In the linux world passkeys are considered part of a plugin in a browser. But I couldn’t agree more. Linux should support passkeys natively.

@@ -1,0 +1,7 @@
+Comment 1: For someone else reading this Passkeys require one of two things
+
+To be setup on the device in the online setup of the passkey.  You may be able to setup a second passkey for each site depending on the specific site setup.
+
+or
+
+To be cloud stored and synced over to the device by setting up your password app on the device.  This is what I use.  With a family 1password account can share passkeys with multiple people.Comment 2: I got it to work. I wasn't completely sure how I did it, but this may have been the way.

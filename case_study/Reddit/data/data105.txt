@@ -1,0 +1,21 @@
+Comment 1: Your passkey is not synced to the Cloud, if you choose your phone as your Passkey then your phone will store the Private Key that is used to authenticate you and the website. 
+
+This means if you try logging on using another phone or computer it won’t have the Private Key to authenticate so you will have to create another Passkey. 
+
+Using the Google Titan or Yubikey will mean you can take the Passkey to any device as long as you can connect to it (USB-C, NFC, etc)Comment 2: On Android, passkeys stored within Google Password Manager is synced \[1\] since they are copyable passkeys, but on a computer such as macOS or Windows, sync depends on the situation.
+
+>"When you use passkeys on your Android device, they’re stored in your Google Password Manager. Passkeys are securely backed up and synced between your Android devices."
+
+The advantage? Passkeys that are bound to a hardware can be more secure since cannot be copied. \[2\]  But if you lose your key, you need to use a backup.
+
+>Copyable passkeys offer roughly the same security as “Sign-in with Google/Apple,” plus an additional key sync password.
+
+With regards to "What about maybe initial login to a passkey protected Google Account from a new phone"? \[3\]
+
+>If Google detects that you don’t have a passkey on a device yet, we’ll prompt you to create one. You’ll need one passkey per device, unless the device has some mechanism to “synchronize” passkeys to other devices already, like with Apple iCloud. In this case only a single passkey for all your iCloud devices is required.
+
+\[1\] [https://support.google.com/chrome/answer/13168025?co=GENIE.Platform%3DAndroid&oco=1](https://support.google.com/chrome/answer/13168025?co=GENIE.Platform%3DAndroid&oco=1)
+
+\[2\] [https://www.yubico.com/blog/a-yubico-faq-about-passkeys/](https://www.yubico.com/blog/a-yubico-faq-about-passkeys/)
+
+\[3\] https://safety.google/authentication/passkey/Comment 3: Thanks for the write up very helpful and useful. I suppose I just checked and iOS is the same it’s synced using iCloud.

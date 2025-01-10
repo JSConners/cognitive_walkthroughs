@@ -1,0 +1,17 @@
+Comment 1: Passkeys are a way to logon to a site. Are you trying passkeys on the PlayStation website or Microsoft? 
+
+I suggest configuring the passkey for either site on a laptop or MacBook if you can. Passkey creation on phones is also absolutely possible if you don’t have another device but I personally prefer using a full browser when possible on a non mobile device . The passkey itself can reside on the Samsung phone.
+
+For Microsoft see https://support.microsoft.com/en-us/topic/sign-in-to-your-account-with-a-security-key-b23a2a45-6ab8-4c86-9f22-bcadf60235aa
+
+
+For PlayStation see https://www.playstation.com/en-us/support/account/set-up-passkey-psn/Comment 2: I scan the qr on PS, for a Microsoft owned game
+It takes me to Microsoft login with passkey
+And it's for login.microsoft.com
+
+I'll check those links, thanks!Comment 3: Hello again,
+Checked the links but the problem seems to be with Microsoft passkey, I followed the link you provided and went to security settings and it prompts me to log in with passkey,
+And that seems to be the thing I miss,
+
+I also have an pc where it seem to work, but I don't know if its passkey there, it uses window hello or what's it calledComment 4: Use the pc and go to security settings. Then logon with passkey. Once done add another on Microsoft site and when prompted choose option to make it on your android phone.
+Scan qr code using Samsung phone and complete the passkey creation on phone. At which point you have two passkeys. One on pc and one on phone to login to Microsoft.Comment 5: Are you still having issues? I think I figured it out on my end...I was trying to login to a Microsoft site on my Samsung S24 and the Google pop-up "no passkeys found" kept popping up too.

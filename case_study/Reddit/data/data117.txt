@@ -1,0 +1,11 @@
+Comment 1: You are right. 
+
+1. I've already come across a site that only plans to support device-bound passkeys. The only way for this to be practical is if ALL sites support both device-bound and synced passkeys so the user can choose which type to use on ALL their devices. And let's be honest, if I can login to an account from at least 4-5 different devices, device-bound passkeys are not the solution.
+
+2. Passkeys completely ignore a large subset of users. Children, the homeless, the illiterate and the elderly are left behind. And once we're eventually forced to use passkeys instead of passwords, those people won't be able to log into anything at all. Try logging into Gmail on a public library computer if you don't have a phone or logging onto your family iPad owned by your mother. (And that's before we think about the ethics of storing and abusing a child's biometric data.)
+
+3. It is illegal to force someone to share their password while forcing someone to unlock a device with biometrics is perfectly legal. Passkeys ignore basic human rights to properly secure their data from government agencies.
+
+4. My phone's bluetooth is off by default as it is a security liability. I don't need to connect to other bluetooth devices. It makes it too easy for hackers to break in. So cross-platform authentication is out by Bluetooth is out, especially on old devices that don't even have Bluetooth-capabilities.
+
+The whole idea is great in theory, but in practice, it's not workable. It relies too much on technology that isn't always available and it requires users to be more technical than they are.

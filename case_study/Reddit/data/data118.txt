@@ -1,0 +1,1 @@
+Comment 1: Nice article, Microsoft has still a lot of work to do. But I have the feeling that Microsoft doesn't really want Passkeys since they have their own authentication app that they sell to companies to use as login method.

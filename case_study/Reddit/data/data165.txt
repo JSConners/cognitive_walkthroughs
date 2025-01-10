@@ -1,0 +1,11 @@
+Comment 1: Passkeys to multiple accounts for the same service can be saved on a single device regardless of whether that device is for general purpose computing (e.g. a computer, a phone, etc) or a dedicated hardware security key (e.g. a Yubikey).Comment 2: The passkeys are separate things from the device.
+
+Think of the device as a keychain, and the passkeys as well, keys.
+
+If both of them need to open their respective doors, they can do so by taking the same keychain (the device) and using the correct key (the passkey).
+
+The thing is, because they are sharing the device, either of them can access both of their accounts, just like how you can open both doors when you have access to the keychain, because it has both keys on it.
+
+This is why it is not advised to use passkeys on shared or public devices, and you only store passkeys on devices you exclusively own and use.
+
+Source: I have passkeys enabled for multiple accounts for a single website. Pretty much the same scenario.Comment 3: On my devices I can choose which passkey to use. I have a personal and a shared google account. Both on windows and apple devices works like a charm.

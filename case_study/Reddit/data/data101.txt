@@ -1,0 +1,32 @@
+Comment 1: Bitwarden along with other password managers do support passkeys on Android. Starting from Android 14 third party password managers are allowed to handle the passkeys. 
+
+And that’s exactly the role google playes in the sce where google handles the passkeys. It’s a password manager moving on to passkeys.   
+
+
+Is that an answer to your question? :-)Comment 2: To summarize: you are worried about a circular dependency.
+
+TL;DR: 1) Google doesn't allow this circular dependency; 2) Google hasn't yet gotten rid of passwords on accounts; 3) and they still have account recovery flows.
+
+Google does not allow you to store a Google account passkey for the same account in the passkey manager. You can store a Google account passkey for a different account in the passkey manager (which wouldn't have the problem you've described).
+
+Android does have a passkey for each signed in Google account that can be used in hybrid passkey flows to log into Google on another device. But this isn't synced via the passkey manager.
+
+Also, to summarize: to get access to your Google managed passkeys, you must sign into Google on a qualified Android device (high enough Android version and not a TV, IoT, etc) and *then* every your device lockscreen (PIN, password, pattern) from another Android device that was/is syncing to the passkey manager. 
+
+For signing into Google, Google doesn't even let you sign into an Android device for the first time with a passkey (at least not now; presumably that will change in the future). They still require your password OR account recovery. 
+
+Presumably, even if Google eventually offers the ability to get rid of your password, they will still have account recovery flows. They always have. And losing access to devices that have your Google passkey is a scenario that is much harder to blame on user error than forgetting a password.Comment 3: Thank you for the reply! Are you sure Bitwarden has full passkeys support on Android? I was testing with [demo.yubico.com/playground](https://demo.yubico.com/playground), it works fine with Bitwarden's dektop browser extension. But when trying to log in to that site on my phone there is only Android's native passkeys popup. I couldn't get the Bitwarden app to do it.
+
+Re. the second part, Google would be my password manager. So if I get a new phone and no access to the old one, I would need to log in to be able to log in. In other words, I'd be locked out?
+
+On the other hand, the way I see it, if Bitwarden is my password manager to which I know the master password of, I would be able to set up my main account on a new phone. That is, as long as I could install Bitwarden with no Google account set up (on the phone's initial setup I'd need to skip logging in to my main account), and Bitwarden fully supports passkeys on Android.Comment 4: Thank you, "circular dependency", that's exactly what tried to explain in many more words. Interesting that Google prevents it. Understandable, but kind of sucks that it's not possible to completely remove password logins yet. It's the weakest link after all, and it will keep being abused while it's there.Comment 5: Yes, if you use Google as your password manage. Or to handle the passkeys. On a new device you need to log in on your google account in order to be able to acces them. If you want to use a degoogled android phone and do not want to log in on you google account Bitwarden might be an option to handle the passkeys. 
+
+According to this page passkey handling with Bitwarden is cross platform:   
+[https://bitwarden.com/passwordless-passkeys/](https://bitwarden.com/passwordless-passkeys/)
+
+But they are a bit vague about it. Perhaps you need a premium account in order to do this? The Bitwarden documentation should state that somewhere.   
+
+
+Another thing Yubiko is about physical keys. Perhaps Bitwarden detects this on Android. You might want to try this website: 
+
+[https://webauthn.io/](https://webauthn.io/)

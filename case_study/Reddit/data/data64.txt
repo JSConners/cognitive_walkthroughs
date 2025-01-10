@@ -1,0 +1,29 @@
+Comment 1: Yeah, but maybe you should wait. There is no way you can rename your registered passkeys. I now have 3 passkeys in my Sony account that are all named like this:
+
+Mozilla/5.0 (X11; Ubuntu; Linux x86\_64; rv:123.0) Gecko/20100101 Firefox/123.0
+
+(Additionally there is also the date but not the time of registration.)
+
+2 belong to physical security keys, the third one belongs to the NordPass password manager. If I would lose one of my security key, how am I supposed to find find out which entry to delete? Welp, guess I would need to remove them all and then enroll the rest again. Geeez.Comment 2: I added the passkey from my windows computer and then I was no longer able to login to my PS app on Android.
+
+So I deactivated it to remove the saved passkey and set the password again.
+
+Then I set it up on the phone first with a passkey and the setup on the computer.
+
+Great I now how two passkeys. One on the computer and the other on my one phone.
+
+HOWEVER when I login to PSN I have the option to still choose the old passkey which no longer shows under my account under passkeys.
+
+This is stored on Windows Hello as I understand and by the looks of it there is no way to remove the old entry on Windows 10.
+
+This sucks because I am now stuck with a broken passkey and it is being presented every time as a choise when logging in.
+
+Any way to remove it?Comment 3: I just tried creating a PlayStation passkey on my Android phone on Chrome and everything went fine. Said it created a passkey in my Google Password Manager but when I go to sign in, I get a prompt saying that there are no passkeys for this site on the device. Checking the Google Password Manager on my phone confirms this.
+
+Now I also have a laptop synched with the same Google account and when I go to Chrome and check the password manager, the passkey is there!  
+
+I deleted the passkey and tried a few times but the same thing happens, the passkey ends up showing up on my laptop. So I decided to turn sync off on the laptop and recreated the passkey on my phone and this time the passkey showed up on my phone. Tested and was able to log in using the passkey on my phone. So I turn sync back on the laptop and the passkey that was on my phone disappeared and for some reason appeared on the laptop again.
+
+I'm a noob with all this but I don't understand why this is happening.Comment 4: You should be able to remove the Passkey from Windows itself. One current limitation of passkeys is that there is no way to sync the deletion of a passkey between the server and the client. You need to delete it on the server and also on the client separately.
+
+It's definitely a pain point that the FIDO alliance is aware of and working on.

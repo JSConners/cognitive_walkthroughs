@@ -1,0 +1,22 @@
+Comment 1: PIN are actually not as weak as they may seem. In modern systems, there is usually a hardware-enforced rate limit, so that only a few attempts are allowed. This way, even a 4-digit PIN (provided it's not obvious like a birth date) is acceptable.Comment 2: I love passkey. Should be everywhere by now on everything.Comment 3: PINs are pretty good in general since on some devices such as the Yubikey 5.. when you set it up as a Passkey you have to assign a PIN to use it. After that.. 7 wrong entries and the key basically "self-destructs" purging all FIDO2 keys making it completely useless.Comment 4: I think your fears are understandable, but unwarranted.  Let’s take your phone for example. In order to use passkeys, you’d first have to enter your passcode at least once to enable FaceId/touchID. After that, passkey will use biometric.
+
+If you use a passkey managed with 1Password, you have some protection. When you use faceID to open your vault, but it fails to recognize your face, it falls back to requiring your master password. It does not fall back to letting you enter your phone’s passcode like other apps.  This solves your concern.Comment 5: Also, you can have different PINs per device. Rather you should have different PINs.
+
+Regardless, people should protect their device PIns/passcodes just like you do with debit card PIN.Comment 6: For sure. I believe that too. I might have phrased my post in a bad way. I'm all for passkeys, like right now if possible, I'm just doubting or at least wondering about the security we put in place to protect them.
+
+For example in windows, when you enable windows hello, you **must** have a PIN in addition to whatever biometric or hardware security key (like yubikee I guess) you have. And by default those pins are numbers only. And that's what I'm afraid of, because that's the "weakest link" in the new passkey chain.Comment 7: That's exactly my issue - entering the passcode (which is the apple equivalent afaik of the PIN on windows or android). Because it's weak and/or needs to be remembered. My face or finger I always carry with me (usually 😅).Comment 8: But you have to enter your passcode at least once to enable Face ID. Like after rebooting phone. Passcode/pin is not  weak at all, but you must not share it or let people see you enter it.
+
+A six digit PIN where the phone limits the number of tries and can even slow you down on successive failures is actually VERY secure - as long as you protect the passcode.
+
+In fact it’s more secure than Face ID / Touch ID in that law enforcement can not force you to enter your passcode, but they can force you to use your biometric - at least in America 
+
+Still this is separate from passkeys. Passkeys are MUCH better than passwords in terms of mitigating the largest amounts of attack vectors:
+
+1. password reuse, 
+2. Websites hacked that did not practicing security best practices and storing username and password in the clear or weakly
+3. Social engineering and phishing
+4. Poor password strength
+
+And more.
+
+You can have separate passkeys for each device and even store passkeys on yubikeys for ultimate security (although more effort).

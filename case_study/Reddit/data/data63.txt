@@ -1,0 +1,13 @@
+Comment 1: In Windows 10 still nu GUI to see all your keys. But this article can help you to see them and to delete obsolete:
+
+https://superuser.com/questions/1527685/how-to-remove-webauthn-credentials-from-onboard-tpm-on-win10-device
+
+Make sure to scroll a little bit and you will find link to small tool that wil make deletion of your keys easier. Helped me at least.
+
+EDIT: There you go - https://github.com/passwordless/webauthn-fido2-key-removerComment 2: Wow. Thanks. This is very useful.
+
+What I did was remove the Windows PIN and add it again. This removed all the saved passkeys.
+
+I then set them up again and now there are only working passkeys, but this method is way better.
+
+Thanks again.

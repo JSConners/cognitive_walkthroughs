@@ -1,0 +1,112 @@
+Comment 1: Interesting! Thanks for sharing.
+
+Edit 1 : 
+
+I have red the article and two things came to mind:
+
+1. Imho passkeys are additional to security keys. In the case of Apple I can imagine that users authenticate themselves on a new device using the a Yubikey/Nitrokey/Any other brand. And after that they use the Passkeys stored in the iCloud Keychain to authenticate them on any given website.
+2. Wouldn’t it be a solution to manufacture a Yubikey/Nitrokey with a 1000 slots for discoverable credentials? Or would that be too expensive?
+
+Edit 2 : 
+
+Another option would be to allways use discoverable credentials with passkeys and allways non-discoverable credentials with Yubikeys/Nitrokeys. That way the server can be confident if a security key or a password manager is used. And in the case of a lost security key it’s pretty useless if found. Such a security key can be used together with a password manager using either passwords or passkeys. Since the password manager fills in the username and the Yubikey/Nitrokey is only doing what’s it supposed to be doing which is 2FA.Comment 2: > After also having worked in the WebAuthn / passkeys field for quite some time and answering many developer questions around the settings, I summarized my findings to help other developers when setting up a WebAuthn server for their use case.
+
+And you got it completely wrong. Let's see exactly how badly (spoiler: nearly everything in your post is based on incorrect information.)
+
+---
+
+Your post says,
+
+> if a user wants to add multiple non-resident keys to their account, it’s not possible to tell which of the stored credential IDs belongs to the provided user handle without providing more information. [..] The problem now is that there are two credential IDs associated with the one email address of the user. In the next login attempt, when the user provides their email address, the relying party does not know which credential ID to send back to the user’s device for authentication. However, the right credential ID is needed to derive the private key.
+
+**This is completely wrong.** What *actually* happens is that the RP looks up *ALL* enrolled non-discoverable credential IDs and includes them in the `allowCredentials` sequence, as defined in the [WebAuthn standard §5.5 Options for Assertion Generation](https://www.w3.org/TR/webauthn-3/#dom-publickeycredentialrequestoptions-allowcredentials).
+
+**Since your entire blog article is predicated on this misinformation, all of your following conclusions are completely wrong!** A user who has enrolled 2 (or more) non-discoverable will be able to complete the multi-step login process with *ANY* of the authenticators, *even if multiple are connected at once.*
+
+---
+
+Let's see how much this invalidates your remaining claims:
+
+> The reason for this implementation and behavior of non-resident keys is that non-resident keys were introduced in a time when WebAuthn was primarily used as a second factor in 2FA processes. Most of the times, users provided their user handle and password as first factor. Then, they used one hardware security key (e.g. YubiKey) as second factor.
+
+**Nonsense.** It's been commonplace for years that MFA (aka 2FA, but any *multiple* factor enrollment / login process) has *multiple* options. For example, pre-FIDO users might have enrolled both a TOTP and their mobile phone via SMS (or phone call) for tokens: they can *pick either one.*
+
+FIDO works the same way here, *including with non-discovearble* credentials! You completely miss this point, but for a YubiKey (or any FIDO-compliant device) one can enroll multiple credentials, provided of course the service permits it; this is *highly desirable* so that a backup can exist in case of loss, damage, or theft of one of them, and allows users more flexibility in removing less-secure forms of MFA (SMS in particular.)
+
+> In resident-key scenarios, the user simply presents their authenticator, and the relying party can pull up the necessary credentials from the device itself (no credential ID and thus no user handle needs to be provided by the user). Non-resident keys lack this simplicity, as each login attempt must be accompanied by the specific credential ID, which the relying party must supply or the user must select.
+
+**This is mostly incorrect.** The **user** does **NOT** "select" the credential ID (regardless if the RP is sending 1 or 10 `allowCredentials` in the list per the aforementioned WebAuthn standard.) In fact, the user doesn't even *see* the credential ID.
+
+What really happens when multiple enrolled FIDO non-discoverable credentials is that *every connected device* will prompt for User-Presence, and the user may pick *any* connected device. You go on to double-down on this claim a moment later:
+
+> The core challenge for developers and product managers is managing multiple credential IDs efficiently and ensuring a user-friendly experience. The risk lies in complicating the authentication process because users need to select the right credential ID manually, potentially eroding the user experience and nullifying the convenience passkeys typically offer.
+
+**This is even more wrong.** The user **does not "select the right credential ID manually"** as you claim! They simply touch their FIDO token. **That's it: touch the device.** The user doesn't need to know a thing about Credential IDs or choosing a token before the login attempt: none of that.
+
+You then go on to **fail to understand this and talk about a made-up series of failure modes that don't exist in reality:**
+
+> [#1]. Try Every Stored Credential ID One by One: This is a rather theoretical option as manually trying all stored credential IDs on the authenticator causes a really bad user experience, because users would potentially see many errors until the right one matches.
+
+**Nope.** What really happens is that **EVERY** enrolled credential is supplied. See the link above to the WebAuthn stnadard where it clearly says the `allowCredentials` is a *sequence* of `PublicKeyCredentialDescriptor` objects. A sequence, if you weren't aware, is a **list** -- many of them can be supplied. A user that has enrolled 6 FIDO tokens gets **all 6 of them back**.
+
+Then the *browser* is free to **try them all** and does so **without any user interaction** -- failures here **are not visible to the user** which you go on to claim is the source of a "really bad user experience." It seems as though you haven't actually tried this, because you'd clearly know this isn't the case if you had.
+
+> [#2]. Users Provide the Correct Credential ID Upfront: Besides suppling the user handle, the user also sends the right credential ID along, which is also very bad user experience, as managing the random credential ID is complex.
+
+**Absolute rubbish.** This is never how WebAuthn was designed to work, and no workflow operates this way. You're just making things up to scare people aware from non-discoverable credentials, or honestly believe that making things up makes you an "expert" in the field. Ugh.
+
+> [#3]. Only Allow One Non-Resident Key Per Account [..] [#4]. Implement Advanced Device Management [..]
+
+**Nope. Not necessary.** (How do I know? Because I've done it, on demo enrollment services: stay tuned and I show the OP and all readers how in a moment!)
+
+> Users Manually Choose The Right Non-Resident Key: From all presented options, this is the most viable one. It still introduces friction as users need to provide names for each non-resident key, so that they later do not need to decide based on a cryptic credential ID. Instead, users can then select the non-resident key based on a human understandable name.
+
+**This is all very wrong.** That's not how this works at all during authentication time. Even with 2 (or more, could easily be 6 or 10) enrolled non-discoverable credentials, they appear in the `allowCredentials` sequence (list.) **Users do not pick which one to use in advance**, and they further **do not need to select the name to use them;** this applies **even if multiple FIDO tokens are plugged in!**
+
+---
+
+The "recommendations" from Corbado, at least *this* particular writeup, are **downright bad for user experience!** No one should follow these recommendations: **Corbado and Vincent's information is creating a downright hostile user-experience here!**
+
+> For developers tasked with implementing applications that should be able to handle multiple non-resident keys per account, we recommend the following (in case only supporting resident keys or maximum having one non-resident key is no viable option): 1. Let User Manually Choose the Right Non-Resident Key:
+
+**This is completely unnecessary.** Just send the proper response with the **sequence** (list) of `allowCredential` which contain the non-resident credential IDs. The browser will allow *any* connected token to be activated, and so long as the user activates *any* token with a matching credential, the login will succeed.
+
+Obviously this won't work if a user has 2 tokens connected and has only enrolled one of them (but this doesn't work with a discoverable token in a no-username login situation either, so claiming that it's somehow better for UX is equally nonsense.)
+
+> Understanding the behavior of non-resident keys within passkeys and adopting recommended best practices can help maintain the security and user experience that passkeys promise.
+
+Well, here we get to the real crux of the issue. **Corbado is seemingly here to shill discovearble FIDO tokens, and is apparently willing to promote misinformation to do it.** The alternative is that the self-described "passionate authentication expert and founder of Corbado" has absolutely no clue how WebAuthn works. At best this article is completely misguided, and at worst, Corbado's founder is actively spreading misinformation to further their own "Passkeys as a Service" business.
+
+---
+
+So how can **I back up my claims?** Easy: **Try it yourself!**
+
+1. Register a new user on the [Yubico Playground](https://demo.yubico.com/playground).
+2. Once logged into the new account, click 'Add Security Key' (near the top,) and do **not** check the 'Enable Passwordless login' (leaving unchecked will create a *non-discoverable* credential)
+3. Complete the WebAuthn enrollment ceremony
+4. Insert a *different* FIDO token, and repeat steps 2 to 3, enrolling the *second* authenticator ^({either swap the tokens, or leave both connected but tap the 2nd one})
+5. Optionally, create recovery codes (usually recommended for "real world" services, but for a demo users can skip it if not wanting to be as realistic; same applies to alternate, non-FIDO MFA methods.)
+6. Click the 'Sign Out', to log out of the demo service
+7. Now **plug both FIDO authenticator tokens in** -- this is the part that the referenced Corbado blog *claims is very hard for users.* I'm going to show that is *complete and utter nonsense*
+8. Sign in again, using the username & password
+9. When both FIDO tokens are present in the machine, **they both will flash, and users can touch either one.**
+
+^(Edit: formatting)Comment 3: Your bit about non-resident keys isn't entirely accurate: "This means either the user can only have one non-resident key per Relying Party or needs to decide beforehand, which non-resident key should be used."
+
+Every major deployment of NRKs (aka fido1 security keys) supports multiple keys per user. The key IDs (which are the wrapped keys) are provided in `publicKey.allowCredentials[].id`, and `allowCredentials` is a list. As an RP, you just provide the full list of key IDs associated with the user, the browser checks which one(s) are actually available, and only asks the user to use one of them.Comment 4: Hey u/Jybodi,  
+  
+Thank you for your detailed response, and I appreciate your constructive feedback.
+
+I apologize for any confusion that this article may have caused. Our intention was never to mislead anyone, and I must admit that our original intention and explanations in the article were not specific enough. Consequently, I have completely rewritten it to hopefully make things clearer.
+
+Our initial goal was to provide a way to help users select the appropriate YubiKey with an empty / non-complete allowCredential. This aim may have inadvertently led us down an incorrect path. To clarify, our intention was not to select a credential ID per se, but rather to suggest a usage like “use YubiKey A” and then proceed with the assertion. I apologize for this confusion.
+
+We have since revised the article to make it clear that, in the case of non-resident keys, you should set allowCredentials and allow the browser to manage the rest.
+
+Furthermore, it was not our intention to discredit non-resident keys, such as YubiKeys. We strongly believe in their use, particularly for internal authentication purposes among employees, e.g. including for AWS and SSH access, where we also utilize them internally. However, we recognize that, for non-technical external customers, passkeys might be more appropriate.
+
+Thanks for your feedback! If you would like to provide any of your social profile URLs, I would be happy to credit you in the article.Comment 5: You're right - valid point and sorry for not being clear enough in this point. I corrected it to: "This means the user needs to manually select in an operating system / browser modal which non-resident key should be used."Comment 6: > I corrected it to: "This means the user needs to manually select in an operating system / browser modal which non-resident key should be used."
+
+Your correction remains wrong. There's no selection required in a modal: the user simply taps the desired FIDO token and the browser uses that. See the workflow at the end of my top-level reply.
+
+If you're serious about fixing your misinformation, you effectively need to retract the entire claim you make in this blog post.

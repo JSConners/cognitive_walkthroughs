@@ -1,0 +1,5 @@
+Comment 1: The bad news is that it is only supported by browser extensions at this time. Also no export/import.
+
+All expected features related to Passkeys will be supported in future releases (export/import, mobile support, Passkey login to BW itself, etc).
+
+[The BW team has acknowledged that expectations for initial support were not communicated well.](https://www.reddit.com/r/Bitwarden/comments/17lgtef/passkeys_in_2023100/k7gr5iw/)Comment 2: AFAIK Passkey import/export is still being ironed out by the FiDO standards body, so bitwarden *can’t* export keys unless they create their own standard or export them unencrypted

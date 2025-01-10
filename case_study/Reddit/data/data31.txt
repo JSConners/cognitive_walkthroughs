@@ -1,0 +1,10 @@
+Comment 1: My thoughts, pretty much, just communicated more coherently than I've been able toComment 2: TLDR:
+The authors main issues revolve around passkeys promoting platform lock-in, excluding external security keys, suffering from platform bugs/data loss, lacking true open standards, and providing a poor user experience in the name of being "passwordless."
+
+These issues seem self contradictory; you complain of user lock-in while also complaining about poor user experience. Maybe what the author calls lock-in is actually convenience to improve user experience? 
+
+Also, couldn't a user as easily delete their passkey in their 'locked-in' platform as they could lose their hardware key in an 'open platform'???
+
+In reality the future for passkeys is bright and the stated issues are growing pains.Comment 3: Thanks for sharing. It’s a long ramble by a grumpy dev so it should be taken with a grain of salt though.Comment 4: Passkeys are going to fail. Just look at the majority of posts in this sub. It’s people having trouble using passkeys. Corporations are not going to want to deal with this. The minute they get wind of the workforce and customer support required, they will pull the plug.  I’m not happy to state the above, but it’s reality.Comment 5: > These issues seem self contradictory; you complain of user lock-in while also complaining about poor user experience.
+
+These aren't contradictory. He's saying we have the worst of both worlds at the moment.Comment 6: It’s a dev who wrote the WebAuthn library for Rust, a W3C WebAuthn participant, and a member of the 389 directory server team. Generally I agree about the grain of salt for dev grumblings, but in this case the guy has the creds to be making his claims which imo are non trivial.

@@ -1,0 +1,1 @@
+Comment 1: Yes, you can keep on using them. That is the whole point of syncable passkeys.

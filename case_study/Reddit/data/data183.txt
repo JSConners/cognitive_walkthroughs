@@ -1,0 +1,43 @@
+Comment 1: Here's a directory of passkey supported sites https://keepersecurity.com/passkeys-directory/Comment 2: Microsoft is also listed on passkeys.directory, but does not support passkeys.  Their passwordless option is proprietary and requires the Microsoft Authenticator app.Comment 3: Necro-post to report that I was also missing the option to set up passkeys on eBay with Chrome on MacOS until I disabled uBlock Origin for the page. Then the passkeys option immediately showed up upon refresh.Comment 4: I managed to set up a passkey for eBay (even wrote a blog post about it) - which device / OS were you using?Comment 5: You can easily add sites to the listing.Comment 6: Would be nice to have a pinned post with directory infoComment 7: Microsoft does support passkeys for personal Microsoft accounts, I do have them setup and working for a month or so on Android Phone and on a Yubikey. They also have the Microsoft Authenticator passwordless method that one doesn't use passkeysComment 8: Tried on macOS and iOS, can you point me to your blog post please?Comment 9: After figuring out the eBay thing, I tried the same with Microsoft, and sure enough, they are blocking the option for passkeys if you use Safari.  If I try Chrome then it gives me an option to enable "Windows Hello" (lol I am on a Mac) for a local-device-only passkey, which to me defeats the whole point.
+
+I wish there were some way to put notes into [passkeys.directory](https://passkeys.directory), to warn future people of these limitations on some sites.Comment 10: Sure: [https://www.corbado.com/blog/analysis-of-sign-ups-and-logins-with-passkeys-best-practices-from-ebay](https://www.corbado.com/blog/analysis-of-sign-ups-and-logins-with-passkeys-best-practices-from-ebay)  
+
+
+Happy to provide more help and insights (disclaimer founded a startup in this space)Comment 11: For what it’s worth, you can select “use another device” while setting up a passkey in Chrome on macOS, and you can scan the QR code with your iPhone. Then, that passkey will be synced to iCloud Keychain and available on Safari on your Mac.
+
+It’s early days, hopefully this stuff will shake out over time… 😅Comment 12: If you click on cancel there, it shows the other options from chrome and you can use another device.   
+Since a few months Microsoft is part of the ones with the best implementations of passkeys. You don't even have to enter your email anymore to login as passkeys are unique. 
+
+Google still asks for emails as an hybrid solution but it's not needed anymore on a full implementation that replaces passwordsComment 13: Thank you!  I didn't try signing up for a new account since I already have one, and I don't recall ever seeing the pop up at login time.  However I poked around a little more, and tried Chrome... apparently they are blocking passkeys if you are using Safari!  It also says "This passkey will only be saved on this device" and I verified that after being created, the passkey does not work in Safari or on other devices.  I also found that SMS 2FA is still enforced even when using passkey.
+
+So the bottom line is that the eBay implementation has serious limitations that make it actually a worse experience than just using a password.  Unfortunately not useful at all for me as a Safari user.
+
+Anyway, thanks again for your help, I appreciate it!Comment 14: today I noticed my Pixel Password Manager is now recommending adding passkeys I assume it is plucking off the Passkey directory the OP mentions. (this is definitely cool!)
+
+adding a Passkey worked great w KAYAK and BestBuy - secured in an instant & awesome they are helping pave the way!
+
+eBay is a whole other pickle.  I read yr blog post & whatever Android 14 is expecting and what eBay.com is reporting don't seem to jive.  
+
+I've previously enabled biometrics for eBay maybe 2 months ago yet Google Password Manager still doesn't show a key for eBay stored.
+
+the general gist of your post seems to allude to the fact that eBay may have their own custom implementation?
+
+When I look at KAYAK in my Password Manager, it clearly shows 2 entries: the original user/password pair & the new Passkey.
+
+not the case w eBay.
+
+where is eBay storing the key on my phone then?Comment 15: Playing with passkeys settings on this demo site https://webauthn.me/debugger (which is really well explained with animations and opensource), you can see that the "residentKey" is an option that a site can use to force the passkey to be a "device bound" one, preventing it from syncing to other devices.
+
+So it's a choice of the site itself for increased security.
+
+Is it justified for eBay, not sure, but it seems to be the choice they made, at least for nowComment 16: I'm glad I found this because I just tried setting up a passkey for ebay and was losing my mind when it kept asking me for the password every time I tried to sign in on a different device, browser etc. Especially since google seems to have it set up perfectly. I'm also confused as to why after setting up a separate passkey on safari (have one on chrome too) on my macbook, why can't I use that same passkey on safari on my iPhone? Is it also blocking it despite it showing up in my icloud keychain the same way chrome is blocking safari? Also doesn’t seem to work if I use incognito mode in safari.Comment 17: in general, passkeys are based on an open-standard but each relying party (e.g. eBay, KAYAK, etc.) have their own custom implementation. Currently, there are very little common best demonstrated practices to passkey implementation.
+
+A follow-up question:
+
+When you created the passkey 2 months ago, were you sure that it was stored in Google Password Manager (and that you were on Android 14 back then)?Comment 18: ah - sounds like growing pains.
+
+to answer your question, I‘m pretty sure I was on Android 14 back then but I’m quite certain \*\*no\*\* passkey was stored in Google Password Manager as there has always only been a password-based key that shows up in GPM (unlike KAYAK and BestBuy as I mentioned above that now have 2 entries each)
+
+If I go to [ebay.com](http://ebay.com) sign out and then sign back in (on my Pixel 6a), it asks for my fingerprint and it signs in.
+
+I can’t help but wonder which credentials are being stored where and how the authentication is taking place!

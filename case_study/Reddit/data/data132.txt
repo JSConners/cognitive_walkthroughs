@@ -1,0 +1,8 @@
+Comment 1: Huh iCloud keychain should support passkeys. You can also use 1Password. Both should work fine. Or am I missing the point?Comment 2: I've been using a passkey for sign-in on Best Buy's website since December, 2022. It works fine with iCloud Keychain.
+
+Are you trying to add one via your iPhone or a Mac?Comment 3: Why not use Bitwarden? It's open source and the free tier does almost everything.Comment 4: You are absolutely right:  It all should have 'just worked' but instead I received that totally incorrect response from the Best Buy site.Comment 5: And, you know, 1Password works superbly on the iPhone with facial recognition, so well that I am simply not going to bother with Passkeys unless forced to do so.  Just the latest not-ready-for-prime-time technology IMHO.Comment 6: The instruction I found were how to do it on an iPhone, so it was on my iPhone that I tried it.Comment 7: Because I am already deeply invested in 1Password, which I have had for six or seven years.Comment 8: 1Password also supports passkeys. Perhaps it’s the best buy webs where the passkey implementation isn’t functioning. I had the same thing with ebay once. Don know if they fixed that. With Google passkeys work like a charm in my experience.   
+What might be an option is to try this website : https://webauth 
+
+And try it with 1Password. It should work. This website is a test website for passkeys.Comment 9: >https://webauth
+
+Hmm.  Tried Safari and Brave and both returned "can't find the server".Comment 10: Strange, well than I am out of options. Well if you use 1Password, difficult passwords which aren’t reused and 2fa your are fine anyway.

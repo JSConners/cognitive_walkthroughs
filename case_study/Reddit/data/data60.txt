@@ -1,0 +1,5 @@
+Comment 1: >I want to start using passkey but if my finger print stop working without a screen protector or if I changed phone would that lock me out of my account permanently
+
+Depends on where or which login credential storage provider you are storing that passkey with
+
+If you’re using icloud for example, then it should be backed up to your icloud accountComment 2: Does google have a backup like the authenticator. It saves on to my gmail account so if I log in with a new device the code is there too.Comment 3: It works with authentication codes, but i’m not too sure about with Pass🔑sComment 4: Consider using a Yubico Yubi🔑 to save a Pass🔑 for whatever account you want direct unconditional access to, assuming the platform of the concerned account(s) allows for so to happens

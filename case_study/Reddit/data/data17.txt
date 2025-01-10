@@ -1,0 +1,13 @@
+Comment 1: Firstly you don’t use your public key to login. The website/app presents a challenge that your device signs with your private key. The website then uses your public key to verify the challenge response is authentic. 
+
+There is no way to copy and paste your private key, as this would negate the phishing protections afforded by passkeys. By design, passkeys can only be used on the site for which they are created, and this is enforced by the browser/client. 
+
+You might be better off using a native password/passkey manager for example keychain on macOS or Chrome’s manager. I have no hassles using passkeys on a Mac, even in incognito mode.Comment 2: It’s impossible to copy-paste the key because that’s not how passkeys work. it’s a system that works behind the scenes and the security is on how you approve using the passkey.  In other words, signing in is the second factor.
+
+you also hopefully realize you’re talking about settings in a specific browser.  You‘ve tried looking at the settings and other browsers, right?
+
+also, which platform you’re on matters too.
+
+1password requires entering any password in normal mode in Safari after a period of time also in case you didnt know.  Which I want becsuse it protects using themComment 3: Other comments about how you can't copy and paste passkey credentials are correct. And same for how an OS passkey manager should work.
+
+An alternative that achieves using a 1Password hosted passkey is to use Firefox. Firefox allows you to set whether an extension is allowed in private/ingonito windows

@@ -1,0 +1,49 @@
+Comment 1: On chromebook:  
+chrome://settings/securityKeysComment 2: >chrome://settings/securityKeys
+
+Are you able to view and delete individual resident credentials with this command on  Chromebook?
+
+The command does nothing on my Chrome browser under Windows 10.  I do have a **chrome://settings/Passkeys** command that shows passkeys stored in Windows Hello but it does not let me see resident keys stored in the Titan.
+
+Do you know a way to view these credentials from Windows?Comment 3: As far as I can tell from poking around online, those settings are not available in Chrome on Windows. This could very well be a limitation of the OS, but that is entirely speculation on my part. The settings are definitely available on macOS, Linux, and Chrome OS.Comment 4: I just got a new Titan Key (version K52T) today. 
+ 
+No the Chromebook reference I mentioned before does not allow you to enumerate the Passkeys stored on the Tritan key.  Very unfortunate.
+  
+When I access chrome://settings/securityKeys the following is displayed:  
+
+===  
+
+Manage security keys  
+
+Manage phones  
+Control which phones you use as security keys  
+
+Create a PIN  
+Protect your security key with a PIN (Personal Identification Number)  
+
+Sign-in data  
+Manage sign-in data stored on your security key  
+
+Fingerprints  
+Add and delete fingerprints saved on your security key  
+
+Reset your security key  
+This will delete all data on the security key, including its PIN  
+
+===  
+
+"Manage phones" successfully displays the phones I have logged into and which can be used as a security key  
+
+"Create a PIN" successfully allows me to set up and change a PIN on my new Titan Key.  The pin is then required to add or access a passkey on it.  
+
+"Sign-in data" does not seem to work with the Titan Key and returns the following message:  
+This security key can't store any sign-in data  
+
+"Fingerprints" does not work with the Titan key and returns the following message:  
+Your security key can't store fingerprints  
+
+"Reset your security key" - I have not used this as I have serveral Passkeys stored on the new Titan Key and I do not want to have to recreate them.  
+
+===Comment 5: Do the settings in those non-Windows operating systems allow you to view a list of the resident credentials stored in the Titan security key and to individually delete one of those credentials?
+
+I'm asking because some on Reddit claim that the new Titan key runs a 2.0 version of CTAP that does not allow for that credential management.  They say the key needs version CTAP 2.1 to be able to manage individual creds.Comment 6: Thanks for the update. According to some, the inability to enumerate resident credentials is intrinsic to the Titan. I've also read there is a flaw in the attestation certificate that prevents enrollment at sites that check attestation.Comment 7: I confirmed this with a Titan I know has resident credentials. Interestingly it does enumerate credentials on YubiKey 5 series keys and allows for individual deletion.Comment 8: I don’t have a new Titan key to test with, but I’d take the others at their word. It certainly works as stated for other brand security keys (e.g. Yubikeys).Comment 9: I wonder if this means that if I remove and re-enroll a passkey from a site where I have previously enrolled, will it overwrite the previous entry on the Titan key, or add another entry?Comment 10: I believe that is how it should work. Given the problem covered here and the certificate problem I have returned both my Titans to Google as faulty and received a full refund.

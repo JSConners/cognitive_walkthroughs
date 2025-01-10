@@ -1,0 +1,1 @@
+Comment 1: This wasn't too much of a stretch, since it has been possible to do this yourself for years, by reconfiguring PAM to use hardware FIDO tokens.

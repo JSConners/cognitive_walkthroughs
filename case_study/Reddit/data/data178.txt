@@ -1,0 +1,35 @@
+Comment 1: Two questions:
+
+1) Did you create this passkey on the same device / browser?
+
+2) Does the prompt always appear when you login or only when you manually click on "Create passkey" in the passkey settings?Comment 2: I'm glad others are having this problem.  I read through the comments... the implementation makes passkeys worthless (you still need a password for any device that isn't the one you created a passkey).Comment 3: I have the same issue. Google account prompts to create new passkey each time even though one was already created on this Windows 10 computer running current built of Chrome browser. I followed the step to delete the passkey - and it would create one fine.  But the next time I open Chrome, I am prompted again for Windows 10 pin, verify that it is me with Google app on my home, and get a prompt to create a new passkey and get a message telling me a passkey was already created.  I am looking for troubleshooting steps to see why Chrome is not using the existing passkey created on this Windows 10 computer.  Clear all cache with Chrome did not help.
+
+I should add that I am able to use Chrome passkey on different computers Windows 11 and Mac OS.Comment 4: Hey, thanks for answering!
+
+&#x200B;
+
+>1. Did you create this passkey on the same device / browser?
+
+Yes, I did it all in Chrome. So created in Chrome, then enabled the option to prefer non-password mechanisms for logging in. However, it's always prompting for password. When I chose other options for authentication I get no Passkey option. It will let me create a new passkey, but then says "oh you already have one on this device".
+
+&#x200B;
+
+>2. Does the prompt always appear when you login or only when you manually click on "Create passkey" in the passkey settings?
+
+It only appears upon clicking Create passkeys.
+
+I add some screenshots here + a hilarious survey that popped up in the middle of it all.
+
+https://imgur.com/a/z7k00AXComment 5: Alright, thanks for the screenshots. If you visit this page ([https://myaccount.google.com/u/1/signinoptions/passkeys](https://myaccount.google.com/u/1/signinoptions/passkeys)) can you see the passkey (it should be something like "Chrome on Mac") - so what happens if you delete this one and create a new passkey? Is the "You already have a passkey for this device" message still appearing?Comment 6: >https://myaccount.google.com/u/1/signinoptions/passkeys
+
+With these steps it works just fine, thank you very much vdelitz for your engagement in this!Comment 7: wasn't the whole point is that you would be able to use a passkey from a different device using QR like an iPhone?  
+If a passkey is only offered to be used on the same device it was created, it is a very limited implementation of passkeys...Comment 8: Glad it worked for you :)Comment 9: There's a few limitations right now, critically, passkeys don't sync between being created on a mobile device to the Desktop version of Chrome on Windows/Mac yet. So you should be able to use the QR code method to use that passkey to authenticate once, but it's just using it from the mobile device that must be in proximity of your laptop device. Once it does that then the interesting part is that it should prompt you to create a separate local passkey that is just stored on that laptop and essentially orphaned from actually being synced into your google account. Basically an artifact of using passkeys as an early adopter before the sync aspect is fully working. 
+
+What I'm not sure about is what happens to all these orphaned passkeys that we have created on say Chrome on Windows, Chrome on MAC once that sync functionality is enabled, do we all of a sudden of a ton of passkeys syncing?Comment 10: I played with it for a while yesterday. I was even able to create passkeys using my hardware FIDO2 keys. However, sadly the problem as you described, is that they are only usable on the device which created them for some reason.
+
+Further more, if i create a passkey on safari on mac, i cannot use it on chrome for mac (on the same device), and vice-versa.  
+While passkeys are supported in a way, that you can create a passkey for each client / device combo, i think this is widely inefficient. Especially when iCloud already knows to sync passkeys for all devices logged into the same account.
+
+I expected so much more from this feature launch by google, as the browsers themselves already fully support all of the passkeys features needed to use them properly.Comment 11: I guess maybe they just wanted to get it out there in a phase1 even though it's in this incomplete state. I think it's going to make it a bit tough for your average user to really adopt and use it with all of the holes tho.
+
+I don't see any ETA listed on the Google developer site regarding the lack of sync of passkeys for Chrome on Windows and Mac.

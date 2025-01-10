@@ -1,0 +1,29 @@
+Comment 1: Nice answers to the questionsComment 2: I did not read all of it, but for different reasons I have more than one device. An older phone can be a passkey backup, but also for my bank accounts.
+I have passkeys also stored on my tablet(s)
+If possible having a different location for storing your hardware may even be better.Comment 3: I’m confused by these passkeys. What happens if I should die and my loved ones need access to my accounts?Comment 4: Another recovery question if you don't mind. If I'm traveling overseas & my Android phone gets stolen, how can  I set up my Google account on a new phone I buy locally if I'm using passkeys?
+
+I have all kinds of emergency info in my Google Drive, like photos of my passport, etc. I also use Google Authenticator to log in to many websites.
+
+Right now that account uses a long passphrase that I remember & everything else is in a KeePass file stored on Google Drive.
+
+Thanks for the great answers here and on your website. They've been very helpful to me.Comment 5: It seems a lot is dependent on how well it’s implemented…
+
+My early encounters with passkeys have not been positive. It is not intuitive to use and is too different in concept from passwords. This will cause confusion  and frustration with users with multiple devices and or OSes (which is most of us these days) followed by abandonment. That might be why most of the buzz around them has already died down. 
+
+I think it’s not ready for prime time and suspect it will remain a niche until something better comes along that carries broad industry support, is easy to adopt by both service providers and users alike.Comment 6: Thank you!Comment 7: Yep! The shorthand I use for this is "store your backup key in the same place/level of security you would for essential documents (like your birth certificate)"Comment 8: So this is is actually a larger “account recovery” question; and is an important one! The gist is that it’s not really related to passkeys, because the same problem would exist with a complex password you never told anyone.
+
+Some of the solutions that we currently have for this are:
+
+- your traditional email-based recovery options
+- Apple’s Legacy Contacts feature (and similarly implemented approaches)
+- passkey devices often have a PIN in case biometrics fail, which would allow loved ones to act on your behalfComment 9: So this largely varies on a per-service basis (which is why it’s important to choose a primary vault that works for your lifestyle!), but Google has an answer for you here! https://safety.google/authentication/passkey/Comment 10: Actually, it’s easy. You use a password app (such as 1password) and you leave the password to that app with a trusted family member who can access it on your computer/devices and they will be able to get to all your important account passwords. Passkeys, apparently, work differently with the biometrics and not sure how you handle that.Comment 11: Thanks for this!
+
+It looks like I can still fall back to my password, which solves the issue for me, at least for now.
+
+I'll have to keep thinking about this lost/stolen phone scenario. It actually happened once a few years ago, so I'm pretty sensitive about this. :)  I'm all for improved security, and maybe (hopefully) passwords will disappear one day. I should figure out a different 'Plan B'.
+
+Thanks again for your help, I appreciate it.Comment 12: Ah! So passkeys are actually stored in that same password store that you’re describing, so as long as someone can access the vault, they’re good!Comment 13: Are they? If they are stored there but only useful if the biometrics are available then what are you going to do?Comment 14: Ack, marketing strikes again. When companies say “passkeys are protected by biometrics”, they mean that they’re oftentimes stored in a keychain like iCloud or 1Password that allows you to authenticate via biometrics.
+
+Passkeys can also be stored on hardware security keys that don’t have biometrics, but only use a PIN. And most biometric systems have a PIN or password as the fallback.
+
+Essentially; if you’re able to prove your identity to access the vault (either through biometrics, a PIN, or the vault password), then you can use a passkey. The browser/OS does the work of getting the private key from your vault, doing the handshake with the service, and authenticating youComment 15: The layers. I understand the Icloud and 1password (or lastpass, etc.) can be accessed via bio or personal password.  The passkeys are the confusing part. they need a trigger and it makes it sound that the trigger is a bio or apparently another pass code. then the hard part comes when you have a spouse that doesn’t want to embrace new tech or even a password manager. How can you share passkeys or logins if you’re not using the same platforms? It’s a mess and since there are only a few entities going to passkeys at this point, I think I’ll wait till it becomes mandatory to switch.

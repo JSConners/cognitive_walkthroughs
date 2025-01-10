@@ -1,0 +1,21 @@
+Comment 1: Passkeys are a multi-device authenticator, so one could have their passkeys backed up to a cloud service (via Apple iCloud, or Microsoft or Google) and replicated across multiple devices (like phone, laptops, tablet, etc.)
+
+Compare that to the “worst case scenarios” of passwords. Users forget their passwords all the time, attackers can get into accounts and change the password to something unknown to the account owner, reused passwords can be compromised, etc.Comment 2: This is my nightmare scenario - getting exiled from my financial accounts.
+
+Having said that... I'm accessing [IRS.gov](https://IRS.gov) and Social Security using [ID.ME](https://ID.ME) where I use a Yubikey, which I keep in safe. I'm OK with that. 
+
+If I can have numerous passkeys on 2 or 3 different cheap and tough devices to access my accounts, like Yubikeys  (stored in different places, with one being with an out-of-state relative) I'm OK with that.Comment 3: Typically when you enable strong FIDO2 authentication on some account, they'll also give you a recovery code of some kind in case you lose your authentication method. Print that sheet off and throw it in a safe.Comment 4: Ok thanks. But for instance, if my passkeys are stored on Google, and I lose the only mobile phone I have, how can I log in into my Google account on a different device like a pc?Comment 5: Financial institutions are notorious for not following industry standards. Many use just a pincode with some proprietary ancient 2FA. Expect financial institutions to be the last to implement passkeysComment 6: Using Google as an example, one can turn on multiple “authenticators,” of which passkeys are just one. Accounts can still have a password, one can use hardware security keys like YubiKeys, etc.Comment 7: Apple do have a recovery flow for iCloud Keychain for instances, where you’re locked out of all devices. I wonder if it’s used for account access of a deceased member. 
+
+Given that there is no single ‘recovery code’ for a passkey, (as they’re passwordless and that code would essentially be a form of password) I’d say it’s best to prepare for having at least one device set up to help you get back in. 
+
+1Password have account recovery for family, teams and business accounts - perhaps when passkeys are supported by those accounts (not only the individual accounts being advertised to get passkey support) - there could be a recovery flow there still. 
+
+All things considered, it’s worth the extra effort to not bother with passwords eventually.Comment 8: Here in the Netherlands that’s absolutely true!Comment 9: Long story short, you would typically use other recovery methods on that account. Lets take your google account, you would use your password, phone number, alternate email or ideally other hardware authenticators.
+
+Just like with a password that you can forget, you would normally want to have some type of backup for a passkey as well. Now in theory you could try to operate using a passkey as the only means of authentication for an account, but few providers will likely allow you to due that due to the risk of you locking yourself of your account. Because passkeys can 'sync' to other devices and be backed up to a cloud, you could in theory rely on this backup to get you back in like when you lose our phone.
+
+Currently there are some limitations in that passkeys generally only sync between the same vendor ecosystem they were created in, so while your passkeys do sync and are backed up within a google account for example , from a practical perspective they would only be directly accessible to you on lets say an Android Phone and an Android Tablet, but if you logged into a Windows device with your google account, they are not accessible to Chrome on that device for example. This support is planned but isn't here yet.
+
+Note currently almost no accounts will allow you to actually remove the password as an authentication method completely  (Microsoft accounts are one of the only ones that I am aware of rights, as they have had their own passwordless solution for some time in addition to passkeys)
+
+So while you may start to use a passkey for Primary Auth + MFA for you accounts, you typically will still have password as another Primary Auth method, as well as other recovery methods etc.

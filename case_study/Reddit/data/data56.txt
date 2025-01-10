@@ -1,0 +1,20 @@
+Comment 1: It is ultimately up to the relying party (the website) to determine what kind of passkey they want. You can't really decide unless you are given the option. Most will go with synced passkeys now a days.  To create a local or device bound passkey with Android, make sure that the option authenticatorSelection.residentKey is set to "discouraged".Comment 2: That'd be fine for a power user but it'd be a disaster for the user base that passkeys are targeted at - which I suspect is why most passkey solutions are cloud syncing.
+
+If you want to keep passkeys on a physical device, there are solutions out there for keeping passkeys on hardware; and, they're better than keeping them in a phone IMO - they don't get lost when you get a new phone and you're not tied to the one phone to have access to them.Comment 3: [deleted]Comment 4: Why would you want to do this and how do you think it could work?
+
+The service you're setting up a passkey with needs *something* stored on their end to complete authentication, otherwise you're storing all credentials on your device with no way for the service to validate you're the owner of the account you're trying to access.
+
+By keeping all credentials and storing nothing with a service, you're effectively holding a lock *and* a key that fit together but don't protect anything.Comment 5: Thank you. This is a great piece of information and helps a lot.Comment 6: That I am aware of. Thanks for pointing out.
+
+Does anyone know if / how I can define to store passkeys on the phone in its TPM or lets say on a Yubikey if the preset the website suggests states the settings otherwise (ignoring preset and using TPM / Yubikey anyway)?Comment 7: So I hoped. But sadly they are stored in the password manager and will then be synced.Comment 8: Well, of course I am speaking about the private keys here. Sorry for not being clear enough.
+
+I want to keep the passkey (private key) in the TPM of my device - as it was done with Androids webauthn implementation before passkeys were integrated into the cloud based password manager. Being offered the choice would be even better.Comment 9: The account provider where you have an account gets to decide the security measures they wish to employ so unfortunately no, I know of no way of user circumventing the measures to increase or decrease them. I also don't see Google taking a step back on this either - of the people that don't trust passkeys in the cloud and want them on tamper/exfiltration-resistant hardware only a small percentage of those people would accept/trust them being on a phone. The rest would want them on an offline dedicated device (hardware token).Comment 10: I don't think the problem here is about the account provider.
+
+
+The problem, from what I understand, is that there's no app currently on Android (and possibly no API but I don't think that's the case) that does that.
+
+
+And, for the reasons you mentioned, no one is in a hurry to make one.
+
+
+If there was an app like YubikeeDX that stored the passkey on the device itself, instead of any kind of cloud syncinc, then it could very well respond the WebAuthn request saying the key is device-bound (without actually lying).

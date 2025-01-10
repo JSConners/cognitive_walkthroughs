@@ -1,0 +1,9 @@
+Comment 1: For whatever the relying party that asks to create the passkey, is there an option to add another passkey? Normally the website would have a section where for your user account you can view settings for security and choose to add / remove passkeys as appropriate.
+
+If it allows additional passkeys you can try the flow and see if it lets you scan a qr code to do the hybrid flow where credential lives on the phone. At this point you can login using passkey on PC and passkey on the phone.
+
+Then when it comes to accessing the same site/app on your phone if they allow using a passkey you can use the one provisioned earlier on the phone.
+
+You can test this process using https://passkeys.io to get an idea of what I mean.Comment 2: Oh my god you saved me! I had been trying to set up a passkey on my google account instead and it kept failing, I hadn't even thought of setting one up on onelogin
+
+It worked! Thank you so much!

@@ -1,0 +1,7 @@
+Comment 1: Awesome should everybody adapt to it. Fuck passwords and pins.Comment 2: Just set up a passkey with 1Password - works great!
+
+For those that don't want to read their blog post:
+
+1. Click your profile picture
+2. Click Feature preview and enable passkeys
+3. Go into your account settings and add a passkey

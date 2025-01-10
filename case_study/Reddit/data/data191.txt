@@ -1,0 +1,28 @@
+Comment 1: So I checkout the list and tried setting up Passkeys with some sites where I already had accounts.
+
+eBay: I posted earlier that I set up Passkeys on my eBay account and that was very easy.
+
+Paypal: I looked everywhere in the account settings and for the life of me I could not find where to set up Passkeys. If anyone figures this one out let me know.
+
+Google: I’m not sure where to set up Passkeys on Google. I thought it might be ‘Security Key’ which had me download something called ‘Google Smart Lock’ to my phone to enable it but that just set up another way to do 2-step verification which I already do using the YouTube app on my iPhone/iPad. Even their 2-step verification doesn’t work with the built-in Password Manager on Apple devices.
+
+Microsoft: Like Google I’m not sure where to set this up. The wording is not clear and the only thing I could find that might be Passkeys wanted me to download Microsoft Authenticator. I’m not downloading additional software to use a feature that is already built in to the iPhone.
+
+Very disappointed so far. If anyone figures these out I’d like to know how to set these up.Comment 2: Best Buy was really easy for me. 
+
+For Google tho, I went back to using the verification code in Settings > Passwords on iOS. Relying on a second app is a mess.Comment 3: I thought Apple has it.Comment 4: Since yesterday, Google is supporting it and it is very easy.
+
+Microsoft also supports it since a few months :)
+
+But for now we can not delete the password yet on Google, we can do that only on MicrosoftComment 5: [deleted]Comment 6: I just tried Google and even though I was able to setup Passkeys it still asks for my password when I sign in. If I try on another device it tells me Passkeys is already set up but it still won’t use it for signing in. Still wants me to enter a password. Seems they still have work to do on their implementation.
+
+As for Microsoft it still asks me to download their authenticator app before I can even try to set up any alternative method of authentication.
+
+Not looking good so far!Comment 7: Probably a little late to the game but here’s what I found:
+
+1. Passkeys basically fill in the spot of a security key. So when a website offers to use a security key for login you can setup a passkey instead when using a chromium based browser or safari.
+2. As I understand it, Google only supports security keys and therefore passkeys for 2-step-verification which means you still need your email and password.
+3. Microsoft only lets you set up a security key when you are on the account page with a windows desktop pc using a chromium based browser.
+4. Paypal supports passkeys currently in the US and only the US. Don’t know where you’re from. Should come to other countries this year.Comment 8: I never encountered any of those issues, it may be browser related but on chrome it worked perfectly from the beginning.
+
+For Microsoft you need that app as a backup method to be able to delete your password. But after that it works perfectly with passkeysComment 9: Yeah, the Google log in is working correctly now with Passkey.

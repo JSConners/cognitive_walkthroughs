@@ -1,0 +1,38 @@
+Comment 1: Google does not support passwordless login via Passkeys or more appropriately WebAuthn. They only support it as 2FA via the Security Key option.
+The “Use your phone to Sign In” option is NOT Passkey/WebAuthn it’s just OPT based authentication which can easily be used for phishing attacks and I would not recommend it.
+The easiest and safest way I would recommend is to use a the Security Key 2FA option and register your iPhone/Android(Passkey) or use a Security KeyComment 2: Passkeys now supported on Google accounts.
+
+https://reddit.com/r/google/comments/136ji6j/google_rolling_out_passkey_support_on_google/Comment 3: Nope! I honestly don’t even know where to set it up on Google.Comment 4: [deleted]Comment 5: I tried setting up passkeys on multiple Google accounts recently. Some learnings:
+
+* As expected, can only be used for 2FA, not a replacement for a password.
+* Chrome on MacOS does not support using a passkey for logging into Google accounts (a hardware security key is the only webauthn option available), whereas Safari will happily allow you to use a passkey or a separate device to complete authentication.
+* The passkey stored in your iCloud Keychain **will be overwritten** if a passkey is created for a different Google account (for whatever reason, only a passkey for a single Google account may exist in a Keychain).
+* The passkey created for the Google account **cannot be shared via Airdrop**. The workflow for sharing it will appear to complete successfully (including the passkey in Keychain recording the current date as the last time it was shared), but the Keychain of the receiver will not actually receive anything.Comment 6: Check [this article](https://support.google.com/accounts/answer/6361026?authuser=1&visit_id=21672151353626-4050788714990864132&p=phone_prompt_signin&hl=en&rd=1).
+
+[https://imgur.com/a/DtoqMMc](https://imgur.com/a/DtoqMMc)
+
+I use yubikey on my main account and since that account is [firstnamelastname@gmail.com](mailto:firstnamelastname@gmail.com), i probably won't be able to switch to this without getting frequent alerts, but this would be awesome to log in anywhere without worrying about password getting stolen.Comment 7: I just activated mine too. I'm guessing you have to have it on at least 2 devices nowComment 8: Great to see that it's finally available in an easy way for all accountsComment 9: Account settings, security, log in with email. Next page will explain how it worksComment 10: [deleted]Comment 11: You are able to log in without password?Comment 12: Yes this is still a OTP/Notification based Authentication where the Relying Party in this case Google sends a notification or OPT to a registered device and you just tap “Yes” and it logs you in.
+
+But Passkeys work on WebAuthn spec which is different. When you try to log in into a website the server sends you a challenge which only you can digitally sign with your private key. When the server receives the signatur, it verifies it with your public key which they stored during registration. If it is a valid signature you are authenticated.
+
+Google’s current authentication implementation for Google accounts does not support it for passwordless authentication. It’s still UserID Password or Notification to your phone based Authentication neither of them protects you from phishing attacks.
+
+If you add a simple password to your Google account and just used Passkey/Security Key as your 2FA. It is technically phishing proof and secure enough but an attack can still do social engineering attack on Google support posing as you to reset your easy password and do some damage.
+
+If you use same email/username in a bunch of websites and account and anyone of them were breached in the past your email is in the hands of an attacker they can bombard you with notification requests or contact support in your name to get access to your account.Comment 13: I have six Yubikeys and an iCloud account with passkeys configured for all of my Google accounts (gmail and workplace).Comment 14: Okay, I’ve gone to the security settings page and I don’t see anything that says “log in with email.” This is on a Chrome browser on macOS.Comment 15: That's 2fa. Shouldn't it be the one under log in with email?Comment 16: I’m trying this on iPhone, iPad and in a Mac with the Chrome browser and I don’t see anything about Passkeys on the 2-step verification page.Comment 17: [deleted]Comment 18: What you said make sense. I went back and tested [https://webauthn.io/](https://webauthn.io/) again, and yes, there is no password for that. I guess I just have to wait.
+
+>If you use same email/username in a bunch of websites and account and anyone of them were breached in the past your email is in the hands of an attacker they can bombard you with notification requests or contact support in your name to get access to your account.
+
+I am guessing I will run into this problem because I have firstnamelastname at gmail?Comment 19: Thanks for the tip. I just configured my yubikeys as passkeysComment 20: Is there a limit of 25 passkeys on each yubikey?Comment 21: This is what I see
+
+[https://imgur.com/a/JluBhXQ](https://imgur.com/a/JluBhXQ)
+
+[Help article](https://support.google.com/accounts/answer/6361026?authuser=1&visit_id=21672151353626-4050788714990864132&p=phone_prompt_signin&hl=en&rd=1)Comment 22: [https://passkeys.directory/](https://passkeys.directory/)
+
+You can test it on WebAuthn.ioComment 23: I guess they haven't implemented it as it should then. You should be able to just give your email and get prompt on phone. There are a few demo pages where it works like thatComment 24: Yes
+
+https://support.yubico.com/hc/en-us/articles/360013790319-How-many-accounts-can-I-register-my-YubiKey-with-Comment 25: Mine looks similar except I don’t have anything that says ‘Use your phone to sign in’ but I also have 2-step verification enabled whereas you don’t. Maybe that’s why. I still don’t see where it says ‘log in with email’ in your screen capture.Comment 26: Yes, you can't have passkeys when 2FA is enabled. That is mentioned in the article.Comment 27: So I disable 2-step verification and I still don’t see anything that says ‘Passkeys’ but the screen now looks like the screen shot you posted.
+
+I tried the ‘Use your phone to sign in’ but that prompts me to download the Google app which I don’t want to do so I just re-enabled the 2-step verification.
+
+As far as I’m concerned they still don’t have passkey support for Google accounts.Comment 28: Thanks for trying. I would have to agree with you, it is not really supported 100%

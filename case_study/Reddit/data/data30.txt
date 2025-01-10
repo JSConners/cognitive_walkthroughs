@@ -1,0 +1,66 @@
+Comment 1: Google creates 10 Backup codes that you can use as a last resort to log in.Comment 2: It actually seems buggy it takes my password then says use passkey click try again 2x and it says verified phone it's like a glitch
+
+I was hoping that passkey would allow single tap access from mobile  and was worried that passkey was required for all logins but it doesn't seem to be that way also the passkey win work with windows as it says there isn't one and now since it's multifactor it tries passkey 1st then requires password or authenticator key or backup code then hit passkey retry twice to get. No way to disable passkey
+
+Do you know a way to disable and re enable or get in touch with Google support as it just takes me to faqs page or Google user support forumsComment 3: Sorry, I'm not getting paid enough to read and parse these run on sentences.Comment 4: Rephrased shorter 
+
+Google passkey does not work on my android.
+Google pay does not show all history.
+
+Does that work?
+
+:)Comment 5: Your original post is full of typos and bad grammar like "create a oasjwt". 
+
+When it comes to debugging problems, correct grammar is essential to understanding what you did and the order you did it in. All this matters.
+
+In your rephrased shorter comment, the two sentences are clear but not sufficient to understand what you need. For example, how does "lost android" fit into all this?
+
+You need to extensively edit your post before we can help you.Comment 6: That's another run on sentence.Comment 7: 
+As far as lost android I was concerned about logging in on other devices. In testing I found that it still seems to take legacy methods.
+
+I just updated this porion of the original post let me know if you need more clarification on my passkey doesn't work issue.
+
+I was reading Google's passkey Web site and it was not clear to me how to recover if you lose you only android device. It also won't let me complete setup of use of my initial Google passkey. It says a passkey is created  automatically but when I tried to activate for use it says something went wrong. 
+
+When I try to use passkey that says is active to login  it 1st prompts to use passkey. It errors  as it  says retry or use another method. I choose another method and it accepts passwords. Next it  says click next to use existing passkey. Again it says something went wrong and doesn't work. But if I retry use passkey 2 more times it works. This happens every time
+ . Seems glitch and never prompts for fingerprint
+
+
+I read passkey and can't be  deleted or recreated. I did read you can disable as option  . It seems  broken even thought it says exists and has never been used.
+
+Additionly when try to use Google pass key on windows 11 the following error happens
+ If I login into Gmail on a computer and select use Google passkey it prompts  I need android and android Bluetooth enabled to logon  with a passkey. I follow the steps and it says no passkey exists.Comment 8: Ok I updated a d made it two sentences 😂Comment 9: There's still several parts of your post and comments that I can't parse, but I will tell you what I know about this.
+
+It would help if you would specify whether you're using a phone or PC. Sometimes you say W11 but sometimes you don't. I assume those times are on an Android.
+
+Google released passkeys a while ago and it seemed quite broken at the time. It seems better now but still has some problems.
+
+Right now, I can use passkeys to login on an iphone with an iphone.
+
+I also logged in on an Android by scanning a QR code on the Android with my iphone  which provided the pk to Android.
+
+I can not create a PK on a Pixel 4 even though it has a button to do so. The button just doesn't work.
+
+I can create a PK on a USB FIDO2 key and use it on Windows 7/chrome.
+
+As for your Q about backups, I already said you can generate backup codes. You can also enroll an authenticator. I have tried both of those. Most backup methods require another phone or a USB device. If you don't have either, then the backup code is your only option.
+
+[https://static01.nyt.com/images/2016/02/26/technology/personaltech/26techtipwebART/26techtipwebART-articleLarge.jpg?quality=75&auto=webp&disable=upscale](https://static01.nyt.com/images/2016/02/26/technology/personaltech/26techtipwebART/26techtipwebART-articleLarge.jpg?quality=75&auto=webp&disable=upscale)Comment 10: For w11 I Mean windows 11 and also same question for windows 10(both questions are for Google passkey stores and created for device android Samsung 21 or is the passkey only for Google cloud. Need that terminology clarified so I can phrase question better
+
+I haven't tried on iPhone
+
+Times I did not say w11 , Icould have been referring to a Windows or android device haven't tested iPhone or iPad or Linux 
+
+In general it seems Google passkey is buggy and not ready for prime time and there does not seem to be any good support changel to ask Google for assistance. Let me know if there is a way to open a ticket with Google
+
+
+For backup options I already verified it works
+For login with passkey on Android  glitches and require password and then any legacy method or clicking retry again 2x to work
+
+For window 11 with bluetooth on and android on , logging in with passkey proceeds to the point that I scan the QR code that windows 11 prompts with my android phone that I believe has or can access passkey, windows 11 say no passkey exists. Windows hello works fine on my windows 11 without passkey for native windows logins but fails for Google passkey logins for what I just said.
+
+Are there Any additional  or clarifications that I can make to describe the issues and scenarios?
+
+Thanks for the info this far it is useful
+
+In a separate  pixel reddit pixel chat there are bunch of pixel users with thebexact  same issues

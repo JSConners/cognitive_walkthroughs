@@ -1,0 +1,10 @@
+Comment 1: Thanks. It looks like a good overview touching a lot of important areas.
+
+
+I'd like to nitpick or question one tiny piece
+
+> Another alternative is to provide a recovery procedure per SMS, TOTP or some other thrusted means. Relying on solely a password as recovery is discouraged, since the recovery per password then becomes the "weakest link" of the authentication system.
+
+~~Wouldn't SMS used for recovery likewise become the weakest link? (and arguably a lot weaker than a properly-selected password).~~  
+
+* EDIT - nevermind. I gather you are suggesting that recovery should include password **plus** 2FA.  That makes more sense.

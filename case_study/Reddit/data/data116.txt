@@ -1,0 +1,3 @@
+Comment 1: I have updated my Bitwarden app to the latest version and I can't even find an option to store passkeys.
+
+It suits me fine as I have no intention of using them, but I would prefer that Bitwarden did its job and actually has something working when they claim they have.Comment 2: I have managed to add passkeys to fewer than a dozen websites, mainly those that have implemented support for YubiKeys. With the exception of Vanguard, I have been able to make websites treat the passkey stored in Bitwarden as a “virtual” YubiKey.

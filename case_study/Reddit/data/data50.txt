@@ -1,0 +1,40 @@
+Comment 1: These are device bound passkeys. You can’t export them. So you will lose them if you reinstall. This is by design.
+
+What you want is syncable passkeys such as those done by iOS and android natively. That isn’t available on windows yet.
+
+For any accounts where you have a passkey I suggest configuring another if possible on another device so you have a backup method to logon. If this is not possible you will need to reconfigure replacement passkeys after reinstalling windows. This also assumes all accounts with passkeys are accessible via other methods . Else an account recovery process may need to be invoked potentially.Comment 2: This is one significant benefit of storing your passkeys on a security device like a YubiKey— to avoid this very issueComment 3: Gosh I hadn't thought about that problem!
+
+At first I was creating my passkeys on my Windows computers; but I deleted all those and have recreated them using NordPass, which has very good support for passkeys. It's certainly not the only password manager that supports passkeys; in fact, I use Bitwarden too daily and it does fine. But NordPass identifies passkeys as a separate type of record which makes it very easy for me to see what's what. In any case, you might consider saving your passkeys to a password manager like NordPass or Bitwarden before re-installing Windows. (I know that 1Password also has strong support for passkeys and I believe Dashlane does too; probably others as well now.)Comment 4: I came here looking for this initial question, and I understood what I already imagined the answer to be. However, I remembered an alternative which is Bitwarden, which also records the passkeys, so if formatting the computer I will have an alternative. 
+
+The question is more for the "Bitwarden" community users in here:
+
+Will I be able to store a previously created passkey for a website in Bitwarden? Or will it ask me to create a new one and derail the one previously created/stored on my computer??
+
+Thank you for your commentsComment 5: ok, ill try this.Comment 6: Same problem, just moved to a different device.  If you want to replace your YubiKey, it is the same effort.
+
+This is the downside to device-bound Passkeys -- they are, well, bound to one device.Comment 7: that is why device bound passkeys always require a backup passkey or atleast have another backup recovery option added to the account.  
+In one way device bound passkeys are more secure i.e its on your TPM chip and can be protected by a boot password etc before Windows boots and one can be sure your passkeys are never stored in the cloud and can't be compromised even if we argue its encrypted and more convenient if it syncs across all devices.Comment 8: Yes. I've been using a cheaper version security key to store backups.
+
+Identiv uTrust FIDO2 USB-C NFC Security Key (FIDO2, U2F, PIV, TOTP, HOTP, WebAuth
+
+[https://www.amazon.com/gp/product/B0B5YCXMLM](https://www.amazon.com/gp/product/B0B5YCXMLM)Comment 9: Hmm, good idea. But do you know if lastpass supports passkeys?Comment 10: You're less likely to need to change yubikeys than software on your phone or laptop, at least I amComment 11: > do you know if lastpass supports paskeys?
+
+If I'm reading [this page](https://www.lastpass.com/features/passwordless-authentication) right, they support *passwordless login into LastPass itself* but that's not the same thing; actual support for passkeys  (to access third-party sites) seems to be coming*. I have no idea if that info is up to date.
+
+Are you using LastPass already? If so, do make sure that your master password is super strong. But do be aware that LastPass has had some serious security problems of a kind that password managers ought never to have. There are lots of great alternatives: NordPass, Bitwarden, 1Password, Keeper, Roboform, now Proton Pass, and even KeePassXC are all great.Comment 12: Oh, kinda sad bc I'm using lastpass for everything. But is proton pass free?Comment 13: I haven't used LastPass for several years so I'm not completely up to speed. But here's my take for what it's worth.
+
+* Somebody at LastPass really dropped the ball a year or two ago and their servers were breached. Some of the data that was released as a result of the breach (or breaches plural) was unencrypted and I think it included some personal info about users (like names and email addresses).
+* But my understanding is that passwords were all encrypted. What this means is that if your *master password* (the one that gets you into LastPass) was long, strong and unique, *your passwords were probably not compromised*. The problem here is that word "probably".
+* And given the horrible publicity (and the likely loss of a lot of customers that resulted) I would imagine that LastPass has, in the last year, tightened up its security. (The question here is, given their track record, do these folks have any idea what they're doing?)
+
+A lot of people still use LastPass. Sounds like you're one of them. 
+
+How do you know if your passwords were compromised? Get a trial version of 1Password, NordPass or Bitwarden and run their version of the report that searches the web to see if your data is "out there". I think Malwarebytes's website also has a free online page that does this. Or try \[haveIbeenpwned.com\]([https://haveIbeenpwned.com](https://haveIbeenpwned.com)).
+
+.
+
+I think nearly everybody who does NOT work for LastPass or still use LastPass thinks that you should abandon ship. Here's a good article from May 2023:
+
+[https://www.cnet.com/tech/services-and-software/still-using-lastpass-you-need-to-do-these-5-things/](https://www.cnet.com/tech/services-and-software/still-using-lastpass-you-need-to-do-these-5-things/)
+
+It's not THAT difficult to switch to a different password manager. I'm not a huge fan of Proton Pass's design but I'm confident that it's secure and a good password manager, and yes, it's free. But you can also get a free account with Bitwarden (with very few restrictions) or NordPass (with a number of restrictions). KeePassXC is also free, I think, and open source. I personally think even Google Passwords (the new version) would be an improvement.

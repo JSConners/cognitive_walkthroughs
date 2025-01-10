@@ -1,0 +1,33 @@
+Comment 1: >I'm away from home without my phone (visiting, evacuation after a natural disaster, whatever). I want to sign in to Google.
+
+If you're not already using 2 step authentication with TOTP codes, you're vulnerable to your account being brute forced. If you're using TOTP codes right now, not having your phone would be equally a problem for you.
+
+Your recovery options are the same regardless if you use passkeys or passwords. Security keys, backup codes, alternate email addresses, phone number, etc.
+
+It's a good exercise in general to think about account recovery in the same vein as disaster preparation. Research your options, have a plan, and hope you'll never be in a situation where you'll have to rely on it.Comment 2: For the foreseeable future, Google is using passkeys as an alternative to passwords, not a replacement. Where passkeys don't work, you can fall back to your current login method. Since you aren't doing any form of 2FA that relies on your phone, may we assume you're using a physical security key? If so, your (e.g.) Yubikey may be able to store your passkey.Comment 3: I am not at all impressed with Passkey. 
+
+My pixel 7 fingerprint thing pretty much doesn't work at all.  I've re-done it twice and I've given up.   I grew a beard last winter.  Face recognition didn't handle it well (as in "that's not you").  Face recognition doesn't work without lots of light.  In the evenings, I end up using that 4-digit code to get into my Pixel probably 95 percent of the time. 
+
+I don't at all trust biometrics.  With what AI can do with voices and videos, I'm just kind of expecting news stories about how AI can completely circumvent the biometrics Passkey is using and depending on. 
+
+I use Yubikeys.  I have great confidence in those.  And I have confidence in my 25-character passwords (plus or minus) stored in Bitwarden (which is protected with my Yubikey). 
+
+This passkeys thing seems to have thrown out the "multi" part of multi-factor (because novices keep using Password123 on all their accounts???).  They're betting all security on face recognition???  Seriously?
+
+Fidelity just announced passkey support (and they apparently still don't do Yubikey).  I'm disappointed.Comment 4: I would be MUCH happier with passkey if, instead of  biometrics, they'd allow me to configure the security based on my Yubikey(s).Comment 5: I was willing to buy the new yubikey that support passkeys but I still don't understand how they workComment 6: https://youtu.be/3jEm5WyN4EQ?si=f-4NJNat82_HKzZ-
+
+Live and be well.Comment 7: I haven't seen that yet.  But if it's Yubikey storing "biometrics" for passkey, sigh...  that's not what I'm looking for at all.  :-)
+
+Yubikeys are generally very easy, though.  With Bitwarden, for example, I have my big-ish passphrase Bitwarden requires.  And if I enter that ok, it says "ok, insert your yubikey into the USB port and push the little button on the key"  I do that and I'm in. 
+
+And I can use Bitwarden such that it won't require the Yubikey each time I unlock my "vault" of passwords with my master password.  Or I can work such that it always asks me for my Yubikey on my device.  But the "bad guys" will always be asked and they won't have it. 
+
+Biometrics just aren't good.  When I pass, I'd like my wife to be able to go into my e-mail and other accounts.  With biometrics, I would imagine that that's not going to be supported.   With Yubikeys, it's easy. 
+
+I know I'm ranting.  :-)  Sorry.Comment 8: Wow.   Thanks!!!
+
+The mainstream passkey stuff goes on and on about biometrics and I've seen nothing about an ability to use Yubikey with them (until now). 
+
+I'll need to watch her other videos, too.  I expect (and hope) that there's a way to hook multiple Yubikeys (e.g., primary and backup) to the same account.   Fidelity has just added passkeys (but not Yubikeys... sigh).  Presumably, I'll be able to register several yubikeys with my Fidelity account somehow.  Passkeys kinda seems like just an extra thing between the Yubikey and the site, but if that's how it's gotta be done... 
+
+Again, thanks for that pointer.  :-)Comment 9: From what I know, you can decide whether to use biometrics or a PIN associated with the USB / NFC key. It depends on the model

@@ -1,0 +1,14 @@
+Comment 1: From a product maturity perspective, I do not believe them to yet be enterprise ready.  Once clients ("password managers") become ubiquitous and passkey market share has grown, I believe they will be far superior to passwords+TOTP.
+
+There are a few distinct benefits:
+
+1. No reuse attacks -- each one is inherently unique.
+2. No replay attacks -- the communications are bi-directional and contain a nonce.
+3. Reduced attack surface -- the secret material (private key) never leaves the client.  Unlike passwords, it is no visible to a man-in-the-middle, and unlike TOTP, there is no shared-secret on the server.
+4. Finer control -- If a phone is lost, that one Passkey can be revoked; no need to break authentication on the user's PC.
+
+That said especially with hardware-bound Passkeys (of which the Yuibico "Security Key series" is an example), there is a scalability issue.  If a user wants a backup or replacement yubikey, it must be individually registered with each web site.  Syncable passkeys solve this issue.Comment 2: I'd add that Passkeys don't offer the controls most enterprise customers will require. Some customers will definitely want to ensure all keys are hardware-backed and/or platform specific (no sync).Comment 3: For Enterprise use WebAuthN/ security key flows.
+
+Also you want to make it easy to add additional passkeys to prevent lockout but then layer additional authentication controls so that they can only access certain apps on the non managed devices.Comment 4: >Some customers will definitely want to ensure all keys are hardware-backed
+
+The WebAuthn (passkey) protocol supports this.  The client can report to the server if the passkey is hardware-bound vs syncable.  It can also attest if "human presence" was validated.Comment 5: But the UX sucks because the passkey can only be rejected *after* it was created. This makes it really confusing for the user and the key will lie around forever, always wanting to fill that conditional UI input field. 

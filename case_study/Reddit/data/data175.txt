@@ -1,0 +1,31 @@
+Comment 1: Passkey implementations are platform specific.  They are probably not going to make it easy for multi-platform usage because everyone is trying to keep their users on their own ecosystems.  Once (or if ever) the platforms allow other sync providers, then maybe we'll see more consistent behaviors implemented across the platforms.
+
+This is also something new.  Sometimes what they say is not what they implement fully yet, so you might have to wait a bit to see how things pan out.  It's going to be novelties for everyone for a while.Comment 2: I tried the same at my work with the same result. At my work Bluetooth is blocked / switched off by the IT people. Don’t know if that’s the reason, but for sure Bluetooth is necessary for authorization with passkeys between devices. Starting from iOS 17 and Android 14 third party password managers can be used to store the passkeys. Let’s see if that would be a solution.Comment 3: The problem here isn't Google per se, but the fact that you are also using Apple.
+
+Passkeys are quite a mess if youre not using the default browsers (Chrome for Google and Safari for Apple). Apple won't let you use iCloud Keychain synced passkeys via Chrome even if theyre already on your device. Likewise, Google will delete passkeys from your device if you log out of or delete Chrome.
+
+Windows basically works like old school passkeys without actual syncing. Ergo, old school "make a passkey for each device you need to log on with". At least this will be the case for passkeys that live "natively" on the device.
+
+You can install iCloud Keychain Extension and Google Chrome to get your passkeys from iCloud and Google to sync with your Windows device and allow you to login directly from there.
+
+If you are literally the only one who will be using your work laptop, and using passkeys is allowed by your IT, and you are sure that you can delete your Windows passkeys in case you need to hand it back, then that is the only safe situation where generating another passkey for your work laptop is a good and sound idea.
+
+But that still doesnt explain why you didnt get a passkey prompt via QR code.
+
+The answer is that implementation is a total mess. In my passkey journey just today trying things out, I discovered that in my case at least, I can only invoke a passkey login to Google if I use the Google Accounts login page specifically. Not Gmail, not anything else. I have to use Google Accounts login page.
+
+Adobe is even worse - while the website will pull up the correct login page, but the mobile apps will pull a very similar looking but definitely very different login page without passkey options.
+
+Passkeys are a bitch right now, but it is at least good to practice using them. We need to get used to it now and report and complain about usability issues, or else, this theoretically better security option will become a headache to most people.Comment 4: thank you so much for this response.  at least it tells me it’s not who’s crazy.
+
+I love the idea of passkeys and I’m hoping that ios17 will make them easier to use.  I use bitwarden for all my passwords and I know they’re working on passkeys integration but they need iOS to allow third parties to manage passkeys.Comment 5: Not an expert on the current protocols, but I think it may be the other way around: Bitwarden should allow iOS to manage its passkeys. 
+
+Passkeys are hardware-bound. Bitwarden isn’t hardware, and the thing that controls the hardware is iOS. Imagine handing over the keys to some stranger (Bitwarden) and letting it ship it off to other devices you have zero control and verification on. The reason why iCloud Keychain works securely is that it knows that the person who has the keys on one keychain is the same person on another keychain, hence you can give them duplicates. With Bitwarden, iCloud doesn’t know if the keychain the duplicates are going to are the same person - it’s insecure.
+
+I expect that the “master control” of passkeys will always be the OS, because the OS controls the security chip.
+
+Case in point, again with my experience today with MacOS: Chrome will not read passkeys in MacOS that were created outside Chrome (i.e. Safari/iCloud Keychain/Password settings). You can still make passkeys accessible only in Chrome, and they will not show up in MacOS Passwords, and will be deleted if you log off the Chrome profile used when generating the passkey or delete Chrome altogether. But MacOS still has full control over that passkey, it’s just that you have to do it through Chrome.
+
+And when you check Google documentation, iCloud Keychain sync and access is on Googles timeline, not Apple’s.
+
+If anything my take here is that Microsoft is actually doing it best, followed by Apple, with Google doing the worst job.Comment 6: again, thank you for this detailed explanation.

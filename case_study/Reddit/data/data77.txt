@@ -1,0 +1,1 @@
+Comment 1: If correctly implemented on any given website you can make more than one passkeys. The different passkeys can indeed be stored in different vaults or accounts for that matter. Usually you can give any name to a Passkey on the website. And in any vault a passkey should contain the url of the website.

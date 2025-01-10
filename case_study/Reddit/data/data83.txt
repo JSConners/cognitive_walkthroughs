@@ -1,0 +1,27 @@
+Comment 1: Took me 3 clicks on Chrome on Mac OSComment 2: What are the 11 clicks?Comment 3: Interesting. I'm always signed in on my desktop and phone and rarely sign in anywhere else.Comment 4: I totally agree. I will not set this up for the rest of my family. They will not be able to use it.Comment 5: Still seems excessive - my original expectation was - no clicks - just a face or a finger tip.Comment 6:   
+1. CLICK on the email address I want to use (I have more than one Google email)  
+2. CLICK on Next (or use Return key)  
+3. FINGERPRINT - I don’t think I have to do Next on this one  
+4. Back to same screen as #1 but this time the email I chose in #1 is in the box CLICK on Next  
+5. Almost the same window as #2 but this time has a white background FINGERPRINT  
+6. An ad for DropBox - this is new today - CLICK on “No thanks”  
+7. Same as screen #2 (again) and use FINGERPRINT again  
+8. A new screen with my password as dots - CLICK on Next  
+9. CLICK off “Don’t ask again on this device.” (Please ask me every time.)  
+10. FINGERPRINT
+
+ok, only 10, but I may have missed one!Comment 7: So you have to not think passkey but think passkeys.    You can register a passkey from your phone with a mobile service as a roaming key.  You can also use your desktop windows OS to register a passkey with that service.   They viuth can be used to access that service.
+
+So yes if you have frequent services you use, register a Windows passkey with them and you can use pin or bio to access on that device.Comment 8: That's kinda intense.  I especially like the ad in the middle of a login process.  What will they think of next?!
+
+Does Google allow you to remove the password from the account?  That might eliminate at least one step.Comment 9: You're doing something wrong. This is what I do when signing into Google:
+
+1. Email address
+
+2. Tap "try another way" instead of entering password
+
+3. Choose passkey
+
+4. Fingerprint
+
+Takes less than 5 seconds.Comment 10: Thanks, I’ll try that.

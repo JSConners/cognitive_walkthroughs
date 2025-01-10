@@ -1,0 +1,13 @@
+Comment 1: Thanks, great tutorial. One note for anyone else setting up keycloak with podman, I was not able to get it to launch the admin console in Chrome when the service was front-ended with nginx to add SSL, without adding `-e KC_PROXY=edge` to the podman command. Otherwise it gets the "refused to load mixed content" error in the browser console.Comment 2: Thanks for the feedback. The keycloak documentation is known to be a bit clunky. Make sure you are looking at current quarkus documentation. https://www.keycloak.org/server/all-config. The container equivalent ENV Vars to set for each option are noted in the bottom left of the config option description ie.  'Env: KC_CACHE'.
+
+There are a handful of things recommended to hit when you are ready for production https://www.keycloak.org/server/configuration-production.   You will want to update the container COMMAND to be 'start' instead of 'start-dev' to enable production optimizations. 
+
+One annoying thing the keycloak container doesn't do by default is log user sign in event details to console output. You will want to enable debug level logs and turn on json logging for user events to be able to easily grab those generally required events from console output to send to a centralized logging platform in a real world cloud native pattern. 
+
+Happy to talk consulting arrangements for support and implementation through PM.Comment 3: Thanks, this is also very helpful information. It's just a learning exercise for me though.
+
+I did find one other "gotcha" when trying to add a Yubikey 5 as a passkey using the default policy settings. After registering the device, keycloak shows it in the list of registered passkeys for the account, but the Yubikey never actually stored the resident key data, so authentication fails when using it to log in. 
+
+The fix is setting "Require discoverable credential" to "Yes" under `Configure->Authentication->Policies->Webauthn Passwordless Policy`. This is apparently only needed for the Yubikey (maybe other hardware keys too?), platform passkeys work out-of-the-box.
+
+But it would be safer if keycloak would throw an error when the resident key data was not saved to the device (especially since there is a limit of 25 resident keys on a Yubikey), so people don't lock themselves out of their account.

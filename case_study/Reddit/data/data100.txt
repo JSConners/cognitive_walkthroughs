@@ -1,0 +1,6 @@
+Comment 1: https://www.androidauthority.com/titan-m2-google-3261547/
+
+Specifically for Pixel phones. 
+Samsung have their own for sometime now, Knox. 
+
+For others similar to other machines in the absence of a TEE then it’s software bound as you’ve suggested.Comment 2: Thank you for the explanation — it makes perfect sense now.  I guess the phone passkeys are stored more securely than I thought.

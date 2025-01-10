@@ -1,0 +1,24 @@
+Comment 1: You can use excludeCredential in the parameters for creating a credential. See https://developers.yubico.com/WebAuthn/WebAuthn_Developer_Guide/WebAuthn_Client_Registration.htmlComment 2: As another comment says this could possibly be done technically but the question is why. If someone loses access to the passkey then what is the backup to login?Comment 3: [https://developer.apple.com/forums/thread/723312](https://developer.apple.com/forums/thread/723312). If my understanding is correct, the iOS native has not support this feature yet. However, I have tried the following config:  
+{  
+  "challenge": challenge,  
+  "rpId": rpId,  
+  "user": {"id": userId, "name": userName},  
+  "pubKeyCredParams": \[  
+{  
+'alg': -7,  
+}  
+  \],  
+  "excludeCredentials": \[  
+{  
+'id': 'yiF6LEni7SVhdIMFFhND6pF45NQ',  
+'type': 'public-key',  
+// 'transports':\['internal'\],  
+}  
+  \],  
+}
+
+it turned out to be quite weird that, the case is I have an iOS device and an android device, if I created a passkey on anroid through scanning the QR code disaplayed in the iOS device, then creating another passkey on the original iOS device will be failed. The id above is the credential id created on the android deviceComment 4: The user can login thought another passkey stored in another authenticator. It just limit creating multiple passkeys in the same authenticator.
+
+The rationale to do this is I think it won't help to let an user to create multiple passkeys in the same device or cloud but will result in management chaos[https://sm.ms/image/rICvL19BKZnYEXc](https://sm.ms/image/rICvL19BKZnYEXc), during authentication, the user will be prompted to choose one among many similar displayed passkeys(may be distinguished by time or sequence number like Passkey #1 #2 etc.), I think this is an UX disaster as they essentially are the same for the user
+
+I hope I don't miss anythingComment 5: You did not miss anything. I assumed you meant one passkey in total. Totally agree that duplicate passkeys are a UX disaster.

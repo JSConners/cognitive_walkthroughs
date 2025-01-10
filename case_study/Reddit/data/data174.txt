@@ -1,0 +1,7 @@
+Comment 1: "To store passkeys, your device must have Android 9.0 or up and have a screen-lock turned on." https://support.google.com/chrome/answer/13168025
+
+I expect you also need Bluetooth turned on. If you meet all these requirements, maybe try a different QR reader?Comment 2: It might be that the camera app doesn’t recognize the code. If you have a QR scanner in the quick settings (drag down from top) that might work better. 
+
+If all else fails the Google Authenticator app QR scanner should recognize Fido codes.Comment 3: Looks like the stock QR code reader on my  phone was the problem.
+
+Thank you!Comment 4: Google Authenticator did the trick, thanks

@@ -1,0 +1,6 @@
+Comment 1: [deleted]Comment 2: I think that's the next logical step: first passwordless, then usernameless.
+
+&#x200B;
+
+But for now, I think account recovery will be too complex if you ditch emails entirelyComment 3: Very fair, and I rather like this idea also!
+A site will require some form of UUID and this doesn’t have to be a known username or email, as per your point.

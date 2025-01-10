@@ -1,0 +1,3 @@
+Comment 1: Apple and iOS based passkeys sync *where the site allows it.*  It's not that they don't support device-bound passkeys - it's that they do, but they don't *only* support device-bound.  Syncing is up to the site.
+
+If the request to create a passkey specifies device-bound, your phone will create a device-bound passkey within the phone's secure element and attest that it's device-bound, and that passkey will not be able to sync.Comment 2: Interesting. I didn't realize this was something the site dictated. Are there any examples of sites which issue device-bound passkeys now? I'd like to test this behavior in lieu of Entra postponing their passkey deployment until next month.

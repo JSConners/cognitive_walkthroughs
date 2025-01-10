@@ -1,0 +1,56 @@
+Comment 1: Can you expand on this? Maybe explain what your concern is?Comment 2: OK, glad to see I'm not the only one thinking about this. I'm pretty wary about Apple and Google pushing this. It seems like a great way for both of them to lock people into their ecosystems. It's not hard to imagine a future where an iPhone user can't switch to Android because hundreds of passkeys are locked into iCloud Keychain.
+
+I'm really hoping 1Password can push other players into making passkeys as interoperable as passwords. Seems like they're also thinking about this.
+https://www.future.1password.com/passkeys/Comment 3: I understand the point but considering how new this technology is, I'm not surprised that Google/Apple/Microsoft don't have a way to export.  For one, it is just much easier to create a new key on your other device, than to export/transfer/import your key. Would it be in a flat file? Encrypted or not encrypted?
+
+Reason two for not letting users export the key: novice users will do this and their keys will get compromised.  If you are inexperienced at security, and you see that "Export" menu option, 1 in 20 users will do it just to do it, and now their secrets are just sitting on the disk unencrypted.
+
+Reason three, there is also a level of trust between the website and the keychain maker, that they promise the user will always be physically present, will always have to unlock the keychain in whatever way they did the first time, etc.  As a site owner like Google or Paypal, I might choose not to support PIN unlock or not to support LastPass as a keychain maker, or only require Yubikey, etc.  The keychain vendor and the website relying on it are having a side conversation. Allowing you to export will basically break their promise to the web site owners.
+
+Finally, yes it is true that they want you to stay in the walled garden, and though I don't think they lose anything if you use multiple keychains, it just makes their product harder to support because interoperability is now a feature they have to test, and their support calls will grow based on problems from the other vendors.  
+
+All that said... I'm sure that export will be an option down the line, maybe not with the big 3, but others like Bitwarden almost certainly will.  And people will happily back up and migrate their keys (and more keys will get compromised since they are stored unencrypted).  It's off limits now for the same reason TOTP was hiding the key from you when it was new.
+
+I would still encourage everyone (even power users like yourself) to make a new key each time you have a new keychain rig.  It's usually easier than exporting, and later you can decide to rotate/invalidate keys when your phone gets stolen, and you get to keep rocking with the keys on your other platform or your Yubikey or whatever.  (In fact Yubikey is the only one I'm 100% confident will never be exportable). For most use cases creating a new key solves the problem without creating more problems.
+
+Good luck!Comment 4: If I understand passkeys correctly ... (big IF) ... 1st level verification is on one's device (either faceID or touchID). The scenario all the promo videos show is simple – you have your own device and you're using it to login to a site using passkeys. 
+
+A more complicated scenario is if you happen to be using a public device when you try to log into a site. I gather you'll be prompted for your faceID or touchID on your primary device(s). Once you've done that you can carry on using that other device. 
+
+So, in either scenario, the first resort AND last resort is identification on one's personal device(s). This seems to lock us even more closely to our devices.
+
+What if one wants to make a digital upheaval like switching from iOS to Android? Is it possible to migrate keys from one OS to another?
+
+Now, what if after the industry is all using passkeys, one decides to ditch the smart phone for a dumb phone? Or, what if one is burgled and no longer has access to his/her primary identification devices? 
+Do they become outcasts, shunned by society?Comment 5: Yes.   
+My concern is whether my password manager owns my credential or I do. Now, my password is: HelloWorld”. If I decide to get rid of 1Password, I just have to copy my password and use Bitwarden, pretty easy. I don’t know if it is possible using passkeys.Comment 6: I agree. 
+
+If we give up our keys, we are definitely in the hands of big (states) companies. 
+
+P.S. I like what I saw in that video.Comment 7: Anyone knows how to export passkeys from Google Chrome password manager? Is that even possible? They are not included in an export from the password manager...Comment 8: This is my take on it.
+
+Ultimately, you own your credentials but my understanding on 'portability' is that it's more complicated now. Take for example 2-factor authentication. If you want to use another app (for example move from 1Password to Bitwarden) to generate 2FA codes you have to log in to each service and re-register the other app as the one that generates the codes.
+
+With Passkeys you would have to log in to each service and create new keys with the app you want to move to. You would think that moving keys from one app to another would be easier but there might be security considerations involved in doing that.Comment 9: You are mistaken.
+
+TOTP (2FA) are perfectly portable. The problem is some apps make it non-portable (Authy). 2FA- TOTP has a key, you can check it in 1Password, Bitwarden, Apple keychain (edit: Mac only)...
+
+Try to edit and you'll see  something like this: \*otpauth://totp/Google%3Ajohnsmith%\**40gmail.com?****secret=JBSWY3DPEHPK3PXP****&issuer=Google*
+
+**secret=JBSWY3DPEHPK3PXP**
+
+JBSWY3DPEHPK3PXP, this is your TOTP code, you can copy and past this every single app and you'll see the same code.Comment 10: > you have to log in to each service and re-register the other app as the one that generates the codes.
+
+This is 100% wrong. TOTP secrets are just plaintext. A lot of places encode them as a QR code, but it's just text. If you look around the page with the QR code, you'll see a link that says something like "Enter manually". If you click that link you'll see a string of letters. That's your TOTP secret key. It's just text. Glorious, portable, text.
+
+The fact that certain authenticator apps don't let you export or see this text is just evil. They're trying to lock you in.
+
+P.S. 1Password gives you full control over your TOTP secret key.Comment 11: I used to use Authy for TOTP but moved to Apple's Keychain and just recreated /reregistered all of them.
+
+So now that I'm using Apple Keychain I can't find how to copy the TOTP keys. What are the steps?Comment 12: You have to export the password and open the file (it's a csv file, you will not have any problem), you can read it then.Comment 13: That's just it. I can't find any way to export the password from Apple's Keychain.Comment 14: Okey.
+
+My bad. I was talking about Mac. I have checked iPhone and I don't see how (using an iPhone).
+
+For Mac (what I said):
+
+[https://support.apple.com/guide/keychain-access/import-and-export-keychain-items-kyca35961/mac](https://support.apple.com/guide/keychain-access/import-and-export-keychain-items-kyca35961/mac)
